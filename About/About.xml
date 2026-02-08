@@ -12,7 +12,7 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>SWCP.guy762.Taran.SWGalaxy</packageId>
-	<url>https://github.com/guy1762/guy762-MM-KotORCore</url>
+	<url>https://github.com/SWCP-KOTOR/SWCP-guy762-Taran-StarWarsGalaxy</url>
 	
 	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<modDependencies>
