@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<name>Star Wars: The Galaxy Far, Far Away</name>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_SWCP_SWGalaxy</modIconPath>
+	<description>Adds Star Wars planets and gravships.</description>
+	<author>guy762, Taranchuk, Lee, et al.</author>
+	
+	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>SWCP.guy762.Taran.SWGalaxy</packageId>
+	<url>https://github.com/guy1762/guy762-MM-KotORCore</url>
+	
+	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<modDependencies>
+		<li>
+			<packageId>guy762.MM.KotORCore</packageId>
+			<displayName>Star Wars KotOR Resources and Materials</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl>
+			<downloadUrl>https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</downloadUrl>
+		</li>
+		<li>
+			<packageId>MrHydralisk.LayeredAtmosphereOrbit</packageId>
+			<displayName>Layered Atmosphere and Orbit</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3568552579</steamWorkshopUrl>
+			<downloadUrl>https://github.com/MrHydralisk/Layered-Atmosphere-Orbit</downloadUrl>
+		</li>
+		<li>
+			<packageId>btd.remix.gravshipblueprints</packageId>
+			<displayName>[BTD] Gravship Blueprints</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3575162262</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	
+	<loadAfterByVersion>
+		<v1.6>
+			<li>Ludeon.RimWorld</li>
+			<li>Ludeon.RimWorld.Royalty</li>
+			<li>Ludeon.RimWorld.Ideology</li>
+			<li>Ludeon.RimWorld.Biotech</li>
+			<li>Ludeon.RimWorld.Odyssey</li>
+			
+			<li>btd.remix.gravshipblueprints</li>
+			<li>MrHydralisk.LayeredAtmosphereOrbit</li>
+			
+			<li>lee.theforce.lightsaber</li>
+			<li>lee.theforce.standalone</li>
+			
+			<li>guy762.StarWarsXenotypes</li>
+			<li>guy762.MM.KotORCore</li>
+			<li>guy762.KotORWeapons</li>
+			<li>guy762.KotORDroids</li>
+			
+			<li>SWCP.GCWVehicles</li>
+		</v1.6>
+	</loadAfterByVersion>
+	<loadBefore>
+		<li>SWCP.guy762.WarlordEmpire</li>
+	</loadBefore>
+	
+	<incompatibleWith>
+	  <li>guy762.KotORGadgets</li>
+	</incompatibleWith>
+  
+</ModMetaData>
