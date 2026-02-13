@@ -98,22 +98,14 @@
 		<graphicData><texPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater</texPath></graphicData>
 		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater_north</uiIconPath>
 	
-		<!-- <thingClass>guy762_LifeSupportUnit.Building_OxygenHeater</thingClass> -->
-		<!-- <thingClass>Building_Heater</thingClass> -->
-		<thingClass>Building_LifeSupportUnit</thingClass>
-		<!-- <comps> -->
-			<!-- <li Class="CompProperties_HeatPusher"> -->
-				<!-- <compClass>CompHeatPusherPowered</compClass> -->
-				<!-- <heatPerSecond>5</heatPerSecond> -->
-				 <!-- this is in fuckin dumbass celsius -->
-				<!-- <heatPushMaxTemperature>20</heatPushMaxTemperature> -->
-			<!-- </li> -->
-			<!-- <li Class="guy762_LifeSupportUnit.CompProperties_OxygenTempControl"> -->
-				<!-- <energyPerSecond>25</energyPerSecond> -->
-				<!-- <requiresPower>true</requiresPower> -->
-				<!-- <airPerSecondPerHundredCells>0.01</airPerSecondPerHundredCells> -->
-			<!-- </li> -->
-		<!-- </comps> -->
+		<!-- <thingClass>Building_LifeSupportUnit</thingClass> -->
+		
+		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
+		<comps>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>30</energyPerSecond>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="guy762_ShipTech_LifeSupportUnitBASE">
