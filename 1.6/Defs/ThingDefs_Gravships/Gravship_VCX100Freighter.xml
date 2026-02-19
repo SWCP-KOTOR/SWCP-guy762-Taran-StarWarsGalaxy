@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
+		<defName>guy762_SWGravshipOverlay_VCX100Freighter</defName>
+		<label>VCX-100 light freighter</label>
+		<graphicData>
+			<texPath>Gravships/VCX100/VCX100</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(45,45)</drawSize>
+
+			<!-- <drawOffset>(0.25,0,-0.12)</drawOffset> -->
+
+			<shaderType>CutoutComplex</shaderType>
+			<color>(110,130,115)</color> <!-- moss green -->
+			<colorTwo>(230,185,45)</colorTwo> <!-- republic yellow -->
+			<!-- <colorThree>(225,225,225)</colorThree> -->
+		</graphicData>
+		<size>(1,1)</size>
+		<!-- <size>(35,44)</size> -->
+		<uiIconScale>0.03</uiIconScale>
+		<costList>
+		  <KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
+		  <ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>11200</MaxHitPoints>
+		  <WorkToBuild>44800</WorkToBuild>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>guy762_ShipAuraEffecter_YT1300transport</effecterDef>
+			</li>
+		</comps>
+		
+		<!-- <altitudeLayer>WorldClipper</altitudeLayer> -->
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<!-- <altitudeLayer>BelowTerrain</altitudeLayer> -->
+		
+		<researchPrerequisites>
+		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
+		</researchPrerequisites>
+	</ThingDef>
+	
+	
+	<!-- <EffecterDef> -->
+		<!-- <defName>guy762_ShipAuraEffecter_YT1300transport</defName> -->
+		<!-- <children> -->
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>kotorsound_ShipAmbience_YT1300transport</soundDef> -->
+		  <!-- </li> -->
+		<!-- </children> -->
+	<!-- </EffecterDef> -->
+	
+	
+	<!-- guy762_GravshipPrefab_ -->
+	
+	
+	<PrefabDef>
+	  <defName>guy762_GravshipPrefab_VCX100</defName>
+	  <size>(44,33)</size>
+	  <things>
+		<guy762_ShipTech_WallChargingStation>
+		  <rects>
+			<li>(30,7,31,7)</li>
+		  </rects>
+		</guy762_ShipTech_WallChargingStation>
+		<KOTOR_RhydoniumHopper_insert>
+		  <position>(20, 0, 29)</position>
+		</KOTOR_RhydoniumHopper_insert>
+		<guy762_decor_TowerTerminalA>
+		  <rects>
+			<li>(38,17,39,17)</li>
+		  </rects>
+		  <relativeRotation>Opposite</relativeRotation>
+		</guy762_decor_TowerTerminalA>
+		<Battery>
+		  <positions>
+			<li>(9, 0, 21)</li>
+			<li>(9, 0, 22)</li>
+		  </positions>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</Battery>
+		<Battery>
+		  <positions>
+			<li>(12, 0, 24)</li>
+			<li>(15, 0, 26)</li>
+			<li>(16, 0, 26)</li>
+		  </positions>
+		  <relativeRotation>Opposite</relativeRotation>
+		</Battery>
+		<Battery>
+		  <position>(13, 0, 23)</position>
+		</Battery>
+		<Battery>
+		  <positions>
+			<li>(14, 0, 25)</li>
+			<li>(19, 0, 28)</li>
+		  </positions>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</Battery>
+		<Table1x2c>
+		  <position>(32, 0, 21)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Table1x2c>
+		<guy762_Autodoor1x1_DoomgiverA>
+		  <rects>
+			<li>(24,5,24,5)</li>
+			<li>(24,12,24,12)</li>
+			<li>(32,13,32,13)</li>
+			<li>(36,14,36,14)</li>
+			<li>(36,18,36,18)</li>
+			<li>(24,20,24,20)</li>
+			<li>(30,23,30,23)</li>
+			<li>(24,27,24,27)</li>
+		  </rects>
+		</guy762_Autodoor1x1_DoomgiverA>
+		<guy762_Autodoor1x1_DoomgiverA>
+		  <rects>
+			<li>(25,7,25,7)</li>
+			<li>(25,10,25,10)</li>
+			<li>(33,10,33,10)</li>
+			<li>(27,18,27,18)</li>
+			<li>(25,22,25,22)</li>
+			<li>(33,24,33,24)</li>
+			<li>(29,27,29,27)</li>
+		  </rects>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</guy762_Autodoor1x1_DoomgiverA>
+		<CO_TwinThruster>
+		  <positions>
+			<li>(1, 0, 13)</li>
+			<li>(3, 0, 16)</li>
+			<li>(1, 0, 19)</li>
+		  </positions>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</CO_TwinThruster>
+		<VitalsMonitor>
+		  <position>(28, 0, 9)</position>
+		</VitalsMonitor>
+		<VitalsMonitor>
+		  <rects>
+			<li>(28,12,28,12)</li>
+			<li>(30,12,30,12)</li>
+		  </rects>
+		  <relativeRotation>Opposite</relativeRotation>
+		</VitalsMonitor>
+		<Vent>
+		  <rects>
+			<li>(28,8,28,8)</li>
+			<li>(36,11,36,11)</li>
+			<li>(36,21,36,21)</li>
+		  </rects>
+		</Vent>
+		<Vent>
+		  <rects>
+			<li>(27,14,27,14)</li>
+			<li>(29,24,29,24)</li>
+		  </rects>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</Vent>
+		<guy762_SWTurret_HardpointLightTurbo>
+		  <positions>
+			<li>(40, 0, 12)</li>
+			<li>(40, 0, 20)</li>
+		  </positions>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</guy762_SWTurret_HardpointLightTurbo>
+		<kotor_PlasmaFurnace>
+		  <position>(15, 0, 23)</position>
+		</kotor_PlasmaFurnace>
+		<jdgg_2x2CargoHold>
+		  <positions>
+			<li>(20, 0, 14)</li>
+			<li>(20, 0, 19)</li>
+			<li>(32, 0, 26)</li>
+		  </positions>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		</jdgg_2x2CargoHold>
+		<ToolCabinet>
+		  <position>(11, 0, 22)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</ToolCabinet>
+		<ToolCabinet>
+		  <position>(17, 0, 22)</position>
+		</ToolCabinet>
+		<Dresser>
+		  <position>(28, 0, 28)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>KOTOR_AlloyBronzium</stuff>
+		  <quality>Normal</quality>
+		</Dresser>
+		<Stool>
+		  <rects>
+			<li>(31,20,32,20)</li>
+			<li>(13,21,13,21)</li>
+			<li>(28,21,28,21)</li>
+			<li>(15,22,15,22)</li>
+			<li>(31,22,32,22)</li>
+		  </rects>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Stool>
+		<Stool>
+		  <position>(19, 0, 25)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Stool>
+		<jdgg_RefCargoHold>
+		  <position>(28, 0, 20)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		</jdgg_RefCargoHold>
+		<jdgg_RefCargoHold>
+		  <position>(26, 0, 22)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		</jdgg_RefCargoHold>
+		<GravshipHull>
+		  <rects>
+			<li>(23,0,23,0)</li>
+			<li>(25,0,25,0)</li>
+			<li>(21,1,22,1)</li>
+			<li>(26,1,26,1)</li>
+			<li>(20,2,20,2)</li>
+			<li>(27,2,27,2)</li>
+			<li>(18,3,19,3)</li>
+			<li>(28,3,29,3)</li>
+			<li>(17,4,17,4)</li>
+			<li>(30,4,30,4)</li>
+			<li>(15,5,16,5)</li>
+			<li>(31,5,32,5)</li>
+			<li>(13,6,14,6)</li>
+			<li>(33,6,33,6)</li>
+			<li>(12,7,12,7)</li>
+			<li>(34,7,35,7)</li>
+			<li>(11,8,11,8)</li>
+			<li>(36,8,36,8)</li>
+			<li>(9,9,10,9)</li>
+			<li>(37,9,38,9)</li>
+			<li>(8,10,8,10)</li>
+			<li>(38,10,39,10)</li>
+			<li>(38,11,38,14)</li>
+			<li>(39,14,40,14)</li>
+			<li>(38,18,40,18)</li>
+			<li>(38,19,38,23)</li>
+			<li>(8,22,8,22)</li>
+			<li>(39,22,39,22)</li>
+			<li>(9,23,10,23)</li>
+			<li>(37,23,37,23)</li>
+			<li>(11,24,11,24)</li>
+			<li>(36,24,36,24)</li>
+			<li>(12,25,12,25)</li>
+			<li>(34,25,35,25)</li>
+			<li>(13,26,14,26)</li>
+			<li>(33,26,33,26)</li>
+			<li>(15,27,16,27)</li>
+			<li>(31,27,32,27)</li>
+			<li>(17,28,17,28)</li>
+			<li>(30,28,30,28)</li>
+			<li>(18,29,19,29)</li>
+			<li>(28,29,29,29)</li>
+			<li>(20,30,20,30)</li>
+			<li>(27,30,27,30)</li>
+			<li>(21,31,22,31)</li>
+			<li>(26,31,26,31)</li>
+			<li>(23,32,23,32)</li>
+			<li>(25,32,25,32)</li>
+		  </rects>
+		  <stuff>KOTOR_AlloyDurasteel</stuff>
+		</GravshipHull>
+		<GravshipHull>
+		  <rects>
+			<li>(41,14,42,14)</li>
+			<li>(43,15,43,17)</li>
+			<li>(41,18,42,18)</li>
+		  </rects>
+		  <stuff>Obsidian</stuff>
+		</GravshipHull>
+		<guy762_decor_BigRebelScreen>
+		  <position>(35, 0, 16)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		</guy762_decor_BigRebelScreen>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 2)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 2)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 3)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 3)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 4)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 4)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 5)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 5)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 5)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 5)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 6)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 6)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 7)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 7)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(30, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(31, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(32, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 8)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 9)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 9)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 9)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 10)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(34, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(35, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 11)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(15, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(16, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(19, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(20, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 12)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(28, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(30, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(31, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 13)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 14)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 14)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(34, 0, 14)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(35, 0, 14)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 14)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 15)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 15)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 16)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 17)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 17)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 18)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 18)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(34, 0, 18)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(35, 0, 18)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 18)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 19)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 19)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(28, 0, 19)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 19)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 19)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(15, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(16, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(19, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(20, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(21, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 20)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(34, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(35, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(37, 0, 21)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 22)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 22)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(28, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(31, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(32, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 23)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 24)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 24)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 25)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 25)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 25)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(33, 0, 25)</position>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 26)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 26)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 26)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 27)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(23, 0, 27)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(25, 0, 27)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 27)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 28)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 28)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(29, 0, 28)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 29)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 29)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(27, 0, 29)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(22, 0, 30)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<guy762_PoweredWall_SandcrawlerInteriorWallA>
+		  <position>(26, 0, 30)</position>
+		  <colorDef>Structure_White</colorDef>
+		</guy762_PoweredWall_SandcrawlerInteriorWallA>
+		<DiningChair>
+		  <position>(31, 0, 15)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</DiningChair>
+		<DiningChair>
+		  <rects>
+			<li>(40,15,40,17)</li>
+		  </rects>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</DiningChair>
+		<DiningChair>
+		  <position>(30, 0, 17)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</DiningChair>
+		<guy762_Autodoor1x1_DreadnaughtA>
+		  <rects>
+			<li>(24,0,24,0)</li>
+			<li>(24,32,24,32)</li>
+		  </rects>
+		</guy762_Autodoor1x1_DreadnaughtA>
+		<guy762_Autodoor1x1_DreadnaughtA>
+		  <position>(37, 0, 16)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</guy762_Autodoor1x1_DreadnaughtA>
+		<KOTOR_ReactorRhydonium_medium>
+		  <positions>
+			<li>(21, 0, 22)</li>
+			<li>(21, 0, 25)</li>
+		  </positions>
+		</KOTOR_ReactorRhydonium_medium>
+		<Bed>
+		  <positions>
+			<li>(34, 0, 12)</li>
+			<li>(34, 0, 20)</li>
+		  </positions>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Bed>
+		<Bed>
+		  <positions>
+			<li>(37, 0, 12)</li>
+			<li>(34, 0, 22)</li>
+		  </positions>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Bed>
+		<Bed>
+		  <position>(37, 0, 20)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Bed>
+		<Bed>
+		  <position>(37, 0, 22)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Bed>
+		<GravEngine>
+		  <position>(24, 0, 16)</position>
+		</GravEngine>
+		<LargeChemfuelTank>
+		  <positions>
+			<li>(4, 0, 13)</li>
+			<li>(4, 0, 19)</li>
+		  </positions>
+		</LargeChemfuelTank>
+		<WallLamp>
+		  <rects>
+			<li>(19,4,19,4)</li>
+			<li>(14,7,14,7)</li>
+			<li>(31,9,31,9)</li>
+			<li>(9,13,9,13)</li>
+			<li>(23,13,23,13)</li>
+			<li>(25,13,25,13)</li>
+			<li>(40,15,40,15)</li>
+			<li>(35,19,35,19)</li>
+			<li>(12,21,12,21)</li>
+			<li>(19,21,19,21)</li>
+			<li>(35,22,35,22)</li>
+			<li>(31,24,31,24)</li>
+			<li>(23,28,23,28)</li>
+			<li>(25,28,25,28)</li>
+		  </rects>
+		  <relativeRotation>Opposite</relativeRotation>
+		</WallLamp>
+		<WallLamp>
+		  <rects>
+			<li>(23,4,23,4)</li>
+			<li>(25,4,25,4)</li>
+			<li>(26,7,26,7)</li>
+			<li>(34,10,34,10)</li>
+			<li>(12,11,12,11)</li>
+			<li>(19,11,19,11)</li>
+			<li>(27,11,27,11)</li>
+			<li>(30,12,30,12)</li>
+			<li>(35,13,35,13)</li>
+			<li>(40,17,40,17)</li>
+			<li>(29,18,29,18)</li>
+			<li>(9,19,9,19)</li>
+			<li>(23,19,23,19)</li>
+			<li>(25,19,25,19)</li>
+			<li>(28,22,28,22)</li>
+			<li>(14,25,14,25)</li>
+			<li>(19,28,19,28)</li>
+		  </rects>
+		</WallLamp>
+		<WallLamp>
+		  <rects>
+			<li>(24,8,24,8)</li>
+			<li>(24,24,24,24)</li>
+			<li>(27,27,27,27)</li>
+		  </rects>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</WallLamp>
+		<WallLamp>
+		  <rects>
+			<li>(20,14,20,14)</li>
+			<li>(32,14,32,14)</li>
+			<li>(36,15,36,15)</li>
+			<li>(36,17,36,17)</li>
+			<li>(20,18,20,18)</li>
+			<li>(32,18,32,18)</li>
+		  </rects>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</WallLamp>
+		<CO_VacDoorTriple>
+		  <position>(21, 0, 16)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		</CO_VacDoorTriple>
+		<Table2x2c>
+		  <position>(29, 0, 15)</position>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</Table2x2c>
+		<guy762_DoubleAutodoor_Vjun>
+		  <positions>
+			<li>(17, 0, 12)</li>
+			<li>(17, 0, 20)</li>
+		  </positions>
+		</guy762_DoubleAutodoor_Vjun>
+		<FabricationBench>
+		  <position>(18, 0, 25)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</FabricationBench>
+		<ShelfSmall>
+		  <position>(35, 0, 10)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>KOTOR_Plastoid</stuff>
+		</ShelfSmall>
+		<ShelfSmall>
+		  <rects>
+			<li>(22,13,22,13)</li>
+			<li>(26,13,26,13)</li>
+		  </rects>
+		  <stuff>Steel</stuff>
+		</ShelfSmall>
+		<ShelfSmall>
+		  <rects>
+			<li>(22,19,22,19)</li>
+			<li>(26,19,26,19)</li>
+		  </rects>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		</ShelfSmall>
+		<ElectricTailoringBench>
+		  <position>(13, 0, 22)</position>
+		  <stuff>KOTOR_Plastoid</stuff>
+		</ElectricTailoringBench>
+		<guy762_ShipTech_LifeSupportUnit_heater>
+		  <rects>
+			<li>(23,3,23,3)</li>
+			<li>(24,11,24,11)</li>
+			<li>(34,13,34,13)</li>
+			<li>(38,15,38,15)</li>
+			<li>(34,19,34,19)</li>
+			<li>(24,21,24,21)</li>
+			<li>(23,29,23,29)</li>
+		  </rects>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		</guy762_ShipTech_LifeSupportUnit_heater>
+		<guy762_ShipTech_LifeSupportUnit_heater>
+		  <rects>
+			<li>(14,11,14,11)</li>
+			<li>(28,18,28,18)</li>
+			<li>(15,19,15,19)</li>
+		  </rects>
+		</guy762_ShipTech_LifeSupportUnit_heater>
+		<guy762_ShipTech_LifeSupportUnit_heater>
+		  <rects>
+			<li>(32,12,32,12)</li>
+			<li>(28,25,28,25)</li>
+		  </rects>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</guy762_ShipTech_LifeSupportUnit_heater>
+		<guy762_ShipTech_LifeSupportUnit_heater>
+		  <position>(14, 0, 21)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		</guy762_ShipTech_LifeSupportUnit_heater>
+		<PowerConduit>
+		  <rects>
+			<li>(23,0,23,1)</li>
+			<li>(25,0,25,1)</li>
+			<li>(21,1,22,1)</li>
+			<li>(26,1,26,1)</li>
+			<li>(20,2,21,2)</li>
+			<li>(27,2,27,3)</li>
+			<li>(18,3,20,3)</li>
+			<li>(28,3,29,3)</li>
+			<li>(17,4,18,4)</li>
+			<li>(29,4,30,4)</li>
+			<li>(15,5,17,5)</li>
+			<li>(30,5,32,5)</li>
+			<li>(13,6,15,6)</li>
+			<li>(32,6,33,6)</li>
+			<li>(12,7,13,7)</li>
+			<li>(34,7,35,7)</li>
+			<li>(11,8,12,8)</li>
+			<li>(28,8,28,8)</li>
+			<li>(35,8,36,8)</li>
+			<li>(9,9,11,9)</li>
+			<li>(36,9,38,9)</li>
+			<li>(8,10,9,10)</li>
+			<li>(38,10,39,10)</li>
+			<li>(36,11,36,11)</li>
+			<li>(38,11,38,14)</li>
+			<li>(27,14,27,14)</li>
+			<li>(39,14,42,14)</li>
+			<li>(21,15,21,17)</li>
+			<li>(42,15,43,15)</li>
+			<li>(43,16,43,17)</li>
+			<li>(42,17,42,18)</li>
+			<li>(38,18,41,18)</li>
+			<li>(38,19,38,23)</li>
+			<li>(36,21,36,21)</li>
+			<li>(8,22,8,22)</li>
+			<li>(39,22,39,22)</li>
+			<li>(9,23,11,23)</li>
+			<li>(36,23,37,23)</li>
+			<li>(11,24,11,24)</li>
+			<li>(29,24,29,24)</li>
+			<li>(35,24,36,24)</li>
+			<li>(12,25,12,25)</li>
+			<li>(34,25,35,25)</li>
+			<li>(13,26,14,26)</li>
+			<li>(32,26,33,26)</li>
+			<li>(15,27,17,27)</li>
+			<li>(30,27,32,27)</li>
+			<li>(17,28,17,28)</li>
+			<li>(30,28,30,28)</li>
+			<li>(18,29,20,29)</li>
+			<li>(28,29,29,29)</li>
+			<li>(20,30,21,30)</li>
+			<li>(27,30,27,30)</li>
+			<li>(21,31,23,31)</li>
+			<li>(25,31,26,31)</li>
+			<li>(23,32,23,32)</li>
+			<li>(25,32,25,32)</li>
+		  </rects>
+		</PowerConduit>
+		<CryptosleepCasket>
+		  <position>(36, 0, 10)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</CryptosleepCasket>
+		<KOTOR_RhydoniumTank_small>
+		  <rects>
+			<li>(21,27,21,30)</li>
+		  </rects>
+		  <relativeRotation>Opposite</relativeRotation>
+		</KOTOR_RhydoniumTank_small>
+		<HospitalBed>
+		  <positions>
+			<li>(26, 0, 9)</li>
+			<li>(31, 0, 9)</li>
+			<li>(26, 0, 11)</li>
+		  </positions>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</HospitalBed>
+		<HospitalBed>
+		  <position>(30, 0, 9)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</HospitalBed>
+		<HospitalBed>
+		  <positions>
+			<li>(29, 0, 12)</li>
+			<li>(31, 0, 12)</li>
+		  </positions>
+		  <relativeRotation>Opposite</relativeRotation>
+		  <stuff>Steel</stuff>
+		  <quality>Normal</quality>
+		</HospitalBed>
+		<PilotConsole>
+		  <position>(41, 0, 16)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</PilotConsole>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(8, 0, 11)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(8, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(9, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(10, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(11, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(12, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(13, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(14, 0, 12)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(5, 0, 15)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(5, 0, 16)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(5, 0, 17)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(8, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(9, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(10, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(11, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(12, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(13, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(14, 0, 20)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<guy762_PoweredWall_SandcrawlerHull>
+		  <position>(8, 0, 21)</position>
+		  <colorDef>Structure_Cream</colorDef>
+		</guy762_PoweredWall_SandcrawlerHull>
+		<DoubleBed>
+		  <position>(26, 0, 26)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>KOTOR_AlloyBronzium</stuff>
+		  <quality>Normal</quality>
+		</DoubleBed>
+		<EndTable>
+		  <position>(26, 0, 24)</position>
+		  <relativeRotation>Counterclockwise</relativeRotation>
+		  <stuff>KOTOR_AlloyBronzium</stuff>
+		  <quality>Normal</quality>
+		</EndTable>
+		<ElectricStove>
+		  <position>(28, 0, 22)</position>
+		</ElectricStove>
+		<guy762_SWGravshipOverlay_VCX100Freighter>
+		  <position>(21, 0, 16)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		</guy762_SWGravshipOverlay_VCX100Freighter>
+		<Shelf>
+		  <position>(34, 0, 8)</position>
+		  <stuff>KOTOR_Plastoid</stuff>
+		</Shelf>
+		<SWCP_ShipForcefieldWall>
+		  <rects>
+			<li>(14,13,14,19)</li>
+		  </rects>
+		</SWCP_ShipForcefieldWall>
+		<Couch>
+		  <position>(29, 0, 14)</position>
+		  <stuff>Hyperweave</stuff>
+		  <quality>Normal</quality>
+		</Couch>
+		<Couch>
+		  <position>(28, 0, 16)</position>
+		  <relativeRotation>Clockwise</relativeRotation>
+		  <stuff>Hyperweave</stuff>
+		  <quality>Normal</quality>
+		</Couch>
+	  </things>
+	  <terrain>
+		<!-- <Space> -->
+		<Concrete>
+		  <rects>
+			<li>(0,0,22,0)</li>
+			<li>(26,0,43,0)</li>
+			<li>(0,1,20,1)</li>
+			<li>(27,1,43,1)</li>
+			<li>(0,2,19,2)</li>
+			<li>(28,2,43,2)</li>
+			<li>(0,3,17,3)</li>
+			<li>(30,3,43,3)</li>
+			<li>(0,4,16,4)</li>
+			<li>(31,4,43,4)</li>
+			<li>(0,5,14,5)</li>
+			<li>(33,5,43,5)</li>
+			<li>(0,6,12,6)</li>
+			<li>(34,6,43,6)</li>
+			<li>(0,7,11,7)</li>
+			<li>(36,7,43,7)</li>
+			<li>(0,8,10,8)</li>
+			<li>(37,8,43,8)</li>
+			<li>(0,9,8,9)</li>
+			<li>(39,9,43,9)</li>
+			<li>(0,10,7,11)</li>
+			<li>(40,10,43,10)</li>
+			<li>(42,11,43,13)</li>
+			<li>(6,12,7,12)</li>
+			<li>(43,14,43,14)</li>
+			<li>(0,15,1,17)</li>
+			<li>(43,18,43,32)</li>
+			<li>(42,19,42,32)</li>
+			<li>(6,20,7,32)</li>
+			<li>(0,21,5,32)</li>
+			<li>(40,22,41,32)</li>
+			<li>(8,23,8,32)</li>
+			<li>(39,23,39,32)</li>
+			<li>(9,24,10,32)</li>
+			<li>(37,24,38,32)</li>
+			<li>(11,25,11,32)</li>
+			<li>(36,25,36,32)</li>
+			<li>(12,26,12,32)</li>
+			<li>(34,26,35,32)</li>
+			<li>(13,27,14,32)</li>
+			<li>(33,27,33,32)</li>
+			<li>(15,28,16,32)</li>
+			<li>(31,28,32,32)</li>
+			<li>(17,29,17,32)</li>
+			<li>(30,29,30,32)</li>
+			<li>(18,30,19,32)</li>
+			<li>(28,30,29,32)</li>
+			<li>(20,31,20,32)</li>
+			<li>(27,31,27,32)</li>
+			<li>(21,32,22,32)</li>
+			<li>(26,32,26,32)</li>
+		  </rects>
+		</Concrete>
+		<!-- </Space> -->
+		<Substructure>
+		  <rects>
+			<li>(23,0,23,0)</li>
+			<li>(25,0,25,0)</li>
+			<li>(21,1,22,1)</li>
+			<li>(26,1,26,5)</li>
+			<li>(20,2,20,2)</li>
+			<li>(22,2,22,5)</li>
+			<li>(27,2,27,2)</li>
+			<li>(18,3,19,3)</li>
+			<li>(28,3,29,3)</li>
+			<li>(17,4,17,4)</li>
+			<li>(30,4,30,4)</li>
+			<li>(15,5,16,5)</li>
+			<li>(23,5,23,12)</li>
+			<li>(25,5,25,6)</li>
+			<li>(31,5,32,5)</li>
+			<li>(13,6,14,6)</li>
+			<li>(33,6,33,9)</li>
+			<li>(12,7,12,7)</li>
+			<li>(34,7,35,7)</li>
+			<li>(11,8,11,8)</li>
+			<li>(25,8,32,8)</li>
+			<li>(36,8,36,8)</li>
+			<li>(9,9,9,9)</li>
+			<li>(25,9,25,9)</li>
+			<li>(37,9,38,9)</li>
+			<li>(8,10,8,12)</li>
+			<li>(38,10,39,10)</li>
+			<li>(25,11,25,12)</li>
+			<li>(33,11,38,11)</li>
+			<li>(9,12,16,12)</li>
+			<li>(19,12,22,12)</li>
+			<li>(26,12,27,12)</li>
+			<li>(33,12,33,14)</li>
+			<li>(38,12,38,14)</li>
+			<li>(21,13,21,14)</li>
+			<li>(27,13,31,13)</li>
+			<li>(27,14,27,17)</li>
+			<li>(34,14,35,14)</li>
+			<li>(37,14,37,14)</li>
+			<li>(39,14,42,14)</li>
+			<li>(43,15,43,17)</li>
+			<li>(21,18,21,20)</li>
+			<li>(33,18,35,18)</li>
+			<li>(37,18,42,18)</li>
+			<li>(27,19,29,19)</li>
+			<li>(33,19,33,23)</li>
+			<li>(38,19,38,23)</li>
+			<li>(8,20,16,20)</li>
+			<li>(19,20,20,20)</li>
+			<li>(22,20,23,20)</li>
+			<li>(25,20,27,20)</li>
+			<li>(8,21,8,22)</li>
+			<li>(23,21,23,27)</li>
+			<li>(25,21,25,21)</li>
+			<li>(34,21,37,21)</li>
+			<li>(39,22,39,22)</li>
+			<li>(9,23,9,23)</li>
+			<li>(25,23,29,23)</li>
+			<li>(31,23,32,23)</li>
+			<li>(37,23,37,23)</li>
+			<li>(11,24,11,24)</li>
+			<li>(25,24,25,27)</li>
+			<li>(29,24,29,26)</li>
+			<li>(36,24,36,24)</li>
+			<li>(12,25,12,25)</li>
+			<li>(33,25,35,25)</li>
+			<li>(13,26,14,26)</li>
+			<li>(33,26,33,26)</li>
+			<li>(15,27,16,27)</li>
+			<li>(22,27,22,31)</li>
+			<li>(26,27,26,31)</li>
+			<li>(31,27,32,27)</li>
+			<li>(17,28,17,28)</li>
+			<li>(29,28,30,28)</li>
+			<li>(18,29,19,29)</li>
+			<li>(27,29,29,29)</li>
+			<li>(20,30,20,30)</li>
+			<li>(27,30,27,30)</li>
+			<li>(21,31,21,31)</li>
+			<li>(23,32,23,32)</li>
+			<li>(25,32,25,32)</li>
+		  </rects>
+		</Substructure>
+		<MetalTile>
+		  <rects>
+			<li>(24,0,24,0)</li>
+			<li>(24,5,24,5)</li>
+			<li>(25,7,25,7)</li>
+			<li>(25,10,25,10)</li>
+			<li>(33,10,33,10)</li>
+			<li>(17,12,18,12)</li>
+			<li>(24,12,24,12)</li>
+			<li>(14,13,14,19)</li>
+			<li>(32,13,32,13)</li>
+			<li>(36,14,36,14)</li>
+			<li>(21,15,21,17)</li>
+			<li>(37,16,37,16)</li>
+			<li>(27,18,27,18)</li>
+			<li>(36,18,36,18)</li>
+			<li>(30,19,32,19)</li>
+			<li>(17,20,18,20)</li>
+			<li>(24,20,24,20)</li>
+			<li>(25,22,25,22)</li>
+			<li>(30,23,30,23)</li>
+			<li>(33,24,33,24)</li>
+			<li>(24,27,24,27)</li>
+			<li>(29,27,29,27)</li>
+			<li>(24,32,24,32)</li>
+		  </rects>
+		</MetalTile>
+		<guy762_FloorTiles_XGrate_grey>
+		  <rects>
+			<li>(23,1,23,4)</li>
+			<li>(25,1,25,4)</li>
+			<li>(21,2,21,11)</li>
+			<li>(20,3,20,11)</li>
+			<li>(27,3,27,7)</li>
+			<li>(18,4,19,11)</li>
+			<li>(28,4,29,7)</li>
+			<li>(17,5,17,11)</li>
+			<li>(30,5,30,7)</li>
+			<li>(15,6,16,11)</li>
+			<li>(22,6,22,11)</li>
+			<li>(26,6,26,7)</li>
+			<li>(31,6,32,7)</li>
+			<li>(13,7,14,11)</li>
+			<li>(12,8,12,11)</li>
+			<li>(34,8,35,10)</li>
+			<li>(10,9,11,11)</li>
+			<li>(36,9,36,10)</li>
+			<li>(9,10,9,11)</li>
+			<li>(37,10,37,10)</li>
+			<li>(9,21,22,22)</li>
+			<li>(10,23,22,23)</li>
+			<li>(12,24,22,24)</li>
+			<li>(30,24,32,26)</li>
+			<li>(13,25,22,25)</li>
+			<li>(15,26,22,26)</li>
+			<li>(17,27,21,27)</li>
+			<li>(30,27,30,27)</li>
+			<li>(18,28,21,28)</li>
+			<li>(23,28,23,31)</li>
+			<li>(25,28,25,31)</li>
+			<li>(20,29,21,29)</li>
+			<li>(21,30,21,30)</li>
+		  </rects>
+		</guy762_FloorTiles_XGrate_grey>
+		<guy762_FloorTiles_DoomgiverFoorMetal>
+		  <rects>
+			<li>(24,1,24,4)</li>
+			<li>(24,6,24,11)</li>
+			<li>(39,11,41,13)</li>
+			<li>(0,12,5,14)</li>
+			<li>(6,13,13,19)</li>
+			<li>(15,13,20,19)</li>
+			<li>(22,13,26,19)</li>
+			<li>(28,14,32,18)</li>
+			<li>(2,15,5,20)</li>
+			<li>(33,15,42,15)</li>
+			<li>(33,16,36,17)</li>
+			<li>(38,16,42,17)</li>
+			<li>(37,17,37,17)</li>
+			<li>(0,18,1,20)</li>
+			<li>(39,19,41,21)</li>
+			<li>(24,21,24,26)</li>
+			<li>(24,28,24,31)</li>
+		  </rects>
+		</guy762_FloorTiles_DoomgiverFoorMetal>
+		<guy762_FloorTiles_DivotedTile_offwhite>
+		  <rects>
+			<li>(26,9,32,11)</li>
+			<li>(28,12,32,12)</li>
+			<li>(28,20,32,22)</li>
+			<li>(26,21,27,22)</li>
+		  </rects>
+		</guy762_FloorTiles_DivotedTile_offwhite>
+		<guy762_FloorTiles_DoomgiverFoorMetal_dark>
+		  <rects>
+			<li>(34,12,37,13)</li>
+			<li>(34,19,37,20)</li>
+			<li>(34,22,37,22)</li>
+			<li>(34,23,36,23)</li>
+			<li>(26,24,28,26)</li>
+			<li>(34,24,35,24)</li>
+			<li>(27,27,28,28)</li>
+		  </rects>
+		</guy762_FloorTiles_DoomgiverFoorMetal_dark>
+	  </terrain>
+	</PrefabDef>
+
+  
+</Defs>

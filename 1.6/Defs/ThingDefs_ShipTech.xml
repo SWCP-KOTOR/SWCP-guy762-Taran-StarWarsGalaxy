@@ -1,17 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<DesignatorDropdownGroupDef>
-		<defName>guy762_SWShipTechDropdown_LifeSupportUnit</defName>
-		<label>life support units</label>
-	</DesignatorDropdownGroupDef>
-	
-	<ThingDef Name="guy762_ShipTech_LifeSupportUnitBASE" ParentName="BuildingBase" Abstract="true">
-		<!-- <defName>guy762_ShipTech_LifeSupportUnit_heater</defName> -->
+	<ThingDef Name="guy762_ShipTech_LifeSupportUnit_heater" ParentName="BuildingBase">
+		<defName>guy762_ShipTech_LifeSupportUnit_heater</defName>
 		<label>life support unit</label>
 		<description>A bulky wall-mounted unit that releases temperature-controlled oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.</description>
-		
-		<designatorDropdown>guy762_SWShipTechDropdown_LifeSupportUnit</designatorDropdown>
 		
 		<tickerType>Rare</tickerType>
 		<rotatable>true</rotatable>
@@ -61,7 +54,7 @@
 			<li>Placeworker_AttachedToWall</li>
 		</placeWorkers>
 		
-		<!-- <thingClass>Building_Heater</thingClass> -->
+		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -70,9 +63,9 @@
 			<li Class="CompProperties_LowPowerUnlessVacuum">
 				<lowPowerConsumptionFactor>0.5</lowPowerConsumptionFactor>
 			</li>
-			<!-- <li Class="CompProperties_TempControl"> -->
-				<!-- <energyPerSecond>25</energyPerSecond> -->
-			<!-- </li> -->
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>30</energyPerSecond>
+			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<!-- <li Class="CompProperties_OxygenPusher"> -->
@@ -88,47 +81,6 @@
 			<li>OrbitalTech</li>
 		</researchPrerequisites>
 		<uiOrder>2505</uiOrder>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="guy762_ShipTech_LifeSupportUnitBASE">
-		<defName>guy762_ShipTech_LifeSupportUnit_heater</defName>
-		<label>life support unit (heater)</label>
-		<description>A bulky wall-mounted unit that releases heated oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.\n\nTEMPERATURE RANGE: 55 ~ 75</description>
-		<graphicData><texPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater</texPath></graphicData>
-		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater_north</uiIconPath>
-	
-		<!-- <thingClass>Building_LifeSupportUnit</thingClass> -->
-		
-		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
-		<comps>
-			<li Class="CompProperties_TempControl">
-				<energyPerSecond>30</energyPerSecond>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	<ThingDef ParentName="guy762_ShipTech_LifeSupportUnitBASE">
-		<defName>guy762_ShipTech_LifeSupportUnit_cooler</defName>
-		<label>life support unit (cooler)</label>
-		<description>A bulky wall-mounted unit that releases cooled oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.\n\nTEMPERATURE RANGE: -175 ~ -200</description>
-		<graphicData><texPath>ShipTech/LifeSupportUnit/LifeSupportUnit_cooler</texPath></graphicData>
-		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_cooler_north</uiIconPath>
-	
-		<!-- <thingClass>guy762_LifeSupportUnit.Building_OxygenCooler</thingClass> -->
-		<!-- <thingClass>Building_Cooler</thingClass> -->
-		<comps>
-			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>-5</heatPerSecond>
-				<heatPushMaxTemperature>-175</heatPushMaxTemperature> <!-- this is in fuckin dumbass celsius -->
-			</li>
-			<!-- <li Class="guy762_LifeSupportUnit.CompProperties_OxygenTempControl"> -->
-				<!-- <energyPerSecond>-25</energyPerSecond> -->
-				<!-- <requiresPower>true</requiresPower> -->
-				<!-- <airPerSecondPerHundredCells>0.01</airPerSecondPerHundredCells> -->
-			<!-- </li> -->
-		</comps>
 	</ThingDef>
 
 </Defs>
