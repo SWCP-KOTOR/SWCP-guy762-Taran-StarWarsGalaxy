@@ -2,20 +2,20 @@
 <Defs>
   
 	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
-		<defName>guy762_SWGravshipOverlay_ActionVI</defName>
-		<label>Action-VI bulk transport</label>
+		<defName>guy762_SWGravshipOverlay_GR75Transport</defName>
+		<label>GR-75 medium transport</label>
 		<graphicData>
-		  <texPath>Gravships/ActionVI/ActionVI</texPath>
+		  <texPath>Gravships/GR75Transport/GR75Transport</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>(114,114)</drawSize>
+		  <drawSize>(92,92)</drawSize>
 		  
-		  <drawOffset>(0,0,-0.6)</drawOffset>
+		  <!-- <drawOffset>(0,0,-0.6)</drawOffset> -->
 		  
 		  <shaderType>CutoutComplex</shaderType>
-		  <color>(110,95,95)</color> <!-- dark sand purple -->
+		  <color>(185,180,175)</color> <!-- warm grey -->
 		</graphicData>
 		<size>(1,1)</size>
-		<!-- <size>(25,75)</size> -->
+		<!-- <size>(32,90)</size> -->
 		<uiIconScale>0.0125</uiIconScale>
 		<costList>
 		  <KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
@@ -40,22 +40,20 @@
 		</researchPrerequisites>
 	</ThingDef>
 	
-	<EffecterDef>
-		<defName>guy762_ShipAuraEffecter_ActionVI</defName>
-		<children>
-		  <li>
-			<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
-			<soundDef>kotorsound_ShipAmbience_ActionVI</soundDef>
-		  </li>
-		  <li>
-			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
-			<soundDef>kotorsound_SubtleRepComMetalCreaking</soundDef>
-			<intermittentSoundInterval><min>1000</min><max>2500</max></intermittentSoundInterval>
-			<!-- <intermittentSoundInterval><min>100</min><max>250</max></intermittentSoundInterval> -->
-		  </li>
-		</children>
-	</EffecterDef>
-	
+	<!-- <EffecterDef> -->
+		<!-- <defName>guy762_ShipAuraEffecter_ActionVI</defName> -->
+		<!-- <children> -->
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>kotorsound_ShipAmbience_ActionVI</soundDef> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass> -->
+			<!-- <soundDef>kotorsound_SubtleRepComMetalCreaking</soundDef> -->
+			<!-- <intermittentSoundInterval><min>1000</min><max>2500</max></intermittentSoundInterval> -->
+		  <!-- </li> -->
+		<!-- </children> -->
+	<!-- </EffecterDef> -->
 	
 	<!-- guy762_GravshipPrefab_ -->
 	

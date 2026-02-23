@@ -2,10 +2,10 @@
 <Defs>
   
 	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
-		<defName>guy762_SWSoS2ShipOverlay_RaiderCorvette</defName>
+		<defName>guy762_SWGravshipOverlay_RaiderCorvette</defName>
 		<label>Raider-I Corvette</label>
 		<graphicData>
-		  <texPath>SoS2Ships/RaiderCorvette/RaiderCorvette</texPath>
+		  <texPath>Gravships/RaiderCorvette/RaiderCorvette</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>(78,155)</drawSize>
 		  

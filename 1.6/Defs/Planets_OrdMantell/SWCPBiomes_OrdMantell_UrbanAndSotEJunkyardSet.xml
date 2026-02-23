@@ -216,13 +216,13 @@
 		  <Clear>8</Clear>
 		  <Fog>2</Fog>
 		  <Rain>0</Rain>
-		  <DryThunderstorm>2</DryThunderstorm>
+		  <DryThunderstorm>1</DryThunderstorm>
 		  <RainyThunderstorm>1</RainyThunderstorm>
 		  <FoggyRain>3</FoggyRain>
 		  <SnowGentle>0.5</SnowGentle>
 		  <SnowHard>0.125</SnowHard>
 		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-		  <ToxRain>4</ToxRain>
+		  <ToxRain>2</ToxRain>
 		  <Overcast>8</Overcast>
 		</baseWeatherCommonalities>
 		<wildPlants>
