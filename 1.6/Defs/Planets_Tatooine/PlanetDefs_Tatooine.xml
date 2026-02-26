@@ -298,7 +298,7 @@
 		<label>Tatooine orbit</label>
 		<settings>
 			<radius>130</radius>
-			<subdivisions>5</subdivisions>
+			<subdivisions>4</subdivisions>
 			<extraCameraAltitude>300</extraCameraAltitude>
 			<backgroundWorldCameraOffset>160</backgroundWorldCameraOffset>
 			<backgroundWorldCameraParallaxDistancePer100Cells>2.5</backgroundWorldCameraParallaxDistancePer100Cells>
