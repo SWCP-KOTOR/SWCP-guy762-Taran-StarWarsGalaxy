@@ -207,4 +207,445 @@
 		</tradeTags>
 	</ThingDef>
 	
+	
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SWCPBuilding_NPCLifeSupportUnit</defName>
+		<label>fixed life support unit</label>
+		<description>A bulky wall-mounted unit that releases temperature-controlled oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.</description>
+		
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+		<!-- <thingCategories> -->
+		  <!-- <li>BuildingsMisc</li> -->
+		<!-- </thingCategories> -->
+		
+		<graphicData>
+			<texPath>ShipTech/LifeSupportUnit/LifeSupportUnit</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(185,180,175)</color> <!-- warm grey -->
+			
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<!-- <WorkToBuild>4000</WorkToBuild> -->
+			<Mass>20</Mass>
+		</statBases>
+		
+		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_north</uiIconPath>
+		
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>MM_StarWarsShipBuildTab</designationCategory> -->
+		
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<overrideMinifiedRot>North</overrideMinifiedRot>
+		<minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+			<expandHomeArea>false</expandHomeArea>
+			<paintable>true</paintable>
+		</building>
+		<!-- <costList> -->
+			<!-- <Steel>100</Steel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+			<!-- <ComponentSpacer>1</ComponentSpacer> -->
+		<!-- </costList> -->
+		<!-- <placeWorkers> -->
+			<!-- <li>Placeworker_AttachedToWall</li> -->
+		<!-- </placeWorkers> -->
+		
+		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+				<!-- <compClass>CompPowerTrader</compClass> -->
+				<!-- <basePowerConsumption>250</basePowerConsumption> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_LowPowerUnlessVacuum"> -->
+				<!-- <lowPowerConsumptionFactor>0.5</lowPowerConsumptionFactor> -->
+			<!-- </li> -->
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>30</energyPerSecond>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<!-- <li Class="CompProperties_OxygenPusher"> -->
+				<!-- <requiresPower>true</requiresPower> -->
+				<!-- <airPerSecondPerHundredCells>0.02</airPerSecondPerHundredCells> -->
+			<!-- </li> -->
+			<li Class="CompProperties_AmbientSound">
+				<sound>OxygenPump_Ambient</sound>
+				<disabledOnUnpowered>true</disabledOnUnpowered>
+			</li>
+		</comps>
+		<!-- <researchPrerequisites> -->
+			<!-- <li>OrbitalTech</li> -->
+		<!-- </researchPrerequisites> -->
+		<uiOrder>2505</uiOrder>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCPBuilding_NPCDecorativeTerminalBASE" ParentName="BuildingBase" Abstract="True">
+		<description>.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+		<!-- <thingCategories> -->
+			<!-- <li>BuildingsJoy</li> -->
+		<!-- </thingCategories> -->
+		<statBases>
+			<!-- <WorkToBuild>10000</WorkToBuild> -->
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>14</Mass>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>0.5</JoyGainFactor>
+		</statBases>
+		<!-- <costList> -->
+			<!-- <Steel>80</Steel> -->
+			<!-- <ComponentSpacer>1</ComponentSpacer> -->
+		<!-- </costList> -->
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<!-- <li Class="CompProperties_Breakdownable"/> -->
+		</comps>
+		<!-- <constructEffect>ConstructMetal</constructEffect> -->
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+		<!-- <researchPrerequisites> -->
+			<!-- <li>KOTOR_Research_HoloRec</li> -->
+		<!-- </researchPrerequisites> -->
+	</ThingDef>
+	
+	<!--  ================================================================ -->
+	<ThingDef ParentName="SWCPBuilding_NPCDecorativeTerminalBASE">
+		<defName>SWCPBuilding_NPCBigRebelScreen</defName>
+		<label>large display screen (green)</label>
+		<graphicData>
+			<texPath>Buildings/DecorativeTerminals/bigrebelscreen_green</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+		</graphicData>
+		
+		<size>(2,1)</size>
+		<fillPercent>0.30</fillPercent>
+		
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>guy762_Effecter_UsingGreenHoloscreen</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		</placeWorkers>
+		
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+				<!-- <compClass>CompPowerTrader</compClass> -->
+				<!-- <shortCircuitInRain>true</shortCircuitInRain> -->
+				<!-- <basePowerConsumption>5</basePowerConsumption> -->
+				<!-- <soundAmbientPowered>kotorsound_building_telemetry_Purr</soundAmbientPowered> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(45,250,45,0)</glowColor>
+			</li>
+		  <!-- <li Class="CompProperties_Facility"> -->
+			<!-- <statOffsets> -->
+			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
+			<!-- </statOffsets> -->
+			<!-- <maxSimultaneous>2</maxSimultaneous> -->
+		  <!-- </li> -->
+		</comps>
+		
+	</ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabInterior_BigGreenRebelScreen</defName>
+		<!-- <rotations>North</rotations> -->
+		<size>(2,1)</size>
+		<things>
+			<SWCPBuilding_NPCBigRebelScreen>
+				<!-- <position>(0,0,1)</position> -->
+			</SWCPBuilding_NPCBigRebelScreen>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>SWCPBuilding_NPCShieldBank</defName>
+		<label>shield recharger</label>
+		<description>An advanced energy bank capable of recharging personal energy shields. Energy shields must have at least one charge remaining in order to be recharged. Fully-depleted shields are still discarded as the burnt-out power cells within are unusable and cannot hold any new charges.Must have at least one charge remaining.\n\nNOTE: Do NOT set recipes on this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<graphicData>
+			<texPath>ResourceSys_Plasma/ShieldBank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.5, 0.25, 0.25)</volume>
+				<offset>(0,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MarketValue>3600</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<!-- <WorkToBuild>3000</WorkToBuild> -->
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<!-- <researchPrerequisites> -->
+			<!-- <li>KOTOR_Research_UltraComponent</li> -->
+		<!-- </researchPrerequisites> -->
+		<!-- <costList> -->
+			<!-- <KOTOR_AlloyDurasteel>65</KOTOR_AlloyDurasteel> -->
+			<!-- <ComponentIndustrial>6</ComponentIndustrial> -->
+			<!-- <ComponentSpacer>4</ComponentSpacer> -->
+			<!-- <KOTOR_UltraComponent>1</KOTOR_UltraComponent> -->
+		<!-- </costList> -->
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+				<!-- <compClass>CompPowerTrader</compClass> -->
+				<!-- <basePowerConsumption>200</basePowerConsumption> -->
+				<!-- <shortCircuitInRain>false</shortCircuitInRain> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(45,250,45,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<!-- <li Class="CompProperties_Breakdownable"/> -->
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellIcon Inherit="False" />
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+		
+		<minifiedDef Inherit="False" /><thingCategories Inherit="False" />        <!-- important for not being minifiable -->
+		
+		<surfaceType>Item</surfaceType>
+		<!-- <constructionSkillPrerequisite>10</constructionSkillPrerequisite> -->
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<!-- <tradeTags> -->
+		  <!-- <li>guy762TT_KotORWorkbench</li> -->
+		<!-- </tradeTags> -->
+	</ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabTechBuilding_JKShieldBank</defName>
+		<rotations>North</rotations>
+		<size>(1,2)</size>
+		<things>
+			<SWCPBuilding_NPCShieldBank>
+				<position>(0, 0, 1)</position>
+			</SWCPBuilding_NPCShieldBank>
+		</things>
+	</PrefabDef>
+	
+
+
+	
+	
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>SWCPBuilding_NPCPlasmaAmmoBank</defName>
+		<label>plasma condenser</label>
+		<description>Superheats Tibanna gas and condenses it into plasma cartridges. Use of this device is relatively simple, having been designed for common soldiers to operate while deployed in military bases.</description>
+		<graphicData>
+			<texPath>ResourceSys_Plasma/AmmoBank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.5, 0.25, 0.25)</volume>
+				<offset>(0,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<!-- <WorkToBuild>3000</WorkToBuild> -->
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<!-- <researchPrerequisites> -->
+			<!-- <li>KOTOR_Research_plasmaApplications</li> -->
+		<!-- </researchPrerequisites> -->
+		<!-- <costList> -->
+			<!-- <Steel>65</Steel> -->
+			<!-- <KOTOR_IngotCortosis>10</KOTOR_IngotCortosis> -->
+			<!-- <ComponentIndustrial>4</ComponentIndustrial> -->
+			<!-- <ComponentSpacer>1</ComponentSpacer> -->
+		<!-- </costList> -->
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+				<!-- <compClass>CompPowerTrader</compClass> -->
+				<!-- <basePowerConsumption>80</basePowerConsumption> -->
+				<!-- <shortCircuitInRain>false</shortCircuitInRain> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(240,130,30,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<!-- <li Class="CompProperties_Breakdownable"/> -->
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellIcon Inherit="False" />
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		
+		
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+		
+		<minifiedDef Inherit="False" /><thingCategories Inherit="False" />        <!-- important for not being minifiable -->
+		
+		
+		<surfaceType>Item</surfaceType>
+		<!-- <constructionSkillPrerequisite>10</constructionSkillPrerequisite> -->
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<!-- <tradeTags> -->
+		  <!-- <li>guy762TT_KotORWorkbench</li> -->
+		  <!-- <li>guy762TT_AllItemsSellable</li> -->
+		<!-- </tradeTags>	 -->
+	</ThingDef>
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabTechBuilding_JKAmmoBank</defName>
+		<rotations>North</rotations>
+		<size>(1,2)</size>
+		<things>
+			<SWCPBuilding_NPCPlasmaAmmoBank>
+				<position>(0, 0, 1)</position>
+			</SWCPBuilding_NPCPlasmaAmmoBank>
+		</things>
+	</PrefabDef>
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabTechBuilding_JKShieldANDAmmoBank</defName>
+		<rotations>North</rotations>
+		<size>(2,2)</size>
+		<things>
+			<SWCPBuilding_NPCPlasmaAmmoBank>
+				<position>(0, 0, 1)</position>
+			</SWCPBuilding_NPCPlasmaAmmoBank>
+			<SWCPBuilding_NPCShieldBank>
+				<position>(1, 0, 1)</position>
+			</SWCPBuilding_NPCShieldBank>
+		</things>
+	</PrefabDef>
+
+	
 </Defs>
