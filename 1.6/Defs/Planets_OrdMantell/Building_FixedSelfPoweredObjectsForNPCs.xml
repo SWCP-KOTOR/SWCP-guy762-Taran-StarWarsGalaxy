@@ -264,16 +264,18 @@
 			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
 			<!-- <ComponentSpacer>1</ComponentSpacer> -->
 		<!-- </costList> -->
-		<!-- <placeWorkers> -->
-			<!-- <li>Placeworker_AttachedToWall</li> -->
-		<!-- </placeWorkers> -->
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
 		
 		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
 		<comps>
-			<!-- <li Class="CompProperties_Power"> -->
-				<!-- <compClass>CompPowerTrader</compClass> -->
-				<!-- <basePowerConsumption>250</basePowerConsumption> -->
-			<!-- </li> -->
+			<li Class="CompProperties_Power"> <!-- the thingClass requires this to be powered in some way, but you can fool it by making it into a powerplant so long as it's producing *some* amount of power -->
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			
 			<!-- <li Class="CompProperties_LowPowerUnlessVacuum"> -->
 				<!-- <lowPowerConsumptionFactor>0.5</lowPowerConsumptionFactor> -->
 			<!-- </li> -->
@@ -282,10 +284,10 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<!-- <li Class="CompProperties_OxygenPusher"> -->
-				<!-- <requiresPower>true</requiresPower> -->
-				<!-- <airPerSecondPerHundredCells>0.02</airPerSecondPerHundredCells> -->
-			<!-- </li> -->
+			<li Class="CompProperties_OxygenPusher">
+				<requiresPower>false</requiresPower>
+				<airPerSecondPerHundredCells>0.02</airPerSecondPerHundredCells>
+			</li>
 			<li Class="CompProperties_AmbientSound">
 				<sound>OxygenPump_Ambient</sound>
 				<disabledOnUnpowered>true</disabledOnUnpowered>

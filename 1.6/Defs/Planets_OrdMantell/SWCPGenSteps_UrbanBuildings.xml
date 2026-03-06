@@ -135,9 +135,12 @@
 		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
 		
 		<wallAttachments>
-		  <AncientEmergencyLight_Green>
-			<countRange>1~2</countRange>
-		  </AncientEmergencyLight_Green>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
 		</wallAttachments>
 		
 		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
@@ -218,9 +221,12 @@
 		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
 		
 		<wallAttachments>
-		  <AncientEmergencyLight_Green>
-			<countRange>1~2</countRange>
-		  </AncientEmergencyLight_Green>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
 		</wallAttachments>
 		
 		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
