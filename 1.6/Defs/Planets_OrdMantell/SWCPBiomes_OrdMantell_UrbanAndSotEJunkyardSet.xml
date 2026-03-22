@@ -292,8 +292,10 @@
 		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
 		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
 		  <li>SWCPMapGenStep_NPCMoistureVaporators</li>
+		  <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li>
 		  
 		  <li>SWCPGenStep_UrbanCivilians_Wander</li>
+		  <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOrdMantell_BigCommandPostCops</li>
 		  
 		  <li>ScarlandsJunkClusters</li>
 		  <li>ScarlandsJunkPrefabs</li>
@@ -355,6 +357,25 @@
 	
 	
 	
+	
+	
+	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanBiomeOrdMantell_BigCommandPostCops</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<defendRadius>45</defendRadius>
+			<pawnsPerBeacon>3~6</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_big</li> <!-- replace with a prop police vehicle? -->
+			</beaconBuildingDefs>
+			<options>
+				<xSWOrdMantell_CopPistol_8x>50</xSWOrdMantell_CopPistol_8x>
+				<xSWOrdMantell_CopMelee_8x>50</xSWOrdMantell_CopMelee_8x>
+			</options>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -537,7 +558,7 @@
 			<SnowGentle>0.5</SnowGentle>
 			<SnowHard>0.125</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-			<ToxRain>8</ToxRain>
+			<ToxRain>4</ToxRain>
 			<Overcast>4</Overcast>
 		</baseWeatherCommonalities>
 		

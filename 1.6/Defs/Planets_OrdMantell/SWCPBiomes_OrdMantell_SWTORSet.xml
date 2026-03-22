@@ -5,7 +5,7 @@
 	
 	<BiomeDef>
 		<defName>SWCPBiome_OrdMantellGrasslands</defName>
-		<label>Mantellan grassland</label>
+		<label>Mantellian grassland</label>
 		<description>An open expanse dominated by tall grasses. These areas are good for farming and ranching, except when there's a drought. The lack of trees and other vegetation means there's always a steady breeze.</description>
 		<!-- <workerClass>BiomeWorker_Grasslands</workerClass> -->
 		<workerClass>BiomeWorker_TemperateForest</workerClass>
@@ -386,7 +386,7 @@
 		
 	<ThingDef ParentName="TreeBase">
 		<defName>SWCPPlant_OrdMantellTreeDrago</defName>
-		<label>Mantellan drago tree</label>
+		<label>Mantellian drago tree</label>
 		<description>A hardy desert tree topped with thick, pointed leaves.</description>
 		<graphicData>
 		  <texPath>Plants/OrdMantell_TreeDragoA</texPath>
@@ -433,7 +433,7 @@
 	
 	<BiomeDef>
 		<defName>SWCPBiome_OrdMantellTundra</defName>
-		<label>Mantellan highland</label>
+		<label>Mantellian highland</label>
 		<description>These craggy wastelands bear almost no trees and little vegetation. There are a few small animals interspersed with large herds of migratory grazers and their predators.</description>
 		<workerClass>BiomeWorker_Tundra</workerClass>
 		<!-- <workerClass>BiomeWorker_BorealForest</workerClass> -->

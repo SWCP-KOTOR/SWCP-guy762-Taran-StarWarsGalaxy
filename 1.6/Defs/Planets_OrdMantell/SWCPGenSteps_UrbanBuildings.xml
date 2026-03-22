@@ -84,8 +84,8 @@
 	<MapGeneratorDef ParentName="MapCommonBase">
 		<defName>SWCPMapGenerator_UrbanBiome</defName>
 		<genSteps>
-		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
-		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
+			<li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
+			<li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
 		</genSteps>
 	</MapGeneratorDef>
 	
@@ -97,7 +97,25 @@
 	
 	
 	
-	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPMapGenStep_UrbanBiome_CommandPostForCops</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterGroupPrefabs">
+			<count>2</count>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>85</minSpacing>
+			<countPer10kCellsRange>0.4~0.6</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<groups>
+				<SWCPPrefabBigCommandPost_Militia>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPPrefabBigCommandPost_Militia>
+			</groups>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -142,6 +160,10 @@
 				<countRange>1~1</countRange>
 			</SWCPBuilding_NPCLifeSupportUnit>
 		</wallAttachments>
+		
+		
+		
+			
 		
 		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
 		<roomDefs>

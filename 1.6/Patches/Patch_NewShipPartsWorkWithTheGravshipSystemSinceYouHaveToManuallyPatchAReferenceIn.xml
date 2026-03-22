@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName ="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<order>Append</order>
+				<value>
+					<li>SWCP_CO_EditedTwinThruster</li>
+					<li>guy762_SWGravshipPilotConsole_YT1300transport</li>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RitualOutcomeEffectDef[defName ="GravshipLaunch"]/comps</xpath>
+				<order>Append</order>
+				<value>
+					<li Class="ComplementaryOdyssey.RitualOutcomeComp_GravshipFacilities">
+						<facilityQualityOffsets>
+							<li>
+								<key>SWCP_CO_EditedTwinThruster</key>
+								<value>0.05</value>
+							</li>
+						</facilityQualityOffsets>
+					</li>
+				</value>
+			</li>
+			
+
+			
+		</operations>
+	</Operation>
+
+</Patch>

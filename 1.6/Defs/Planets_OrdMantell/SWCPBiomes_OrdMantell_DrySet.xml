@@ -5,7 +5,7 @@
 	
 	<BiomeDef>
 		<defName>SWCPBiome_OrdMantellScrubland</defName>
-		<label>Mantellan scrubland</label>
+		<label>Mantellian scrubland</label>
 		<description>A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals, but arable soil is hard to find.</description>
 		<workerClass>BiomeWorker_AridShrubland</workerClass>
 		<texture>World/Biomes/OrdMantellScrubland</texture>
@@ -200,7 +200,7 @@
 	
 	<BiomeDef>
 		<defName>SWCPBiome_OrdMantellDesert</defName>
-		<label>Mantellan desert</label>
+		<label>Mantellian desert</label>
 		<description>A very dry area which supports little life. There is very little arable land, and animal life is very sparse. Deserts can be hot, or quite cold.</description>
 		<workerClass>BiomeWorker_Desert</workerClass>
 		<texture>World/Biomes/Desert</texture>
