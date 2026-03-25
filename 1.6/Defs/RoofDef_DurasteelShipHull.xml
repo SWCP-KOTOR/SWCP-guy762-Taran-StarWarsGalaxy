@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RoofDef>
+		<defName>SWCPRoof_DurasteelShipHull</defName>
+		<label>durasteel ship roof</label>
+		<isThickRoof>true</isThickRoof>
+		<canCollapse>false</canCollapse>
+		<!-- <collapseLeavingThingDef>KotORChunk_durasteel</collapseLeavingThingDef> annoying to clean up -->
+		<filthLeaving>Filth_MachineBits</filthLeaving>
+		<soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
+		<modExtensions>
+			<li Class="ComplementaryOdyssey.ComplementaryOdysseyDefModExtension">
+				<color>(115,125,120)</color>
+			</li>
+		</modExtensions>
+	</RoofDef>
+
+</Defs>

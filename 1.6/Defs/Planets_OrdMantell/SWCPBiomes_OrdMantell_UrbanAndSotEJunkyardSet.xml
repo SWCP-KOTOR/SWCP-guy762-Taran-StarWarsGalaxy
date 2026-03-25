@@ -338,6 +338,12 @@
 			<!-- <SWCPCivilian_doctormid>1</SWCPCivilian_doctormid> -->
 			<SWCPCivilian_ugnaught>1</SWCPCivilian_ugnaught>
 			<SWCPCivilian_jawa_offworld>1</SWCPCivilian_jawa_offworld>
+			
+			<SWCPDroidColonistBnS_RA7ProtocolDroid>1</SWCPDroidColonistBnS_RA7ProtocolDroid>
+			<SWCPDroidColonistBnS_PitDroid>1</SWCPDroidColonistBnS_PitDroid>
+			<SWCPDroidColonistBnS_R5AstDrd>0.5</SWCPDroidColonistBnS_R5AstDrd>
+			<SWCPDroidColonistBnS_3POProtocolDroid>0.5</SWCPDroidColonistBnS_3POProtocolDroid>
+			<SWCPDroidColonistBnS_LOMProtocolDroid>0.1</SWCPDroidColonistBnS_LOMProtocolDroid>
 		  </options>
 		</genStep>
 	</GenStepDef>
@@ -371,8 +377,8 @@
 				<li>SWCP_CommandPost_big</li> <!-- replace with a prop police vehicle? -->
 			</beaconBuildingDefs>
 			<options>
-				<xSWOrdMantell_CopPistol_8x>50</xSWOrdMantell_CopPistol_8x>
-				<xSWOrdMantell_CopMelee_8x>50</xSWOrdMantell_CopMelee_8x>
+				<xSWOrdMantell_CopPistol_6x>50</xSWOrdMantell_CopPistol_6x>
+				<xSWOrdMantell_CopMelee_6x>50</xSWOrdMantell_CopMelee_6x>
 			</options>
 		</genStep>
 	</GenStepDef>
