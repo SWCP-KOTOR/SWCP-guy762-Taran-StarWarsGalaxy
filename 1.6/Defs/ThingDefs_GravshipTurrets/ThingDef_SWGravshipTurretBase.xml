@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <ThingDef Name="guy762_TurretBase" ParentName="SWCPBuilding_TurretArmorProfileBASE" Abstract="True"> -->
+		<!-- <thingClass>Building_TurretGun</thingClass> -->
+		<!-- <drawerType>MapMeshAndRealTime</drawerType> -->
+		
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+		<!-- <altitudeLayer>Building</altitudeLayer> -->
+		<!-- <hasTooltip>true</hasTooltip> -->
+		<!-- <drawHighlight>true</drawHighlight> -->
+		<!-- <drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile> -->
+		<!-- <stealable>false</stealable> -->
+		<!-- <passability>PassThroughOnly</passability> -->
+		<!-- <pathCost>50</pathCost> -->
+		<!-- <thingCategories> -->
+		  <!-- <li>BuildingsSecurity</li> -->
+		<!-- </thingCategories> -->
+		<!-- <tickerType>Normal</tickerType> -->
+		<!-- <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> -->
+		
+		<!-- <soundInteract>kotorsound_select_shipgun</soundInteract> -->
+		
+		
+		<!-- <comps> -->
+		  <!-- <li Class="CompProperties_Forbiddable"/> -->
+		  <!-- <li Class="CompProperties_Stunnable"> -->
+			<!-- <affectedDamageDefs> -->
+			  <!-- <li>EMP</li> -->
+			<!-- </affectedDamageDefs> -->
+		  <!-- </li> -->
+		<!-- </comps> -->
+		<!-- <statBases> -->
+		  <!-- <MaxHitPoints>180</MaxHitPoints> -->
+		  <!-- <Flammability>0.7</Flammability> -->
+		  <!-- <WorkToBuild>2000</WorkToBuild> -->
+		  <!-- <Mass>30</Mass> -->
+		  <!-- <Beauty>-20</Beauty> -->
+		<!-- </statBases> -->
+		<!-- <building> -->
+			<!-- <ai_combatDangerous>true</ai_combatDangerous> -->
+		<!-- </building> -->
+		<!-- <placeWorkers> -->
+		  <!-- <li>PlaceWorker_TurretTop</li> -->
+		  <!-- <li>PlaceWorker_PreventInteractionSpotOverlap</li> -->
+		<!-- </placeWorkers> -->
+		
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+		<!-- <constructionSkillPrerequisite>5</constructionSkillPrerequisite> -->
+		<!-- <researchPrerequisites> -->
+		<!-- </researchPrerequisites>  -->
+	<!-- </ThingDef> -->
+	
+	
+	
+	<ThingDef Name="guy762_GravshipTurretBase" ParentName="guy762_TurretBase" Abstract="True">
+		<designationCategory>MM_StarWarsShipBuildTab</designationCategory>
+		<uiOrder>10</uiOrder>
+	</ThingDef>
+
+
+
+</Defs>

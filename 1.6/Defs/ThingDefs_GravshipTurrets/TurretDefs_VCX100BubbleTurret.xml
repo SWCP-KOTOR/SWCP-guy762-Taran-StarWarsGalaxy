@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+
+  <!--=============== hardpoint AA point-defense ===============-->
+
+	<ThingDef ParentName="guy762_GravshipTurretBase">
+		<defName>guy762_SWTurret_VCX100BubbleTurret</defName>
+		<label>VCX-100 dorsal anti-air turret</label>
+		<description>.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>NullTex</texPath>
+			<drawSize>(3,3)</drawSize>
+			<drawRotated>false</drawRotated>
+		  
+		  <damageData>
+			<rect>(0.38,0.2,0.56375,0.8)</rect>
+			<cornerTL>Damage/Corner</cornerTL>
+		  </damageData>
+		  <shadowData>
+			<offset>(-0.13,-0.87,-0.1)</offset>
+			<volume>(0.5,0.4,1.05)</volume>
+		  </shadowData>
+		</graphicData>
+		<uiIconPath>Gravships/VCX100/VCX100_gun</uiIconPath>
+		<!-- <rotatable>false</rotatable> -->
+
+		
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+
+			<ShootingAccuracyTurret>0.99</ShootingAccuracyTurret>
+		</statBases>
+		
+		<!-- <placeWorkers> -->
+			<!-- <li>PlaceWorker_NotUnderRoof</li> -->
+		<!-- </placeWorkers> -->
+		
+		
+		<costList>
+		  <Steel>300</Steel>
+		  <Plasteel>30</Plasteel>
+		  <Uranium>60</Uranium>
+		  <ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		
+		<size>(3,3)</size>
+		<fillPercent>0.8</fillPercent>
+		<!-- <hasInteractionCell>True</hasInteractionCell> -->
+		<!-- <interactionCellOffset>(1,0,3)</interactionCellOffset> -->
+		
+		<soundInteract>kotorsound_select_shipgun</soundInteract>
+		<comps>
+			<!-- <li Class="CompProperties_Mannable"> -->
+				<!-- <manWorkType>Violent</manWorkType> -->
+			<!-- </li> -->
+		  
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>3</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<!-- <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded> -->
+		<building>
+			<turretGunDef>guy762_SWTurretGun_VCX100BubbleTurret</turretGunDef>
+			<turretTopDrawSize>7</turretTopDrawSize>
+			<!-- <turretTopOffset>(-0.05, 0.05)</turretTopOffset> -->
+		  
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>0.25</turretBurstCooldownTime>
+		</building>
+		<researchPrerequisites>
+		  <li>SniperTurret</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+
+
+
+
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>guy762_SWTurretGun_VCX100BubbleTurret</defName>
+		<label>VCX-100 dorsal anti-air turret</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Gravships/VCX100/VCX100_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>200</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SWCPStarfighterBullet_IntAAmedium_dualred</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<!-- <range>90</range> normal ground defense range -->
+				<range>250</range> <!-- ship defense range -->
+				
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				
+				<soundCast>kotorsound_VCX100GhostGun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<forcedMissRadius>0</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				
+				<!-- <onlyManualCast>true</onlyManualCast> -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+		</modExtensions>
+	</ThingDef>
+
+ 
+
+</Defs>
