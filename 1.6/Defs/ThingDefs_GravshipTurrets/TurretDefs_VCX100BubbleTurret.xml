@@ -84,7 +84,7 @@
 			<turretBurstCooldownTime>0.25</turretBurstCooldownTime>
 		</building>
 		<researchPrerequisites>
-		  <li>SniperTurret</li>
+			<li>SniperTurret</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -104,6 +104,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
+		<altitudeLayer>WorldClipper</altitudeLayer>
+		
 		<statBases>
 			<AccuracyTouch>0.95</AccuracyTouch>
 			<AccuracyShort>0.95</AccuracyShort>
