@@ -36,10 +36,6 @@
 			</li>
 		</comps>
 		
-		<!-- <altitudeLayer>WorldClipper</altitudeLayer> -->
-		<altitudeLayer>VisEffects</altitudeLayer>
-		<!-- <altitudeLayer>BelowTerrain</altitudeLayer> -->
-		
 		<researchPrerequisites>
 		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
 		</researchPrerequisites>

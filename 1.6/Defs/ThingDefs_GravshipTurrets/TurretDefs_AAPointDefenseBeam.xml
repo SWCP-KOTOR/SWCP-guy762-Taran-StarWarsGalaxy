@@ -38,7 +38,7 @@
 		<!-- <placeWorkers> -->
 			<!-- <li>PlaceWorker_NotUnderRoof</li> -->
 		<!-- </placeWorkers> -->
-		
+		<altitudeLayer>WorldClipper</altitudeLayer>
 		
 		<costList>
 		  <Steel>300</Steel>
