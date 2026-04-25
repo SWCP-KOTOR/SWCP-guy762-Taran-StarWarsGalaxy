@@ -621,6 +621,7 @@
 			<li>Granite</li>
 			<li>Slate</li>
 		</forceRockTypes>
+		<fogOfWarColor>(50,50,50)</fogOfWarColor>
 		
 		
 		<baseWeatherCommonalities>
@@ -847,7 +848,7 @@
 			<li>Granite</li>
 			<li>Slate</li>
 		</forceRockTypes>
-		
+		<fogOfWarColor>(50,50,50)</fogOfWarColor>
 		
 		<baseWeatherCommonalities>
 		  <Clear>12</Clear>

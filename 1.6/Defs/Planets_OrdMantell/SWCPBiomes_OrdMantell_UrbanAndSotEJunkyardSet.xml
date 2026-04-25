@@ -163,7 +163,7 @@
 		</diseases>
 		
 		
-		<terrainsByFertility>
+		<terrainsByFertility> <!-- DO NOT USE ARTIFICIAL TERRAIN TYPES IN THIS BECAUSE THE BUILDINGS WILL NOT GENERATE PROPERLY AND IT TOOK ME AN HOUR OF DEBUGGING TO FIGURE THAT OUT -->
 		  <li>
 			<!-- <terrain>AncientMegastructure</terrain> -->
 			<terrain>Sand</terrain>

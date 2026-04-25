@@ -122,6 +122,7 @@
 			<li>SWCPStone_RhenVarBlueIce</li>
 			<li>SolidIce</li>
 		</forceRockTypes>
+		<fogOfWarColor>(75,75,105)</fogOfWarColor>
 		
 		
 		
@@ -387,6 +388,7 @@
 			<!-- <li>SWCPStone_RhenVarBlueIce</li> -->
 			<li>SolidIce</li>
 		</forceRockTypes>
+		<fogOfWarColor>(75,75,105)</fogOfWarColor>
 		
 		<baseWeatherCommonalities>
 		  <Clear>12</Clear>
@@ -563,6 +565,7 @@
 			<li>SWCPStone_RhenVarMarble</li>
 			<li>SWCPStone_RhenVarGranite</li>
 		</forceRockTypes>
+		<fogOfWarColor>(75,75,105)</fogOfWarColor>
 		
 		<baseWeatherCommonalities>
 		  <Clear>12</Clear>

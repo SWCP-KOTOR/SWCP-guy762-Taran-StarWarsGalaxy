@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	
+	<MapGeneratorDef ParentName="MapCommonBase">
+		<defName>SWCPMapGenerator_OnderonUrbanBiome</defName>
+		<genSteps>
+			<li>SWCPMapGenStep_UrbanBiome_OnderonDormitories</li>
+			<li>SWCPMapGenStep_UrbanBiome_OnderonMunicipalBuildings</li>
+		</genSteps>
+	</MapGeneratorDef>
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_OnderonMunicipalBuildings</defName>
+		<order>740</order>
+		<!-- <genStep Class="GenStep_AncientRuins"> -->
+			<!-- <layoutDef>SWCPLayout_UrbanMunicipalBuildings</layoutDef> -->
+		<!-- </genStep> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_UrbanBuildings">
+			<layoutDef>SWCPLayout_OnderonUrbanMunicipalBuildings</layoutDef>
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_OnderonUrbanMunicipalBuildings</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_OrdMantellStuccoWallC</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_iron</terrainDef>
+		<surroundingTerrainDef>SWCPTerrain_Flagstone_OnderonMarble</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		
+		
+			
+		
+		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
+		<roomDefs>
+			<!-- <SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor> -->
+			
+			<!-- <AncientRuinsEmpty>2</AncientRuinsEmpty> -->
+			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
+			<SWCPRoomLayout_UrbanServerRoom>2</SWCPRoomLayout_UrbanServerRoom>
+
+			<SWCPRoomLayout_UrbanBarracks>1</SWCPRoomLayout_UrbanBarracks>
+			<SWCPRoomLayout_UrbanLockerRoom>1</SWCPRoomLayout_UrbanLockerRoom>
+			<SWCPRoomLayout_UrbanShelfRoom>2</SWCPRoomLayout_UrbanShelfRoom>
+			<SWCPRoomLayout_UrbanOperatingRoom>1</SWCPRoomLayout_UrbanOperatingRoom>
+		</roomDefs>
+		
+		<junkScaterrers>
+		  <Filth_Trash>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_Trash>
+		  <Filth_MoldyUniform>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~2</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_MoldyUniform>
+		  <Filth_ScatteredDocuments>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~1</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_ScatteredDocuments>
+		  <AncientCardboardBox>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~5</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </AncientCardboardBox>
+		</junkScaterrers>
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_OnderonDormitories</defName>
+		<order>741</order>
+		<!-- <genStep Class="GenStep_AncientRuins"> -->
+			<!-- <layoutDef>SWCPLayout_UrbanDormitories</layoutDef> -->
+		<!-- </genStep> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_UrbanBuildings">
+			<layoutDef>SWCPLayout_OnderonUrbanDormitories</layoutDef>
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_OnderonUrbanDormitories</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallA</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>SWCPTerrain_Flagstone_OnderonMarble</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
+		<roomDefs>
+			<!-- <SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor> -->
+			
+			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
+			
+			<SWCPRoomLayout_UrbanLivingArea>2</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
+
+		</roomDefs>
+	</StructureLayoutDef>
+	
+	
+	
+	
+
+
+</Defs>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Deep -->
+
+  <TerrainDef Abstract="True" Name="SWCPTerrain_DxunGreenSwampWaterDeepBase" ParentName="WaterDeepBase">
+    <renderPrecedence>395</renderPrecedence>
+    <texturePath>BiomeTerrain/GreenSwampyWaterDeepRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/GreenSwampyWaterDeepRamp</pollutedTexturePath>
+    <pathCost>400</pathCost>
+    <traversedThought>SoakingWet</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <statBases>
+      <Beauty>-4</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterDeepBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterDeep</defName>
+    <label>deep swamp water</label>
+    <renderPrecedence>395</renderPrecedence>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterDeepBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterOceanDeep</defName>
+    <label>deep ocean swamp water</label>
+    <renderPrecedence>397</renderPrecedence>
+    <tags>
+      <li>Ocean</li>
+    </tags>
+  </TerrainDef>
+
+  <!-- Chest-deep -->
+  
+  <TerrainDef Abstract="True" Name="SWCPTerrain_DxunGreenSwampWaterChestDeepBase" ParentName="WaterChestDeepBase">
+    <texturePath>BiomeTerrain/GreenSwampyWaterChestDeepRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/GreenSwampyWaterChestDeepRamp</pollutedTexturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <pathCost>150</pathCost>
+    <traversedThought>SoakingWet</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain>
+    <statBases>
+      <Beauty>-4</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterChestDeepBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterMovingChestDeep</defName>
+    <label>chest-deep moving swamp water</label>
+    <renderPrecedence>399</renderPrecedence>
+    <affordances>
+      <li>MovingFluid</li>
+    </affordances>
+    <tags>
+      <li>River</li>
+    </tags>
+    <waterDepthShaderParameters>
+      <_UseWaterOffset>1</_UseWaterOffset>
+    </waterDepthShaderParameters>
+  </TerrainDef>
+
+  <!-- Shallow -->
+
+  <TerrainDef Abstract="True" Name="SWCPTerrain_DxunGreenSwampWaterShallowBase" ParentName="WaterShallowBase">
+    <texturePath>BiomeTerrain/GreenSwampyWaterShallowRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/GreenSwampyWaterShallowRamp</pollutedTexturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <pathCost>100</pathCost>
+    <traversedThought>SoakingWet</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain>
+    <statBases>
+      <Beauty>-4</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterShallowBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterShallow</defName>
+    <label>shallow swamp water</label>
+    <renderPrecedence>394</renderPrecedence>
+    <driesTo>Gravel</driesTo>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterShallowBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterOceanShallow</defName>
+    <label>shallow ocean swamp water</label>
+    <renderPrecedence>396</renderPrecedence>
+    <driesTo>Gravel</driesTo>
+    <tags>
+      <li>Ocean</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_DxunGreenSwampWaterShallowBase">
+    <defName>SWCPTerrain_DxunGreenSwampWaterMovingShallow</defName>
+    <label>shallow moving swamp water</label>
+    <renderPrecedence>398</renderPrecedence>
+    <affordances>
+      <li>MovingFluid</li>
+    </affordances>
+    <tags>
+      <li>River</li>
+    </tags>
+    <waterDepthShaderParameters>
+      <_UseWaterOffset>1</_UseWaterOffset>
+    </waterDepthShaderParameters>
+  </TerrainDef>
+
+
+</Defs>

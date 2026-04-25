@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- ================ Onderonian marble ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_OnderonMarble">
+    <defName>SWCPStone_OnderonMarble</defName>
+    <label>Onderonian marble</label>
+    <description>A soft metamorphic rock.</description>
+    <graphicData>
+      <color>(205,185,145)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_OnderonMarble</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_OnderonMarble</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_OnderonMarble">
+    <defName>SWCPStoneSmoothed_OnderonMarble</defName>
+    <label>smoothed Onderonian marble</label>
+    <description>A soft metamorphic rock. This semi-transparent rock almost appears to glow with its own inner light.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_OnderonMarble</defName>
+    <label>Onderonian marble chunk</label>
+    <graphicData>
+      <color>(205,185,145)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_OnderonMarble>20</SWCPStoneBlocks_OnderonMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_OnderonMarble</defName>
+    <label>Onderonian marble blocks</label>
+    <description>Blocks of solid Onderonian marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
+    <graphicData>
+      <color>(205,185,145)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(205,185,145)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>marble</stuffAdjective>
+      <statFactors>
+        <Beauty>1.35</Beauty>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <WorkToBuild>5.5</WorkToBuild>
+        <WorkToMake>1.15</WorkToMake>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksOnderonMarble</defName>
+    <label>make Onderonian marble blocks</label>
+    <description>Cuts Onderonian marble chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_OnderonMarble</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_OnderonMarble</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_OnderonMarble>20</SWCPStoneBlocks_OnderonMarble>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_OnderonMarble</defName>
+    <label>Onderonian marble tile</label>
+    <color>(205,185,145)</color>
+    <costList>
+      <SWCPStoneBlocks_OnderonMarble>4</SWCPStoneBlocks_OnderonMarble>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_OnderonMarble</defName>
+    <label>Onderonian marble flagstone</label>
+    <color>(205,185,145)</color>
+    <costList>
+      <SWCPStoneBlocks_OnderonMarble>4</SWCPStoneBlocks_OnderonMarble>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ Onderonian Sandstone ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_OnderonSandstone">
+    <defName>SWCPStone_OnderonSandstone</defName>
+    <label>Onderonian sandstone</label>
+    <description>A sedimentary rock composed of sand particles compressed together.</description>
+    <graphicData>
+      <color>(165,125,100)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_OnderonSandstone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_OnderonSandstone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_OnderonSandstone">
+    <defName>SWCPStoneSmoothed_OnderonSandstone</defName>
+    <label>smoothed Onderonian sandstone</label>
+    <description>A sedimentary rock composed of sand particles compressed together. The sand layers have been polished to a flat, smooth surface.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_OnderonSandstone</defName>
+    <label>Onderonian sandstone chunk</label>
+    <graphicData>
+      <color>(165,125,100)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_OnderonSandstone>20</SWCPStoneBlocks_OnderonSandstone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_OnderonSandstone</defName>
+    <label>Onderonian sandstone blocks</label>
+    <description>Blocks of solid Onderonian sandstone.</description>
+    <graphicData>
+      <color>(165,125,100)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(165,125,100)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>sandstone</stuffAdjective>
+      <statFactors>
+        <Beauty>1.1</Beauty>  
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <WorkToBuild>5.0</WorkToBuild>
+        <WorkToMake>1.1</WorkToMake>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksOnderonSandstone</defName>
+    <label>make Onderonian sandstone blocks</label>
+    <description>Cuts Onderonian sandstone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_OnderonSandstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_OnderonSandstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_OnderonSandstone>20</SWCPStoneBlocks_OnderonSandstone>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_OnderonSandstone</defName>
+    <label>Onderonian sandstone tile</label>
+    <color>(165,125,100)</color>
+    <costList>
+      <SWCPStoneBlocks_OnderonSandstone>4</SWCPStoneBlocks_OnderonSandstone>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_OnderonSandstone</defName>
+    <label>Onderonian sandstone flagstone</label>
+    <color>(165,125,100)</color>
+    <costList>
+      <SWCPStoneBlocks_OnderonSandstone>4</SWCPStoneBlocks_OnderonSandstone>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ Dxun Limestone ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_DxunLimestone">
+    <defName>SWCPStone_DxunLimestone</defName>
+    <label>Dxun limestone</label>
+    <description>A sedimentary rock composed of sand particles compressed together.</description>
+    <graphicData>
+      <color>(150,155,125)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_DxunLimestone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_DxunLimestone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_DxunLimestone">
+    <defName>SWCPStoneSmoothed_DxunLimestone</defName>
+    <label>smoothed Dxun limestone</label>
+    <description>A sedimentary rock composed of sand particles compressed together. The sand layers have been polished to a flat, smooth surface.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_DxunLimestone</defName>
+    <label>Dxun limestone chunk</label>
+    <graphicData>
+      <color>(150,155,125)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_DxunLimestone>20</SWCPStoneBlocks_DxunLimestone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_DxunLimestone</defName>
+    <label>Dxun limestone blocks</label>
+    <description>Blocks of solid Dxun limestone.</description>
+    <graphicData>
+      <color>(150,155,125)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.1</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(165,125,100)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>limestone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.55</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksDxunLimestone</defName>
+    <label>make Dxun limestone blocks</label>
+    <description>Cuts Dxun limestone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_DxunLimestone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_DxunLimestone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_DxunLimestone>20</SWCPStoneBlocks_DxunLimestone>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_DxunLimestone</defName>
+    <label>Dxun limestone tile</label>
+    <color>(150,155,125)</color>
+    <costList>
+      <SWCPStoneBlocks_DxunLimestone>4</SWCPStoneBlocks_DxunLimestone>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_DxunLimestone</defName>
+    <label>Dxun limestone flagstone</label>
+    <color>(150,155,125)</color>
+    <costList>
+      <SWCPStoneBlocks_DxunLimestone>4</SWCPStoneBlocks_DxunLimestone>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+
+  
+</Defs>

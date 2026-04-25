@@ -6,7 +6,7 @@
 		<defName>SWCPPlanet_Nevarro</defName>
 		<label>Nevarro</label>
 		<description>.\n\nDistance to Rimworld: 375000 km.\nDiameter: 100% of Rimworld.\n\nGravity well elevation: 1000 km.</description>
-		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
+		<viewGizmoTexPath>World/PlanetIcons/nevarro</viewGizmoTexPath>
 		
 		<posFromRimworld>(-1100000, 5000000, 0)</posFromRimworld>
 		
@@ -22,7 +22,7 @@
 		<description>.</description>
 		<!-- <description>The foundational layer of pulverized rock and dust where ancient impacts scar the terrain. This is the airless ground that forms the outermost shell of the Luna. This stark surface is where sunlight meets shadow and where vast, barren plains stretch endlessly. It provides the base for all of the Luna's natural geography, from towering peaks of crater rims to deep, shadowed chasms.</description> -->
 		<defaultPlanetLayer>SWCPPlanetLayer_Nevarro</defaultPlanetLayer>
-		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
+		<viewGizmoTexPath>World/PlanetIcons/nevarro</viewGizmoTexPath>
 		<planet>SWCPPlanet_Nevarro</planet>
 		
 		<modExtensions>
@@ -159,34 +159,34 @@
 			<li>Mutators</li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Landmarks</li>
 			<li>AncientSites</li>
-			<li>AncientRoads</li>
+			<!-- <li>AncientRoads</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li> -->
 			<li>Factions</li>
-			<li>Roads</li>
+			<!-- <li>Roads</li> -->
 			<li>Features</li>
 		</worldGenSteps>
 		
-		<settlementsPer100kTiles>55~65</settlementsPer100kTiles> <!-- 75~85 is default -->
-		<generatedLocationFactor>2</generatedLocationFactor>
+		<settlementsPer100kTiles>75~85</settlementsPer100kTiles> <!-- 75~85 is default -->
+		<generatedLocationFactor>1</generatedLocationFactor>
 		
 		<worldDrawLayers>
-		  <li>WorldDrawLayer_CurrentMapTile</li>
-		  <li>WorldDrawLayer_SelectedTile</li>
-		  <li>WorldDrawLayer_SettleTile</li>
-		  <li>WorldDrawLayer_MouseTile</li>
-		  <li>WorldDrawLayer_ClosestTile</li>
-		  <li>LayeredAtmosphereOrbit.WorldDrawLayer_UngeneratedPlanetPartsBackgroundBiome</li>
-		  <li>WorldDrawLayer_WorldObjects_Expandable</li>
-		  <li>WorldDrawLayer_WorldObjects_NonExpandable</li>
-		  <li>WorldDrawLayer_DebugNoise</li>
-		  <li>WorldDrawLayer_Landmarks</li>
-		  <li>WorldDrawLayer_Glow</li>
-		  <li>WorldDrawLayer_Hills</li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">WorldDrawLayer_Pollution</li>
-		  <li>WorldDrawLayer_Rivers</li>
-		  <li>WorldDrawLayer_Roads</li>
-		  <li>WorldDrawLayer_Terrain</li>
-		  <li>WorldDrawLayer_Clouds</li>
+			<li>WorldDrawLayer_CurrentMapTile</li>
+			<li>WorldDrawLayer_SelectedTile</li>
+			<li>WorldDrawLayer_SettleTile</li>
+			<li>WorldDrawLayer_MouseTile</li>
+			<li>WorldDrawLayer_ClosestTile</li>
+			<li>LayeredAtmosphereOrbit.WorldDrawLayer_UngeneratedPlanetPartsBackgroundBiome</li>
+			<li>WorldDrawLayer_WorldObjects_Expandable</li>
+			<li>WorldDrawLayer_WorldObjects_NonExpandable</li>
+			<li>WorldDrawLayer_DebugNoise</li>
+			<li>WorldDrawLayer_Landmarks</li>
+			<li>WorldDrawLayer_Glow</li>
+			<li>WorldDrawLayer_Hills</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">WorldDrawLayer_Pollution</li>
+			<li>WorldDrawLayer_Rivers</li>
+			<li>WorldDrawLayer_Roads</li>
+			<li>WorldDrawLayer_Terrain</li>
+			<li>WorldDrawLayer_Clouds</li>
 		</worldDrawLayers>
 		
 		<worldTabs>

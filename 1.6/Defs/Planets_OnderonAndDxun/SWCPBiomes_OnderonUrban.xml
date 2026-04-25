@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
+		<defName>SWCPBiomeFeature_OnderonUrban</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>409</order>
+		<!-- <minRootGroupSize>12</minRootGroupSize> -->
+		<minRootGroupSize>1</minRootGroupSize>
+		<maxRootGroupSize>10</maxRootGroupSize>
+		<rootBiomes>
+			<li>SWCPBiome_OnderonUrban</li>
+		</rootBiomes>
+		<nameMaker>SWCPBiomeNamer_OnderonUrban</nameMaker>
+	</FeatureDef>
+	
+	<RulePackDef>
+		<defName>SWCPBiomeNamer_OnderonUrban</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=0.2)->[narrative_name] [terrain_word]</li>
+			<li>r_name(p=0.2)->[narrative_name]</li>
+			
+			<li>terrain_word(p=6)->city</li>
+			<li>terrain_word(p=3)->metro</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<FeatureDef>
+		<defName>SWCPBiomeFeature_OnderonMegacity</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>409</order>
+		<minRootGroupSize>10</minRootGroupSize>
+		<rootBiomes>
+			<li>SWCPBiome_OnderonUrban</li>
+		</rootBiomes>
+		<nameMaker>SWCPBiomeNamer_OnderonMegacity</nameMaker>
+	</FeatureDef>
+	
+	<RulePackDef>
+		<defName>SWCPBiomeNamer_OnderonMegacity</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=10)->Iziz</li> <!-- capital -->
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_OnderonUrban</defName>
+		<label>urbanized district</label>
+		<description>Ruins of an ancient city which was destroyed by weapons of mass destruction. Water here is toxic and scaria runs rampant among the animals. Mechanoids lurk among the shattered buildings, waiting to awaken and kill again.</description>
+		<settleWarning>Scarlands are inhabited by dangerous insects and rogue mechanoids. Water is toxic and scaria runs rampant among the animals.</settleWarning>
+		
+		<workerClass>BiomeWorker_Glowforest</workerClass>
+		<!-- <workerClass>BiomeWorker_Scarlands</workerClass> -->
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		
+		<texture>World/Biomes/OnderonUrban</texture>
+		
+		<animalDensity>2</animalDensity>
+		<plantDensity>0.60</plantDensity>
+		
+		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		
+		<gravelTerrain>SWCPTerrain_OnderonGravel</gravelTerrain>
+		<lakeBeachTerrain>Mud</lakeBeachTerrain>
+		<mudTerrain>Mud</mudTerrain>
+		<riverbankTerrain>MarshyTerrain</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		
+		<forageability>0.25</forageability>
+		<foragedFood>MealNutrientPaste</foragedFood>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<!-- <pollutionOffset>0.0001</pollutionOffset> -->
+		
+		<!-- <waterShallowTerrain>ToxicWaterShallow</waterShallowTerrain> -->
+		<!-- <waterDeepTerrain>ToxicWaterDeep</waterDeepTerrain> -->
+		<!-- <oceanShallowTerrain>ToxicWaterOceanShallow</oceanShallowTerrain> -->
+		<!-- <oceanDeepTerrain>ToxicWaterOceanDeep</oceanDeepTerrain> -->
+		<!-- <waterMovingShallowTerrain>ToxicWaterMovingShallow</waterMovingShallowTerrain> -->
+		<!-- <waterMovingChestDeepTerrain>ToxicWaterMovingChestDeep</waterMovingChestDeepTerrain> -->
+		
+		<!-- <layerWhitelist> -->
+			<!-- <li>SWCPPlanetLayer_Onderon</li> whitelist is actually on the planetlayerdef in a modextension -->
+		<!-- </layerWhitelist> -->
+		
+		<soundsAmbient>
+			<li>Ambient_DayInsects_Jungle</li>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>160</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SleepingSickness</diseaseInc>
+			<commonality>140</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		<terrainsByFertility> <!-- DO NOT USE ARTIFICIAL TERRAIN TYPES IN THIS BECAUSE THE BUILDINGS WILL NOT GENERATE PROPERLY AND IT TOOK ME AN HOUR OF DEBUGGING TO FIGURE THAT OUT -->
+			<li>
+				<terrain>SWCPTerrain_OnderonMegastructure</terrain>
+				<min>-999</min>
+				<max>999</max>
+			</li>
+			<!-- <li> -->
+				<!-- <terrain>SWCPTerrain_OnderonMegastructure</terrain> -->
+				<!-- <min>-999</min> -->
+				<!-- <max>0.57</max> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <terrain>Gravel</terrain> -->
+				<!-- <min>0.57</min> -->
+				<!-- <max>0.67</max> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <terrain>SWCPTerrain_OnderonGrasslandSoil</terrain> -->
+				<!-- <min>0.67</min> -->
+				<!-- <max>999</max> -->
+			<!-- </li> -->
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.0005</perlinFrequency>
+				<isPond>true</isPond>
+				<thresholds>
+				  <li>
+					<terrain>MarshyTerrain</terrain>
+					<min>0.64</min>
+					<max>0.87</max>
+				  </li>
+				  <li>
+					<terrain>Marsh</terrain>
+					<min>0.87</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.01</perlinFrequency>
+				<isPond>true</isPond>
+				<thresholds>
+				  <li>
+					<terrain>Gravel</terrain>
+					<min>0.64</min>
+					<max>0.87</max>
+				  </li>
+				  <li>
+					<terrain>SWCPTerrain_OnderonGrasslandSoil</terrain>
+					<min>0.87</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<forceRockTypes>
+			<li>SWCPStone_OnderonMarble</li>
+			<li>Limestone</li>
+		</forceRockTypes>
+		<fogOfWarColor>(105,80,60)</fogOfWarColor>
+		
+		
+		
+		
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>0.3</DryThunderstorm>
+			<RainyThunderstorm>1.7</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<Plant_Grass>3.0</Plant_Grass>
+			<Plant_TallGrass>2.0</Plant_TallGrass>
+			<Plant_ShrubLow>2.0</Plant_ShrubLow>
+			<Plant_Alocasia>0.8</Plant_Alocasia>
+			<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
+
+			<SWCPPlant_OnderonTreePalm>0.3</SWCPPlant_OnderonTreePalm>
+			<SWCPPlant_OnderonAlocasia>0.4</SWCPPlant_OnderonAlocasia>
+
+			<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+			<!-- <Plant_TreeTeak>0.2</Plant_TreeTeak> -->
+			<Plant_Bush>0.15</Plant_Bush>
+			<Plant_Clivia>0.1</Plant_Clivia>
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
+			<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
+			<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
+		</wildPlants>
+		<wildAnimals>
+			<Dalgo MayRequire="Mlie.StarWarsAnimalCollection">0.2</Dalgo>
+			<Pikobis MayRequire="Mlie.StarWarsAnimalCollection">0.5</Pikobis>
+			<TeeMuss MayRequire="Mlie.StarWarsAnimalCollection">0.4</TeeMuss>
+			<Fambaa MayRequire="Mlie.StarWarsAnimalCollection">0.4</Fambaa>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+			<MonitorLizard>0.5</MonitorLizard>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+		  <li>Muffalo</li>
+		  <li>Alpaca</li>
+		  
+		  <li>Sovereign_BanthaRace</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+			<li>SWCPMapGenStep_UrbanBiome_OnderonMunicipalBuildings</li>
+			<li>SWCPMapGenStep_UrbanBiome_OnderonDormitories</li>
+			
+			<!-- <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li> -->
+
+			<li>SWCPGenStep_UrbanCivilians_Wander</li>
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</li> -->
+
+			<li>ScarlandsJunkClusters</li>
+			<li>ScarlandsJunkPrefabs</li>
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<li>SWCPGenStep_ExtraCommonScatterRuinsSimple</li>
+			<li>SWCPGenStep_ExtraCommonScatterShrines</li>
+
+			<li>GrasslandsElevationReduction</li>
+		</extraGenSteps>
+		<preventGenSteps>
+			<li>RocksFromGrid</li>
+			<li>RockChunks</li>
+		</preventGenSteps>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <frequency>25</frequency> -->
+				<!-- <spawnOnBiomes> -->
+					<!-- <li>Scarlands</li> -->
+				<!-- </spawnOnBiomes> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_ExtraCommonScatterRuinsSimple</defName>
+		<order>750</order>
+		<genStep Class="GenStep_ScatterRuinsSimple">
+		  <allowInWaterBiome>false</allowInWaterBiome>
+		  <countPer10kCellsRange>3~6</countPer10kCellsRange>
+		  <canBeOnEdge>true</canBeOnEdge>
+		  <ignoreUsedRects>true</ignoreUsedRects>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>SWCPGenStep_ExtraCommonScatterShrines</defName>
+		<order>750</order>
+		<genStep Class="GenStep_ScatterShrines">
+		  <allowInWaterBiome>false</allowInWaterBiome>
+		  <countPer10kCellsRange><min>1</min><max>2</max></countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	
+	<!-- <GenStepDef MayRequire="SWCP.guy762.WarlordEmpire"> -->
+		<!-- <defName>SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</defName> -->
+		<!-- <order>960</order> -->
+		<!-- <genStep Class="SWCPBiomes.GenStep_DefendingPawns"> -->
+			<!-- <factionDef>guy762_SWWarlordsFaction_PDF</factionDef> -->
+			<!-- <defendRadius>45</defendRadius> -->
+			<!-- <pawnsPerBeacon>3~6</pawnsPerBeacon> -->
+			<!-- <beaconBuildingDefs> -->
+				<!-- replace with a prop police vehicle? -->
+				<!-- <li>SWCP_CommandPost_big</li> -->
+			<!-- </beaconBuildingDefs> -->
+			<!-- <options> -->
+				<!-- <xSWOnderon_CopPistol_6x>50</xSWOnderon_CopPistol_6x> -->
+				<!-- <xSWOnderon_CopMelee_6x>50</xSWOnderon_CopMelee_6x> -->
+			<!-- </options> -->
+		<!-- </genStep> -->
+	<!-- </GenStepDef> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<TerrainDef Name="SWCPTerrain_OnderonMegastructure" ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_OnderonMegastructure</defName>
+		<label>megastructure</label>
+		<texturePath>BiomeTerrain/OnderonMegastructure</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/AncientMegastructure</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionColor>(240,240,240)</pollutionColor>
+		<pollutionTintColor>(1,1,1,1)</pollutionTintColor>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<fertility>0.05</fertility>
+		<takeFootprints>true</takeFootprints>
+		<preventCraters>true</preventCraters>
+		<pathCost>1</pathCost>
+		<designationCategory />
+		<statBases>
+		  <Beauty>-3</Beauty>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		</affordances>
+	</TerrainDef>
+	
+	
+	
+	
+
+	
+</Defs>

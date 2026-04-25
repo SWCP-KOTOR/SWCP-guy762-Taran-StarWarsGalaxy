@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>SWCPBiome_DxunJungle</defName>
+		<label>Dxun jungle</label>
+		<description>A thick, moist jungle, buzzing with animal life and infested with disease. Despite its visual beauty, this is a very dangerous biome. Choking overgrowth, aggressive animals, and constant sickness are why some explorers call this the "green hell".</description>
+		<!-- <workerClass>BiomeWorker_TropicalRainforest</workerClass> -->
+		<workerClass>BiomeWorker_TemperateForest</workerClass>
+		<animalDensity>5.4</animalDensity>
+		<plantDensity>0.95</plantDensity>
+		<settlementSelectionWeight>0.7</settlementSelectionWeight>
+		<movementDifficulty>4</movementDifficulty>
+		
+		<gravelTerrain>SWCPTerrain_DxunGravel</gravelTerrain>
+		<lakeBeachTerrain>Mud</lakeBeachTerrain>
+		<riverbankTerrain>Riverbank</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<texture>World/Biomes/DxunJungle</texture>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<maxFishPopulation>720</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common>
+				<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+			</freshwater_Uncommon>
+			<saltwater_Common>
+				<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+				<Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+			</saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Jungle</li>
+			<li>Ambient_DayInsects_Jungle</li>
+		</soundsAmbient>
+		<diseaseMtbDays>35</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>160</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SleepingSickness</diseaseInc>
+			<commonality>140</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>SWCPTerrain_DxunGrasslandSoil</terrain>
+				<min>-999</min>
+				<max>0.67</max>
+			</li>
+			<li>
+				<terrain>MossyTerrain</terrain>
+				<min>0.67</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+		  <li>
+			<perlinFrequency>0.075</perlinFrequency>
+			<thresholds>
+			  <li>
+				<terrain>MarshyTerrain</terrain>
+				<min>0.7</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		  <li>
+			<perlinFrequency>0.05</perlinFrequency>
+			<thresholds>
+			  <li>
+				<terrain>MarshyTerrain</terrain>
+				<min>0.64</min>
+				<max>0.87</max>
+			  </li>
+			  <li>
+				<terrain>Marsh</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		<forceRockTypes>
+			<li>Limestone</li>
+			<li>SWCPStone_DxunLimestone</li>
+		</forceRockTypes>
+		<fogOfWarColor>(60,75,60)</fogOfWarColor>
+		
+		<baseWeatherCommonalities>
+			<Clear>6</Clear>
+			<Fog>6</Fog>
+			<Rain>6</Rain>
+			<DryThunderstorm>0.3</DryThunderstorm>
+			<RainyThunderstorm>3</RainyThunderstorm>
+			<FoggyRain>4</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">4</Overcast>
+			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">4</BlindFog>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<SWCPPlant_DarkGrass>3.0</SWCPPlant_DarkGrass>
+			<SWCPPlant_DarkTallGrass>2.0</SWCPPlant_DarkTallGrass>
+			<Plant_ShrubLow>1</Plant_ShrubLow>
+			<Plant_Alocasia>0.4</Plant_Alocasia>
+			<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
+			
+			<SWCPPlant_DarkShrubLow>2</SWCPPlant_DarkShrubLow>
+			<SWCPPlant_DarkAlocasia>0.8</SWCPPlant_DarkAlocasia>
+			<SWCPPlant_DarkTreeBamboo>1</SWCPPlant_DarkTreeBamboo>
+			<SWCPPlant_DarkTreeCecropia>0.5</SWCPPlant_DarkTreeCecropia>
+			<Plant_TreeBamboo>0.7</Plant_TreeBamboo>
+			<Plant_TreeTeak>0.2</Plant_TreeTeak>
+			
+			<Plant_Chokevine>1</Plant_Chokevine>
+			<Plant_Bush>0.15</Plant_Bush>
+			<Plant_Clivia>0.05</Plant_Clivia>
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_Rafflesia>0.1</Plant_Rafflesia>
+			
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
+			<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
+			<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
+		</wildPlants>
+		<wildAnimals>
+			<Boma MayRequire="Mlie.StarWarsAnimalCollection">0.6</Boma>
+			<Cannok MayRequire="Mlie.StarWarsAnimalCollection">0.8</Cannok>
+			<Maalraas MayRequire="Mlie.StarWarsAnimalCollection">0.4</Maalraas>
+			<Drexl MayRequire="Mlie.StarWarsAnimalCollection">0.3</Drexl>
+			<Zakkeg MayRequire="Mlie.StarWarsAnimalCollection">0.01</Zakkeg>
+			
+			<!-- <GuineaPig>0.25</GuineaPig> -->
+			<!-- <Rat>1</Rat> -->
+			<!-- <Monkey>1</Monkey> -->
+			<!-- <Boomalope>0.5</Boomalope> -->
+			<!-- <Capybara>0.5</Capybara> -->
+			<!-- <Cassowary>0.5</Cassowary> -->
+			<!-- <Tortoise>0.5</Tortoise> -->
+			<!-- <Chinchilla>0.5</Chinchilla> -->
+			<!-- <WildBoar>0.5</WildBoar> -->
+			<!-- <Elephant>0.5</Elephant> -->
+			<!-- <Rhinoceros>0.5</Rhinoceros> -->
+			<!-- <Alpaca>0.5</Alpaca> -->
+			<!-- <Cobra>0.15</Cobra> -->
+			<!-- <Panther>0.15</Panther> -->
+			<!-- <Macaw MayRequire="Ludeon.RimWorld.Odyssey">0.25</Macaw> -->
+			<!-- <Tiger MayRequire="Ludeon.RimWorld.Odyssey">0.05</Tiger> -->
+			<!-- <Panda MayRequire="Ludeon.RimWorld.Odyssey">0.05</Panda> -->
+			<!-- <Gorilla MayRequire="Ludeon.RimWorld.Odyssey">0.05</Gorilla> -->
+			<!-- <Peacock MayRequire="Ludeon.RimWorld.Odyssey">0.5</Peacock> -->
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Seal MayRequire="Ludeon.RimWorld.Odyssey">0.1</Seal>
+			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+			<SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+			<li>Sovereign_BanthaRace</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_DxunGrasslandSoil</defName>
+		<label>grassy soil</label>
+		<texturePath>BiomeTerrain/DxunGrasslandSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+			<li>SWCPDxunTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_DxunGravel</defName>
+		<label>stony soil</label>
+		<texturePath>BiomeTerrain/DxunGravel</texturePath>
+		<pollutedTexturePath>BiomeTerrain/DxunGravel_polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.7</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>SWCPDxunTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>SWCPPlant_DarkGrass</defName>
+		<label>dark grass</label>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>Plants/DarkGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.05</fertilityMin>
+		  <fertilitySensitivity>0.3</fertilitySensitivity>
+		  <growDays>2.5</growDays>
+		  <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+		  <harvestWork>40</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.4~0.6</visualSizeRange>
+		  <topWindExposure>0.4</topWindExposure>
+		  <wildOrder>1</wildOrder>
+		  <maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>SWCPPlant_DarkTallGrass</defName>
+		<label>tall dark grass</label>
+		<description>Wild tall grass that grows in tough thickets. It slows down anyone moving over it.</description>
+		<statBases>
+		  <MaxHitPoints>90</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+		  <texPath>Plants/DarkTallGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.7~0.85</visualSizeRange>
+		  <topWindExposure>0.4</topWindExposure>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>10</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <pollutedGraphicPath>Things/Plant/Grass_Polluted</pollutedGraphicPath>
+		  <maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>SWCPPlant_DarkTreeBamboo</defName>
+		<label>dark bamboo tree</label>
+		<description>A fast-growing tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</description>
+		<statBases>
+		  <Nutrition>1.5</Nutrition>
+		  <Mass>75</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/DarkBamboo</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.38, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.47)</offset>
+			</shadowData>
+			
+			<drawSize>4</drawSize>
+		</graphicData>
+		<plant>
+		  <growDays>12</growDays>
+		  <harvestWork>460</harvestWork>
+		  <harvestYield>10</harvestYield>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>15</wildClusterWeight>
+		  <leaflessGraphicPath>Things/Plant/TreeBamboo_Leafless</leaflessGraphicPath>
+		  <leaflessSnowOverlayGraphicPath>Things/Plant/TreeBamboo_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+		</plant>
+		<ingestible />
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>SWCPPlant_DarkTreeCecropia</defName>
+		<label>dark cecropia tree</label>
+		<description>One of the most common rainforest trees. Cecropia grows very fast, but yields little usable wood.</description>
+		<graphicData>
+		  <texPath>Plants/DarkCecropia</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.18, 0.3, 0.15)</volume>
+		  </shadowData>
+		</graphicData>
+		<statBases>
+		  <Beauty>1</Beauty>
+		  <Nutrition>1.5</Nutrition>
+		</statBases>
+		<plant>
+			<growDays>14</growDays>
+			<harvestWork>510</harvestWork>
+			<harvestYield>18</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<immatureGraphicPath>Plants/DarkCecropiaImmature</immatureGraphicPath>
+
+			<leaflessGraphicPath>Things/Plant/TreeCecropia_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/TreeCecropia_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessSnowOverlayGraphicPath>Things/Plant/TreeCecropia_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+			<immatureSnowOverlayGraphicPath>Things/Plant/TreeCecropia_LeaflessSnowyImmature</immatureSnowOverlayGraphicPath>
+		</plant>
+		<ingestible />
+	</ThingDef>
+	
+	<ThingDef ParentName="BushBase">
+		<defName>SWCPPlant_DarkAlocasia</defName>
+		<label>dark alocasia</label>
+		<description>A tropical plant. Its extremely broad leaves are a commonly-recognized signifier of tropical forests.</description>
+		<graphicData>
+		  <texPath>Plants/DarkAlocasia</texPath>
+		  <drawSize>2</drawSize>
+		  <shadowData>
+			<volume>(0.55, 0.17, 0.15)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+		  <leaflessGraphicPath>Things/Plant/Alocasia_Leafless</leaflessGraphicPath>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>7.5</wildClusterWeight>
+		  <maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>SWCPPlant_DarkShrubLow</defName>
+		<label>low dark shrubs</label>
+		<description>Various low broadleaf shrubs. These grow in clusters and slow down movement.</description>
+		<statBases>
+		  <MaxHitPoints>90</MaxHitPoints>
+		  <Nutrition>0.25</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Plants/DarkLowShrub</texPath>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>4</maxMeshCount>
+		  <visualSizeRange>0.85~1.05</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		  <pollutedGraphicPath>Things/Plant/ShrubLow_Polluted</pollutedGraphicPath>
+		</plant>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_DxunSwamp</defName>
+		<label>Dxun bog</label>
+		<description>A plant-choked, steamy swamp seething with parasites and pathogens. Much of the land is too marshy to build on. Difficult movement, aggressive animals, and rampant disease make living here a nightmare.</description>
+		<workerClass>BiomeWorker_Ocean</workerClass>
+		<animalDensity>0.5</animalDensity>
+		<plantDensity>0.99</plantDensity>
+		
+		<settlementSelectionWeight>0</settlementSelectionWeight>
+		<campSelectionWeight>0.1</campSelectionWeight>
+		<movementDifficulty>6</movementDifficulty>
+		
+		<gravelTerrain>SWCPTerrain_DxunGravel</gravelTerrain>
+		<coastalBeachTerrain>Mud</coastalBeachTerrain>
+		<lakeBeachTerrain>Mud</lakeBeachTerrain>
+		<riverbankTerrain>Mud</riverbankTerrain>
+		<riverbankSizeRange>6~12</riverbankSizeRange>
+		
+		<texture>World/Biomes/DxunSwamp</texture>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>13</wildPlantRegrowDays>
+		
+		<maxFishPopulation>780</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+		  <freshwater_Common>
+			<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+		  </freshwater_Common>
+		  <freshwater_Uncommon>
+			<Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
+			<Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+		  </freshwater_Uncommon>
+		  <saltwater_Common>
+			<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+		  </saltwater_Common>
+		  <saltwater_Uncommon>
+			<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+			<Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+		  </saltwater_Uncommon>
+		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
+		</fishTypes>
+		
+		<soundsAmbient>
+		  <li>Ambient_NightInsects_Jungle</li>
+		  <li>Ambient_DayInsects_Jungle</li>
+		</soundsAmbient>
+		
+		<diseaseMtbDays>30</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>160</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SleepingSickness</diseaseInc>
+			<commonality>140</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		
+		<terrainsByFertility Inherit="False">
+		  <li>
+			<terrain>Marsh</terrain>
+			<min>-999</min>
+			<max>0.30</max>
+		  </li>
+		  <li>
+			<terrain>Mud</terrain>
+			<min>0.30</min>
+			<max>0.35</max>
+		  </li>
+		  <li>
+			<terrain>MarshyTerrain</terrain>
+			<min>0.35</min>
+			<max>0.50</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_DxunGreenSwampWaterShallow</terrain>
+			<min>0.50</min>
+			<max>0.80</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_DxunGreenSwampWaterDeep</terrain>
+			<min>0.80</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		
+		<terrainPatchMakers Inherit="False">
+		  <li>
+			<perlinFrequency>0.1</perlinFrequency>
+			<maxFertility>0.8</maxFertility>
+			<minSize>25</minSize>
+			<thresholds>
+			  <li>
+				<terrain>MarshyTerrain</terrain>
+				<min>0.65</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		  <li>
+			<perlinFrequency>0.15</perlinFrequency>
+			<isPond>true</isPond>
+			<minSize>20</minSize>
+			<thresholds>
+			  <li>
+				<terrain>MarshyTerrain</terrain>
+				<min>0.70</min>
+				<max>0.85</max>
+			  </li>
+			  <li>
+				<terrain>MossyTerrain</terrain>
+				<min>0.85</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		
+		<forceRockTypes>
+			<li>Limestone</li>
+			<li>SWCPStone_DxunLimestone</li>
+		</forceRockTypes>
+		<fogOfWarColor>(60,75,60)</fogOfWarColor>
+		
+		<baseWeatherCommonalities>
+			<Clear>4</Clear>
+			<Fog>8</Fog>
+			<Rain>8</Rain>
+			<DryThunderstorm>0</DryThunderstorm>
+			<RainyThunderstorm>3</RainyThunderstorm>
+			<FoggyRain>6</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">6</Overcast>
+			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">6</BlindFog>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<SWCPPlant_DarkGrass>3.0</SWCPPlant_DarkGrass>
+			<SWCPPlant_DarkTallGrass>2.0</SWCPPlant_DarkTallGrass>
+			<!-- <Plant_ShrubLow>1</Plant_ShrubLow> -->
+			<!-- <Plant_Alocasia>0.4</Plant_Alocasia> -->
+			<!-- <Plant_TreeCecropia>0.3</Plant_TreeCecropia> -->
+			
+			<SWCPPlant_DarkShrubLow>2</SWCPPlant_DarkShrubLow>
+			<SWCPPlant_DarkAlocasia>0.8</SWCPPlant_DarkAlocasia>
+			<SWCPPlant_DarkTreeBamboo>1</SWCPPlant_DarkTreeBamboo>
+			<SWCPPlant_DarkTreeCecropia>0.5</SWCPPlant_DarkTreeCecropia>
+			<!-- <Plant_TreeBamboo>0.7</Plant_TreeBamboo> -->
+			<!-- <Plant_TreeTeak>0.2</Plant_TreeTeak> -->
+			
+			<Plant_Chokevine>6</Plant_Chokevine>
+			<Plant_Bush>0.15</Plant_Bush>
+			<!-- <Plant_Clivia>0.05</Plant_Clivia> -->
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_Rafflesia>0.1</Plant_Rafflesia>
+			
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
+			<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
+			<!-- <Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus> -->
+		</wildPlants>
+		<wildAnimals>
+			<!-- <Boma MayRequire="Mlie.StarWarsAnimalCollection">0.6</Boma> -->
+			<Cannok MayRequire="Mlie.StarWarsAnimalCollection">0.05</Cannok>
+			<!-- <Maalraas MayRequire="Mlie.StarWarsAnimalCollection">0.4</Maalraas> -->
+			<Drexl MayRequire="Mlie.StarWarsAnimalCollection">0.01</Drexl>
+			<!-- <Zakkeg MayRequire="Mlie.StarWarsAnimalCollection">0.01</Zakkeg> -->
+			
+		<!-- <GuineaPig>0.18</GuineaPig> -->
+		  <!-- <Rat>1</Rat> -->
+		  <!-- <Monkey>1</Monkey> -->
+		  <!-- <Boomalope>0.5</Boomalope> -->
+		  <!-- <Capybara>0.5</Capybara> -->
+		  <!-- <Cassowary>0.5</Cassowary> -->
+		  <!-- <Tortoise>0.5</Tortoise> -->
+		  <!-- <Chinchilla>0.5</Chinchilla> -->
+		  <!-- <WildBoar>0.5</WildBoar> -->
+		  <!-- <Elephant>0.5</Elephant> -->
+		  <!-- <Rhinoceros>0.5</Rhinoceros> -->
+		  <!-- <Alpaca>0.5</Alpaca> -->
+		  <!-- <Cobra>0.15</Cobra> -->
+		  <!-- <Panther>0.15</Panther> -->
+		  <!-- <Macaw MayRequire="Ludeon.RimWorld.Odyssey">0.25</Macaw> -->
+		  <!-- <Tiger MayRequire="Ludeon.RimWorld.Odyssey">0.05</Tiger> -->
+		  <!-- <Panda MayRequire="Ludeon.RimWorld.Odyssey">0.05</Panda> -->
+		  <!-- <Gorilla MayRequire="Ludeon.RimWorld.Odyssey">0.02</Gorilla> -->
+		  <!-- <Flamingo MayRequire="Ludeon.RimWorld.Odyssey">0.5</Flamingo> -->
+		  <!-- <Peacock MayRequire="Ludeon.RimWorld.Odyssey">0.5</Peacock> -->
+		  <!-- <Hippo MayRequire="Ludeon.RimWorld.Odyssey">0.1</Hippo> -->
+		  <!-- <Alligator MayRequire="Ludeon.RimWorld.Odyssey">0.07</Alligator> -->
+		  <!-- <ColossusToad MayRequire="Ludeon.RimWorld.Odyssey">0.1</ColossusToad> -->
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomalope>0.1</Boomalope>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Seal MayRequire="Ludeon.RimWorld.Odyssey">0.1</Seal>
+			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+			<SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+			<li>Sovereign_BanthaRace</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+			<li MayRequire="SWCP.GCWVehicles">SWVehicles_ShipWreckage</li>
+			<li MayRequire="SWCP.GCWVehicles">SWVehicles_MoreShipWreckage</li>
+			<li MayRequire="SWCP.GCWVehicles">SWVehicles_EvenMoreShipWreckage</li>
+		</extraGenSteps>
+	</BiomeDef>
+	
+	
+	
+	
+</Defs>
