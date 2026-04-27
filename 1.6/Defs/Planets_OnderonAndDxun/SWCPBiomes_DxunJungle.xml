@@ -666,16 +666,16 @@
 		<fogOfWarColor>(60,75,60)</fogOfWarColor>
 		
 		<baseWeatherCommonalities>
-			<Clear>4</Clear>
-			<Fog>8</Fog>
-			<Rain>8</Rain>
+			<Clear>2</Clear>
+			<Fog>6</Fog>
+			<Rain>3</Rain>
 			<DryThunderstorm>0</DryThunderstorm>
 			<RainyThunderstorm>3</RainyThunderstorm>
 			<FoggyRain>6</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">6</Overcast>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">3</Overcast>
 			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">6</BlindFog>
 			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
 		</baseWeatherCommonalities>
