@@ -2,6 +2,39 @@
 
 <Patch>
 	
+			<!-- <li>SWCPBiome_Orbit</li> -->
+			
+			<!-- <li>SWCPBiome_TatooineExtremeDesert</li> -->
+			<!-- <li>SWCPBiome_TatooineHighland</li> -->
+			
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+			<!-- <li>SWCPBiome_OrdMantellJunkyard</li> -->
+			<!-- <li>SWCPBiome_OrdMantellJunkSwamp</li> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellDesert</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+			
+			<!-- <li>SWCPBiome_RhenVarGlacialPeaks</li> -->
+			<!-- <li>SWCPBiome_RhenVarGlacialHighland</li> -->
+			<!-- <li>SWCPBiome_RhenVarGlacialWastes</li> -->
+			
+			<!-- <li>SWCPBiome_NevarroAshFlatsDesert</li> -->
+			<!-- <li>SWCPBiome_NevarroHighland</li> -->
+			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
+			
+			<!-- <li>SWCPBiome_OnderonUrban</li> -->
+			<!-- <li>SWCPBiome_OnderonJungle</li> -->
+			<!-- <li>SWCPBiome_OnderonSwampyJungle</li> -->
+			<!-- <li>SWCPBiome_OnderonVeldt</li> -->
+			<!-- <li>SWCPBiome_OnderonHighland</li> -->
+			
+			<!-- <li>SWCPBiome_DxunJungle</li> -->
+			<!-- <li>SWCPBiome_DxunSwamp</li> -->
+	
+	
+	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
 		<order>Append</order>
@@ -10,6 +43,14 @@
 			<li>SWCPBiome_OrdMantellTundra</li>
 			
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -22,6 +63,15 @@
 			<li>SWCPBiome_OrdMantellTundra</li>
 			
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -46,6 +96,9 @@
 			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -62,6 +115,10 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_DxunJungle</li>
 		</value>
 	</Operation>
 	
@@ -71,6 +128,9 @@
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -82,6 +142,11 @@
 			<li>SWCPBiome_OrdMantellTundra</li>
 			
 			<li>SWCPBiome_NevarroHighland</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -96,6 +161,8 @@
 			
 			<li>SWCPBiome_NevarroHighland</li>
 			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
+			
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -121,6 +188,14 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -133,6 +208,11 @@
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
 		</value>
 	</Operation>
 	
@@ -155,24 +235,20 @@
 	
 	
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-			
-			<li>SWCPBiome_NevarroAshFlatsDesert</li>
-		</value>
-	</Operation>
+
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -191,6 +267,9 @@
 			
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -216,6 +295,12 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
 		</value>
 	</Operation>
 	
@@ -238,7 +323,6 @@
 			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
-			
 			<li>SWCPBiome_OrdMantellUrban</li>
 			<li>SWCPBiome_OrdMantellJunkyard</li>
 			<li>SWCPBiome_OrdMantellJunkSwamp</li>
@@ -249,6 +333,15 @@
 			
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
+			
+			<!-- <li>SWCPBiome_OnderonUrban</li> onderon cities are supposed to be walled -->
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -272,6 +365,14 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -289,6 +390,13 @@
 			
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
 		</value>
 	</Operation>
 	
@@ -299,6 +407,9 @@
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -315,6 +426,8 @@
 			
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -343,6 +456,8 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	
@@ -393,6 +508,14 @@
 			<li>SWCPBiome_OrdMantellUrban</li>
 			
 			<li>SWCPBiome_OrdMantellJunkyard</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
 		</value>
 	</Operation>
 	
@@ -418,6 +541,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OnderonUrban</li>
 		</value>
 	</Operation>
 	
@@ -426,6 +550,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OnderonUrban</li>
 		</value>
 	</Operation>
 	
@@ -434,6 +559,7 @@
 		<!-- <order>Append</order> -->
 		<!-- <value> -->
 			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+			<!-- <li>SWCPBiome_OnderonUrban</li> -->
 		<!-- </value> -->
 	<!-- </Operation> -->
 	
@@ -460,6 +586,8 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
 		</value>
 	</Operation>
 	
@@ -477,6 +605,8 @@
 			<li>SWCPBiome_OrdMantellUrban</li>
 			<li>SWCPBiome_OrdMantellJunkyard</li>
 			<li>SWCPBiome_OrdMantellJunkSwamp</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
 		</value>
 	</Operation>
 	
@@ -503,10 +633,10 @@
 	
 	
 	
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath> -->
-		<!-- <order>Append</order> -->
-		<!-- <value> -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
 			<!-- <li>TemperateForest</li> -->
 			<!-- <li>TemperateSwamp</li> -->
 			<!-- <li>ColdBog</li> -->
@@ -514,8 +644,14 @@
 			<!-- <li>TropicalSwamp</li> -->
 			<!-- <li>TropicalRainforest</li> -->
 			<!-- <li>Glowforest</li> -->
-		<!-- </value> -->
-	<!-- </Operation> -->
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
@@ -527,17 +663,31 @@
 			<li>SWCPBiome_OrdMantellLavaField</li>
 			
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/TileMutatorDef[defName="WildTropicalPlants"]/biomeWhitelist</xpath> -->
-		<!-- <order>Append</order> -->
-		<!-- <value> -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WildTropicalPlants"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
 			<!-- <li>TropicalSwamp</li> -->
 			<!-- <li>TropicalRainforest</li> -->
-		<!-- </value> -->
-	<!-- </Operation> -->
+			
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
+		</value>
+	</Operation>
 	
 	
 	
@@ -558,6 +708,13 @@
 			
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -579,6 +736,15 @@
 			<li>SWCPBiome_RhenVarGlacialPeaks</li>
 			<li>SWCPBiome_RhenVarGlacialHighland</li>
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			
+			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
+			
+			<li>SWCPBiome_DxunJungle</li>
+			<li>SWCPBiome_DxunSwamp</li>
 		</value>
 	</Operation>
 	
@@ -594,7 +760,6 @@
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
-			
 			<li>SWCPBiome_OrdMantellUrban</li>
 			<li>SWCPBiome_OrdMantellJunkyard</li>
 			<li>SWCPBiome_OrdMantellJunkSwamp</li>
@@ -606,6 +771,9 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
+			
+			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
 	

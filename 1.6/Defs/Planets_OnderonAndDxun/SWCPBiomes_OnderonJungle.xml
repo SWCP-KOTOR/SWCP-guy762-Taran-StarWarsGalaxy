@@ -636,6 +636,7 @@
 			<Plant_Bush>0.15</Plant_Bush>
 			<Plant_Clivia>0.7</Plant_Clivia>
 
+			<Plant_Tinctoria_Wild>0.01</Plant_Tinctoria_Wild>
 			<Plant_Berry>0.05</Plant_Berry>
 			<Plant_Rafflesia>0.005</Plant_Rafflesia>
 			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">1.5</Plant_RatPalm>

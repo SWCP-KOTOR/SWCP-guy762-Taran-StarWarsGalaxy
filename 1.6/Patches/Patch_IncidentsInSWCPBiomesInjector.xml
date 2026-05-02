@@ -26,6 +26,15 @@
 			<!-- <li>SWCPBiome_NevarroHighland</li> -->
 			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
 			
+			<!-- <li>SWCPBiome_OnderonUrban</li> -->
+			<!-- <li>SWCPBiome_OnderonJungle</li> -->
+			<!-- <li>SWCPBiome_OnderonSwampyJungle</li> -->
+			<!-- <li>SWCPBiome_OnderonVeldt</li> -->
+			<!-- <li>SWCPBiome_OnderonHighland</li> -->
+			
+			<!-- <li>SWCPBiome_DxunJungle</li> -->
+			<!-- <li>SWCPBiome_DxunSwamp</li> -->
+			
 			
 			
 	
@@ -88,6 +97,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OnderonVeldt</li>
 		</value>
 	</Operation>
 	
@@ -96,6 +106,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OnderonVeldt</li>
 		</value>
 	</Operation>
 	
@@ -115,8 +126,9 @@
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Nevarro</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Baroonda</li> -->
-			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Dxun</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
 	
@@ -128,7 +140,7 @@
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVarOrbit</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_NevarroOrbit</li>
-			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OnderonOrbit</li>
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</value>
 	</Operation>
