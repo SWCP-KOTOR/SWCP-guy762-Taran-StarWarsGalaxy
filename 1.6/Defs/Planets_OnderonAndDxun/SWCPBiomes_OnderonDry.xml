@@ -2,13 +2,372 @@
 <Defs>
 
 	
+	<BiomeDef>
+		<defName>SWCPBiome_OnderonSavannah</defName>
+		<label>Onderonian Savannah</label>
+		<description>An open expanse dominated by tall grasses. These areas are good for farming and ranching, except when there's a drought. The lack of trees and other vegetation means there's always a steady breeze. Steam geysers never appear here due to low geothermal activity.</description>
+		<texture>World/Biomes/OnderonSavannah</texture>
+		<workerClass>BiomeWorker_Desert</workerClass>
+		<!-- <workerClass>BiomeWorker_Grasslands</workerClass> -->
+		
+		<animalDensity>3.7</animalDensity>
+		<plantDensity>1.0</plantDensity>
+		<geyserCountFactor>0</geyserCountFactor> <!-- No geothermal -->
+		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		
+		<gravelTerrain>SWCPTerrain_OnderonLightGravel</gravelTerrain>
+		<lakeBeachTerrain>SWCPTerrain_LightRockGravel</lakeBeachTerrain>
+		<riverbankTerrain>Riverbank</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>13</wildPlantRegrowDays>
+		
+		<maxFishPopulation>540</maxFishPopulation>
+		<fishTypes>
+		  <freshwater_Common>
+			<Fish_Bass>1</Fish_Bass>
+		  </freshwater_Common>
+		  <freshwater_Uncommon>
+			<Fish_Catfish>1</Fish_Catfish>
+		  </freshwater_Uncommon>
+		  <saltwater_Common>
+			<Fish_Bluefish>1</Fish_Bluefish>
+		  </saltwater_Common>
+		  <saltwater_Uncommon>
+			<Fish_Marlin>1</Fish_Marlin>
+			<Fish_Flounder>1</Fish_Flounder>
+		  </saltwater_Uncommon>
+		  <rareCatchesSetMaker>RareFishingCatches_Hot</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		
+		
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		<terrainsByFertility>
+		  <li>
+			<terrain>SWCPTerrain_OnderonSavannahSoil</terrain>
+			<min>-999</min>
+			<max>0.8</max>
+		  </li>
+		  <li>
+			<terrain>SoilRich</terrain>
+			<min>0.80</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+		  <!--None-->
+		</terrainPatchMakers>
+		
+		<forceRockTypes>
+			<li>SWCPStone_OnderonMarble</li>
+			<li>SWCPStone_OnderonSandstone</li>
+		</forceRockTypes>
+		
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Windy>4</Windy>
+			<Fog>1</Fog>
+			<Rain>1</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>1</SnowGentle>
+			<SnowHard>1</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		</baseWeatherCommonalities>
+		
+		
+		<wildPlants>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">9</Plant_GrayGrass>
+			<Plant_Clivia>0.3</Plant_Clivia>
+			<Plant_Bush>0.2</Plant_Bush>
+
+			<!-- <SWCPPlant_DarkTreeBamboo>0.02</SWCPPlant_DarkTreeBamboo> -->
+			<Plant_ShrubLow>0.05</Plant_ShrubLow>
+			<SWCPPlant_OnderonTreeDrago>0.02</SWCPPlant_OnderonTreeDrago>
+			<Plant_TreeBamboo>0.05</Plant_TreeBamboo>
+
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			
+			<SWCPPlant_OliveGrass>9.0</SWCPPlant_OliveGrass>
+			<SWCPPlant_OliveTallGrass>9.0</SWCPPlant_OliveTallGrass>
+			
+			<Plant_Reeds>1</Plant_Reeds>
+			<Plant_LilyPad>0.2</Plant_LilyPad>
+		</wildPlants>
+		
+		
+		<wildAnimals>
+			<Dalgo MayRequire="Mlie.StarWarsAnimalCollection">0.2</Dalgo>
+			<Pikobis MayRequire="Mlie.StarWarsAnimalCollection">0.5</Pikobis>
+			<TeeMuss MayRequire="Mlie.StarWarsAnimalCollection">0.4</TeeMuss>
+			<Fambaa MayRequire="Mlie.StarWarsAnimalCollection">0.4</Fambaa>
+			
+			<!-- <Donkey>0.20</Donkey> -->
+			<!-- <Yak>0.06</Yak> -->
+			<!-- <Bison>0.5</Bison> -->
+			<!-- <Horse>0.20</Horse> -->
+			<!-- <Squirrel>1.0</Squirrel> -->
+			<!-- <Hare>1.0</Hare> -->
+			<!-- <Deer>0.5</Deer> -->
+			<!-- <WildBoar>0.5</WildBoar> -->
+			<!-- <Turkey>0.5</Turkey> -->
+			<!-- <Raccoon>0.5</Raccoon> -->
+			<!-- <Ibex>0.5</Ibex> -->
+			<!-- <Muffalo>1.0</Muffalo> -->
+			<!-- <Boomalope>0.4</Boomalope> -->
+			<!-- <Bear_Grizzly>0.07</Bear_Grizzly> -->
+			<!-- <Wolf_Timber>0.07</Wolf_Timber> -->
+			<!-- <Fox_Red>0.07</Fox_Red> -->
+			<!-- <Cougar>0.07</Cougar> -->
+			<!-- <Lynx>0.07</Lynx> -->
+			<!-- <Warg>0.07</Warg> -->
+			<!-- <Mastodon>0.2</Mastodon> -->
+			<!-- <PrairieDog>1</PrairieDog> -->
+			<!-- <Porcupine>0.2</Porcupine> -->
+			<Sparrow>0.5</Sparrow>
+			<Crow>0.5</Crow>
+			<Vulture>0.5</Vulture>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Seal>0.1</Seal>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+
+			<li>Sovereign_BanthaRace</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+			<li>GrasslandsElevationReduction</li>
+		</extraGenSteps>
+	</BiomeDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_OnderonSavannahSoil</defName>
+		<label>grassy soil</label>
+		<texturePath>BiomeTerrain/OnderonSavannahSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+			<li>SWCPOnderonTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>SWCPPlant_OliveGrass</defName>
+		<label>olive grass</label>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>Plants/OliveGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.05</fertilityMin>
+		  <fertilitySensitivity>0.3</fertilitySensitivity>
+		  <growDays>2.5</growDays>
+		  <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+		  <harvestWork>40</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.4~0.6</visualSizeRange>
+		  <topWindExposure>0.4</topWindExposure>
+		  <wildOrder>1</wildOrder>
+		  <maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>SWCPPlant_OliveTallGrass</defName>
+		<label>tall olive grass</label>
+		<description>Wild tall grass that grows in tough thickets. It slows down anyone moving over it.</description>
+		<statBases>
+		  <MaxHitPoints>90</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+		  <texPath>Plants/OliveTallGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.7~0.85</visualSizeRange>
+		  <topWindExposure>0.4</topWindExposure>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>10</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <pollutedGraphicPath>Things/Plant/Grass_Polluted</pollutedGraphicPath>
+		  <maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	
+	
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_OnderonLightGravel</defName>
+		<label>stony soil</label>
+		<texturePath>BiomeTerrain/OnderonLightGravel</texturePath>
+		<pollutedTexturePath>BiomeTerrain/OnderonLightGravel_polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.5</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>SWCPOnderonTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<BiomeDef>
 		<defName>SWCPBiome_OnderonVeldt</defName>
 		<label>Onderonian veldt</label>
 		<description>A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals, but arable soil is hard to find.</description>
-		<!-- <workerClass>BiomeWorker_AridShrubland</workerClass> -->
-		<workerClass>BiomeWorker_Desert</workerClass>
+		<workerClass>BiomeWorker_ExtremeDesert</workerClass>
+		<!-- <workerClass>BiomeWorker_Desert</workerClass> -->
 		<texture>World/Biomes/OnderonVeldt</texture>
 		
 		<allowFarmingCamps>false</allowFarmingCamps>
@@ -173,9 +532,9 @@
 		  <!-- <Megasloth>0.1</Megasloth> -->
 		  <!-- <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard> -->
 		  <!-- <Flamingo MayRequire="Ludeon.RimWorld.Odyssey">0.5</Flamingo> -->
-		  <!-- <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow> -->
-		  <!-- <Quail MayRequire="Ludeon.RimWorld.Odyssey">0.5</Quail> -->
-		  <!-- <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture> -->
+		  <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+		  <Quail MayRequire="Ludeon.RimWorld.Odyssey">0.5</Quail>
+		  <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
 		  <!-- <Hippo MayRequire="Ludeon.RimWorld.Odyssey">0.25</Hippo> -->
 		  <!-- <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo> -->
 		</wildAnimals>
@@ -214,8 +573,8 @@
 		<defName>SWCPBiome_OnderonHighland</defName>
 		<label>Onderonian highland</label>
 		<description>These craggy wastelands bear almost no trees and little vegetation. There are a few small animals interspersed with large herds of migratory grazers and their predators.</description>
-		<workerClass>BiomeWorker_AridShrubland</workerClass>
-		<!-- <workerClass>BiomeWorker_Desert</workerClass> -->
+		<!-- <workerClass>BiomeWorker_AridShrubland</workerClass> -->
+		<workerClass>BiomeWorker_GlacialPlain</workerClass>
 		<texture>World/Biomes/OnderonHighlands</texture>
 		
 		<allowFarmingCamps>false</allowFarmingCamps>

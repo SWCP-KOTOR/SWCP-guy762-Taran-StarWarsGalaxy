@@ -97,6 +97,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 		</value>
 	</Operation>
@@ -106,6 +107,7 @@
 		<order>Append</order>
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 		</value>
 	</Operation>

@@ -440,8 +440,9 @@
 		<animalDensity>6.5</animalDensity>
 		<plantDensity>0.99</plantDensity>
 		
-		<settlementSelectionWeight>0.4</settlementSelectionWeight>
-		<campSelectionWeight>0.9</campSelectionWeight>
+		<!-- <settlementSelectionWeight>0.4</settlementSelectionWeight> -->
+		<settlementSelectionWeight>0</settlementSelectionWeight> <!-- fortress generation is bugged and does not occur -->
+		<campSelectionWeight>0.5</campSelectionWeight>
 		<movementDifficulty>4</movementDifficulty>
 		
 		<gravelTerrain>SWCPTerrain_OnderonGravel</gravelTerrain>

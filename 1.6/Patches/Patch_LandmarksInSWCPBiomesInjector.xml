@@ -27,6 +27,7 @@
 			<!-- <li>SWCPBiome_OnderonUrban</li> -->
 			<!-- <li>SWCPBiome_OnderonJungle</li> -->
 			<!-- <li>SWCPBiome_OnderonSwampyJungle</li> -->
+			<!-- <li>SWCPBiome_OnderonSavannah</li> -->
 			<!-- <li>SWCPBiome_OnderonVeldt</li> -->
 			<!-- <li>SWCPBiome_OnderonHighland</li> -->
 			
@@ -46,6 +47,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -67,6 +69,7 @@
 			<li>SWCPBiome_OnderonUrban</li>
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -97,6 +100,7 @@
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 		</value>
@@ -129,7 +133,8 @@
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			
-			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonSavannah</li>
+			<!-- <li>SWCPBiome_OnderonVeldt</li> -->
 			<li>SWCPBiome_OnderonHighland</li>
 		</value>
 	</Operation>
@@ -143,7 +148,8 @@
 			
 			<li>SWCPBiome_NevarroHighland</li>
 			
-			<li>SWCPBiome_OnderonVeldt</li>
+			<li>SWCPBiome_OnderonSavannah</li>
+			<!-- <li>SWCPBiome_OnderonVeldt</li> -->
 			<li>SWCPBiome_OnderonHighland</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
 			<li>SWCPBiome_DxunSwamp</li>
@@ -191,6 +197,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -210,6 +217,7 @@
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			
 			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			
 			<li>SWCPBiome_DxunJungle</li>
@@ -245,6 +253,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			
 			<li>SWCPBiome_DxunJungle</li>
@@ -268,6 +277,7 @@
 			<li>SWCPBiome_NevarroAshFlatsDesert</li>
 			<li>SWCPBiome_NevarroHighland</li>
 			
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 		</value>
@@ -297,6 +307,7 @@
 			<li>SWCPBiome_NevarroLavaField</li>
 			
 			<li>SWCPBiome_OnderonJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -337,6 +348,7 @@
 			<!-- <li>SWCPBiome_OnderonUrban</li> onderon cities are supposed to be walled -->
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -368,6 +380,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -393,6 +406,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -408,6 +422,7 @@
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
 			
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 		</value>
@@ -512,6 +527,7 @@
 			<li>SWCPBiome_OnderonUrban</li>
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -666,6 +682,7 @@
 			
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 			
@@ -772,6 +789,7 @@
 			<li>SWCPBiome_NevarroHighland</li>
 			<li>SWCPBiome_NevarroLavaField</li>
 			
+			<li>SWCPBiome_OnderonSavannah</li>
 			<li>SWCPBiome_OnderonVeldt</li>
 			<li>SWCPBiome_OnderonHighland</li>
 		</value>
