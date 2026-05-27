@@ -94,7 +94,7 @@
 		
 		<!-- <constructEffect>ConstructMetal</constructEffect> -->
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_uncraftable</li>
+			<li>SWCPResearch_uncraftable</li>
 		</researchPrerequisites>
 		<!-- <constructionSkillPrerequisite>14</constructionSkillPrerequisite> -->
 		<tradeTags>
@@ -197,7 +197,7 @@
 		<!-- <constructionSkillPrerequisite>6</constructionSkillPrerequisite> -->
 		
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_uncraftable</li>
+			<li>SWCPResearch_uncraftable</li>
 		</researchPrerequisites>
 		
 		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
@@ -357,7 +357,7 @@
 		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
 		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
 		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_HoloRec</li> -->
+			<!-- <li>SWCPResearch_HoloRec</li> -->
 		<!-- </researchPrerequisites> -->
 	</ThingDef>
 	
@@ -469,7 +469,7 @@
 		</statBases>
 		<size>(1,1)</size>
 		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_UltraComponent</li> -->
+			<!-- <li>SWCPResearch_UltraComponent</li> -->
 		<!-- </researchPrerequisites> -->
 		<!-- <costList> -->
 			<!-- <KOTOR_AlloyDurasteel>65</KOTOR_AlloyDurasteel> -->
@@ -568,7 +568,7 @@
 		</statBases>
 		<size>(1,1)</size>
 		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_plasmaApplications</li> -->
+			<!-- <li>SWCPResearch_plasmaApplications</li> -->
 		<!-- </researchPrerequisites> -->
 		<!-- <costList> -->
 			<!-- <Steel>65</Steel> -->

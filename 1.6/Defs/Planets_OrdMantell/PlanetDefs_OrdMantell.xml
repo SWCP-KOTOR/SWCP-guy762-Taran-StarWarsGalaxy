@@ -242,32 +242,35 @@
 					<li MayRequire="Ludeon.RimWorld.Royalty">Disease_BloodRot</li>
 					<li>GiveQuest_MechanoidSignal</li>
 				</WhitelistIncidentDef>
-				<WhitelistQuestScriptDef>
-					<li>ThreatReward_Raid_Joiner</li>
-					<li>DelayedRewardDropPods</li>
-					<li>OpportunitySite_ItemStash</li>
-					<li>LongRangeMineralScannerLump</li>
-					<li>OpportunitySite_PrisonerWillingToJoin</li>
-					<li>TradeRequest</li>
-					<li>RefugeePodCrash</li>
-					<li>OpportunitySite_AncientMercenaries</li>
-					<li>Opportunity_AncientStructureLaunchSite</li>
-					<li>Opportunity_AncientStructureGarrison</li>
-					<li>Opportunity_AncientStructureChemfuelRefinery</li>
-					<li>Opportunity_AncientStructureWarehouse</li>
-					<li>Opportunity_AncientInfestedSettlement</li>
-					<li>OpportunitySite_BanditCamp_Giver</li>
-					<li>MechanoidSignal</li>
-					<li>GravEngine</li>
-					<li>Gravcore_MechanoidRelay</li>
-					<li>Gravcore_InsectLair</li>
-					<li>Gravcore_AncientReactor</li>
-					<li>Gravcore_AncientStockpile</li>
-					<li>Gravcore_CrashedMechanoidPlatform</li>
-					<li>GravshipWreckage</li>
-					<li>OpportunitySite_ItemStash_Giver</li>
-					<li>SurveySite</li>
-				</WhitelistQuestScriptDef>
+				<!-- <WhitelistQuestScriptDef> -->
+					<!-- <li>ThreatReward_Raid_Joiner</li> -->
+					<!-- <li>DelayedRewardDropPods</li> -->
+					<!-- <li>OpportunitySite_ItemStash</li> -->
+					<!-- <li>LongRangeMineralScannerLump</li> -->
+					<!-- <li>OpportunitySite_PrisonerWillingToJoin</li> -->
+					<!-- <li>TradeRequest</li> -->
+					<!-- <li>RefugeePodCrash</li> -->
+					<!-- <li>OpportunitySite_AncientMercenaries</li> -->
+					<!-- <li>Opportunity_AncientStructureLaunchSite</li> -->
+					<!-- <li>Opportunity_AncientStructureGarrison</li> -->
+					<!-- <li>Opportunity_AncientStructureChemfuelRefinery</li> -->
+					<!-- <li>Opportunity_AncientStructureWarehouse</li> -->
+					<!-- <li>Opportunity_AncientInfestedSettlement</li> -->
+					<!-- <li>OpportunitySite_BanditCamp_Giver</li> -->
+					<!-- <li>MechanoidSignal</li> -->
+					<!-- <li>GravEngine</li> -->
+					<!-- <li>Gravcore_MechanoidRelay</li> -->
+					<!-- <li>Gravcore_InsectLair</li> -->
+					<!-- <li>Gravcore_AncientReactor</li> -->
+					<!-- <li>Gravcore_AncientStockpile</li> -->
+					<!-- <li>Gravcore_CrashedMechanoidPlatform</li> -->
+					<!-- <li>GravshipWreckage</li> -->
+					<!-- <li>OpportunitySite_ItemStash_Giver</li> -->
+					<!-- <li>SurveySite</li> -->
+					
+					<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPQuest_SettlementRaidDefense_RebelCell_OrdMantell</li> -->
+					<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPQuest_SettlementRaidDefense_ZsinjDominion_OrdMantell</li> -->
+				<!-- </WhitelistQuestScriptDef> -->
 			</li>
 		</modExtensions>
 	</PlanetLayerDef>
