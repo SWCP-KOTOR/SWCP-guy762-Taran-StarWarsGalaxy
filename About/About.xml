@@ -4,14 +4,14 @@
 	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<name>Star Wars: The Galaxy Far, Far Away</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_SWCP_SWGalaxy</modIconPath>
-	<description>Adds Star Wars planets and gravships.</description>
-	<author>guy762, Taranchuk, Lee, et al.</author>
+	<description>SWCP Galacic Civil War project - Alpha I build. This mod is a work-in-progress.\n\nAdds Star Wars planets and gravships.</description>
+	<author>guy762, Taranchuk, Immortalus, Lee, NelsonArts</author>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>SWCP.guy762.Taran.SWGalaxy</packageId>
+	<packageId>SWCP.guy762.Taran.SWGalaxy.gbp</packageId>
 	<url>https://github.com/SWCP-KOTOR/SWCP-guy762-Taran-StarWarsGalaxy</url>
 	
 	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -33,6 +33,17 @@
 			<displayName>[BTD] Gravship Blueprints</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/3575162262</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>jdgg.adaptive.cargoholds</packageId>
+			<displayName>Cargo Holds</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3536708812</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>MrHydralisk.ComplementaryOdyssey</packageId>
+			<displayName>Complementary Odyssey</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3546612303</steamWorkshopUrl>
+			<downloadUrl>https://github.com/MrHydralisk/Complementary-Odyssey</downloadUrl>
+		</li>
 	</modDependencies>
 	
 	<loadAfterByVersion>
@@ -45,6 +56,8 @@
 			
 			<li>btd.remix.gravshipblueprints</li>
 			<li>MrHydralisk.LayeredAtmosphereOrbit</li>
+			<li>jdgg.adaptive.cargoholds</li>
+			<li>MrHydralisk.ComplementaryOdyssey</li>
 			
 			<li>lee.theforce.lightsaber</li>
 			<li>lee.theforce.standalone</li>
