@@ -4,7 +4,7 @@
 	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<name>Star Wars: The Galaxy Far, Far Away</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_SWCP_SWGalaxy</modIconPath>
-	<description>SWCP Galacic Civil War project - Alpha I build. This mod is a work-in-progress.\n\nAdds Star Wars planets and gravships.</description>
+	<description>SWCP Galactic Civil War project - Alpha I build. This mod is a work-in-progress.\n\nAdds Star Wars planets and gravships.</description>
 	<author>guy762, Taranchuk, Immortalus, Lee, NelsonArts</author>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
