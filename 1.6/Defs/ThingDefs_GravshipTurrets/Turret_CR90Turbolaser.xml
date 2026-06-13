@@ -7,14 +7,14 @@
   <!--=============== Atgar P-Tower anti-vehicle turret ===============-->
 
 	<ThingDef ParentName="guy762_GravshipTurretBase">
-		<defName>guy762_SWGravshipTurret_9x9YWingDualLaser</defName>
+		<defName>guy762_SWGravshipTurret_CR90Turbolaser</defName>
 		<label>dual turbolaser turret</label>
 		<description>.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Turrets/DishTurret_base</texPath>
 		  <!-- <texPath>NullTex</texPath> -->
-		  <drawSize>(3,3)</drawSize>
+		  <drawSize>(7,7)</drawSize>
 		  <drawRotated>false</drawRotated>
 		  
 		  <damageData>
@@ -26,7 +26,7 @@
 			<volume>(0.5,0.4,1.05)</volume>
 		  </shadowData>
 		</graphicData>
-		<uiIconPath>Starfighters/BTLA4YWing/YWing_gun</uiIconPath>
+		<uiIconPath>Gravships/CR90Corvette/CR90gun_turbo</uiIconPath>
 
 		
 		<statBases>
@@ -35,7 +35,7 @@
 		  <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
 		</statBases>
 		
-		<size>(3,3)</size>
+		<size>(7,7)</size>
 		<altitudeLayer>WorldClipper</altitudeLayer>
 		
 		<costList>
@@ -88,8 +88,8 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<!-- <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded> -->
 		<building>
-			<turretGunDef>guy762_SWGravshipTurretGun_9x9YWingDualLaser</turretGunDef>
-			<turretTopDrawSize>9</turretTopDrawSize>
+			<turretGunDef>guy762_SWGravshipTurretGun_CR90Turbolaser</turretGunDef>
+			<turretTopDrawSize>12</turretTopDrawSize>
 
 			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1</turretBurstCooldownTime>
@@ -107,13 +107,13 @@
 
 
 	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>guy762_SWGravshipTurretGun_9x9YWingDualLaser</defName>
+		<defName>guy762_SWGravshipTurretGun_CR90Turbolaser</defName>
 		<label>dual turbolaser turret</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Turrets/YWing_gun</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>(9,9)</drawSize>
+			<texPath>Gravships/CR90Corvette/CR90gun_turbo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(12,12)</drawSize>
 		</graphicData>
 		
 		<altitudeLayer>WorldClipper</altitudeLayer>
@@ -159,27 +159,26 @@
   
   
   
-	<ThingDef ParentName="BaseBullet">
-		<defName>SWVehicleBullet_SFbigdoublered_testing</defName>
-		<label>heavy laser bolts</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>5</drawSize>
-		</graphicData>
-		<projectile>
-			<!-- <damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef> -->
-			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
-			<damageAmountBase>200</damageAmountBase>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
-			<speed>200</speed>
-			<explosionRadius>4</explosionRadius>
+	<!-- <ThingDef ParentName="BaseBullet"> -->
+		<!-- <defName>SWVehicleBullet_SFbigdoublered_testing</defName> -->
+		<!-- <label>heavy laser bolts</label> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <shaderType>TransparentPostLight</shaderType> -->
+			<!-- <drawSize>5</drawSize> -->
+		<!-- </graphicData> -->
+		<!-- <projectile> -->
+			<!-- <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef> -->
+			<!-- <damageAmountBase>200</damageAmountBase> -->
+			<!-- <armorPenetrationBase>0.75</armorPenetrationBase> -->
+			<!-- <speed>200</speed> -->
+			<!-- <explosionRadius>4</explosionRadius> -->
 			
-			<flyOverhead>true</flyOverhead>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-	</ThingDef>
+			<!-- <flyOverhead>true</flyOverhead> -->
+		<!-- </projectile> -->
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	<!-- </ThingDef> -->
 
  
 

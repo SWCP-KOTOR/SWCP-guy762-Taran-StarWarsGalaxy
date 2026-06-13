@@ -7,13 +7,13 @@
   <!--=============== AA point-defense beam ===============-->
 
 	<ThingDef ParentName="guy762_GravshipTurretBase">
-		<defName>guy762_SWTurret_AAPointDefenseBeam</defName>
+		<defName>guy762_SWTurret_CR90_AAPointDefenseBeam</defName>
 		<label>anti-air beam turret</label>
 		<description>.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <texPath>Turrets/Turrets_Ogam/HardpointBase</texPath>
-		  <drawSize>(3,3)</drawSize>
+		  <texPath>Turrets/DishTurret_base</texPath>
+		  <drawSize>(4,4)</drawSize>
 		  <drawRotated>false</drawRotated>
 		  
 		  <damageData>
@@ -25,7 +25,7 @@
 			<volume>(0.5,0.4,1.05)</volume>
 		  </shadowData>
 		</graphicData>
-		<uiIconPath>Turrets/Turrets_Ogam/PointDefense_icon</uiIconPath>
+		<uiIconPath>Gravships/CR90Corvette/CR90gun_laser</uiIconPath>
 		<!-- <rotatable>false</rotatable> -->
 
 		
@@ -47,7 +47,7 @@
 		  <ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		
-		<size>(2,2)</size>
+		<size>(4,4)</size>
 		<fillPercent>0.8</fillPercent>
 		<!-- <hasInteractionCell>True</hasInteractionCell> -->
 		<!-- <interactionCellOffset>(1,0,3)</interactionCellOffset> -->
@@ -76,15 +76,15 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<!-- <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded> -->
 		<building>
-			<turretGunDef>guy762_SWTurretGun_AAPointDefenseBeam</turretGunDef>
-			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretGunDef>guy762_SWTurretGun_CR90_AAPointDefenseBeam</turretGunDef>
+			<turretTopDrawSize>10</turretTopDrawSize>
 			<!-- <turretTopOffset>(-0.05, 0.05)</turretTopOffset> -->
 		  
 			<turretBurstWarmupTime>0.125</turretBurstWarmupTime>
 			<turretBurstCooldownTime>2.5</turretBurstCooldownTime>
 		</building>
 		<researchPrerequisites>
-		  <li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -96,13 +96,13 @@
 
 
 	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>guy762_SWTurretGun_AAPointDefenseBeam</defName>
+		<defName>guy762_SWTurretGun_CR90_AAPointDefenseBeam</defName>
 		<label>anti-air beam turret</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Turrets/Turrets_Ogam/PointDefense_gun</texPath>
+		  <texPath>Gravships/CR90Corvette/CR90gun_laser</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>(2,2)</drawSize>
+		  <drawSize>(10,10)</drawSize>
 		</graphicData>
 		<altitudeLayer>WorldClipper</altitudeLayer>
 		
@@ -119,7 +119,7 @@
 		<verbs>
 		  <li>
 			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SWVehicleBullet_ExProjDoubleBeam_AAred</defaultProjectile>
+			<defaultProjectile>SWVehicleBullet_ExProjSingleBeam_AAred</defaultProjectile>
 			<warmupTime>0.125</warmupTime>
 			<!-- <range>90</range> normal ground defense range -->
 			<range>250</range> <!-- ship defense range -->
@@ -153,7 +153,7 @@
 	
 	
 	<ThingDef ParentName="SWCPStarfighterBullet_Interceptor_AntiAir_BASE">
-		<defName>SWVehicleBullet_doublebeam_AAred</defName>
+		<defName>SWVehicleBullet_beam_AAred</defName>
 		<label>anti-air beam</label>
 		<description>.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
@@ -161,7 +161,7 @@
 		<seeThroughFog>true</seeThroughFog>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Weapons/Projectiles/DoubleContinuousBeam_red</texPath>
+			<texPath>Weapons/Projectiles/continuousbeam_red</texPath>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -210,12 +210,12 @@
 	
 	
 	<VEF.Weapons.ExpandableProjectileDef ParentName="SWCPStarfighterBullet_Interceptor_AntiAir_BASE">
-		<defName>SWVehicleBullet_ExProjDoubleBeam_AAred</defName>
+		<defName>SWVehicleBullet_ExProjSingleBeam_AAred</defName>
 		<label>anti-air laser beam</label>
 		<thingClass>VEF.Weapons.ExpandableProjectile</thingClass>
 		<graphicData>
-			<texPath>Weapons/Projectiles/DoubleBeam_red</texPath>
-			<texPathFadeOut>Weapons/Projectiles/DoubleBeam_red</texPathFadeOut>
+			<texPath>Weapons/Projectiles/SingleBeam_red</texPath>
+			<texPathFadeOut>Weapons/Projectiles/SingleBeam_red</texPathFadeOut>
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>

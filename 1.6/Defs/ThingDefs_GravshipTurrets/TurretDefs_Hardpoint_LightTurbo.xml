@@ -82,7 +82,7 @@
 			<turretBurstCooldownTime>2.5</turretBurstCooldownTime>
 		</building>
 		<researchPrerequisites>
-		  <li>SniperTurret</li>
+		  <li>SWCPResearch_PLACEHOLDER</li>
 		</researchPrerequisites>
 	</ThingDef>
 

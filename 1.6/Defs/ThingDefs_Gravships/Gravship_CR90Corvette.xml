@@ -2,24 +2,24 @@
 <Defs>
   
 	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
-		<defName>guy762_SWGravshipOverlay_RaiderCorvette</defName>
-		<label>Raider-I Corvette</label>
+		<defName>guy762_SWGravshipOverlay_CR90Corvette</defName>
+		<label>CR90 Corvette</label>
 		<graphicData>
-		  <texPath>Gravships/RaiderCorvette/RaiderCorvette</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>(78,155)</drawSize>
-		  
-		  <drawOffset>(0,0,0)</drawOffset>
-		  
-		  <shaderType>CutoutComplex</shaderType>
-		  <color>(185,185,185)</color> <!-- lighter grey -->
+			<texPath>Gravships/CR90Corvette/CR90Corvette</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(78,155)</drawSize>
+
+			<drawOffset>(0,0,0)</drawOffset>
+
+			<shaderType>CutoutComplex</shaderType>
+			<color>(125,50,50)</color> <!-- rebel red -->
 		</graphicData>
 		<size>(1,1)</size>
 		<!-- <size>(25,75)</size> -->
 		<uiIconScale>0.02</uiIconScale>
 		<costList>
-		  <KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
-		  <ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
 		  <MaxHitPoints>11200</MaxHitPoints>
@@ -27,7 +27,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Effecter">
-				<effecterDef>guy762_ShipAuraEffecter_RaiderCorvette</effecterDef>
+				<effecterDef>guy762_ShipAuraEffecter_CR90Corvette</effecterDef>
 			</li>
 		</comps>
 		
@@ -38,7 +38,7 @@
 	
 	
 	<EffecterDef>
-		<defName>guy762_ShipAuraEffecter_RaiderCorvette</defName>
+		<defName>guy762_ShipAuraEffecter_CR90Corvette</defName>
 		<children>
 		  <li>
 			<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>

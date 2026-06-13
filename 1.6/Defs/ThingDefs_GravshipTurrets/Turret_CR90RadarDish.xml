@@ -7,14 +7,14 @@
   <!--=============== Atgar P-Tower anti-vehicle turret ===============-->
 
 	<ThingDef ParentName="guy762_GravshipTurretBase">
-		<defName>guy762_SWGravshipTurret_9x9YWingDualLaser</defName>
-		<label>dual turbolaser turret</label>
+		<defName>guy762_SWGravshipTurret_CR90Radar</defName>
+		<label>CR90 radar dish</label>
 		<description>.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Turrets/DishTurret_base</texPath>
 		  <!-- <texPath>NullTex</texPath> -->
-		  <drawSize>(3,3)</drawSize>
+		  <drawSize>(7,7)</drawSize>
 		  <drawRotated>false</drawRotated>
 		  
 		  <damageData>
@@ -26,7 +26,7 @@
 			<volume>(0.5,0.4,1.05)</volume>
 		  </shadowData>
 		</graphicData>
-		<uiIconPath>Starfighters/BTLA4YWing/YWing_gun</uiIconPath>
+		<uiIconPath>Gravships/CR90Corvette/CR90gun_radar</uiIconPath>
 
 		
 		<statBases>
@@ -35,7 +35,7 @@
 		  <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
 		</statBases>
 		
-		<size>(3,3)</size>
+		<size>(7,7)</size>
 		<altitudeLayer>WorldClipper</altitudeLayer>
 		
 		<costList>
@@ -55,12 +55,12 @@
 				<!-- <manWorkType>Violent</manWorkType> -->
 			<!-- </li> -->
 		  
-			<li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>3</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-			</li>
+			<!-- <li Class="CompProperties_Explosive"> -->
+				<!-- <wickTicks>240</wickTicks> -->
+				<!-- <explosiveRadius>3</explosiveRadius> -->
+				<!-- <explosiveDamageType>Bomb</explosiveDamageType> -->
+				<!-- <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage> -->
+			<!-- </li> -->
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -88,8 +88,8 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<!-- <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded> -->
 		<building>
-			<turretGunDef>guy762_SWGravshipTurretGun_9x9YWingDualLaser</turretGunDef>
-			<turretTopDrawSize>9</turretTopDrawSize>
+			<turretGunDef>guy762_SWGravshipTurretGun_CR90Radar</turretGunDef>
+			<turretTopDrawSize>12</turretTopDrawSize>
 
 			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1</turretBurstCooldownTime>
@@ -107,13 +107,13 @@
 
 
 	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>guy762_SWGravshipTurretGun_9x9YWingDualLaser</defName>
-		<label>dual turbolaser turret</label>
+		<defName>guy762_SWGravshipTurretGun_CR90Radar</defName>
+		<label>CR90 radar dish</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Turrets/YWing_gun</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <drawSize>(9,9)</drawSize>
+			<texPath>Gravships/CR90Corvette/CR90gun_radar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(12,12)</drawSize>
 		</graphicData>
 		
 		<altitudeLayer>WorldClipper</altitudeLayer>
@@ -132,27 +132,27 @@
 		<recoilPower>5</recoilPower>
 		
 		<verbs>
-		  <li>
-			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SWCPStarfighterBullet_AssaultAVAAturbo_dualred</defaultProjectile>
-			<warmupTime>0.5</warmupTime>
-			<minRange>5</minRange>
-			<range>500</range>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>kotorsound_turbolaser_LouderForTurrets</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>18</muzzleFlashScale>
-			<!-- <consumeFuelPerShot>1</consumeFuelPerShot> -->
-			<forcedMissRadius>0</forcedMissRadius>
-			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-			<isMortar>true</isMortar>
-		  </li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SWVehicleBullet_NullRadarSignal</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<minRange>5</minRange>
+				<range>500</range>
+				<burstShotCount>1</burstShotCount>
+				<!-- <soundCast>kotorsound_turbolaser_LouderForTurrets</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<!-- <consumeFuelPerShot>1</consumeFuelPerShot> -->
+				<forcedMissRadius>0</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<isMortar>true</isMortar>
+			</li>
 		</verbs>
 		<modExtensions>
-		  <li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
 		</modExtensions>
 	</ThingDef>
   
@@ -160,26 +160,35 @@
   
   
 	<ThingDef ParentName="BaseBullet">
-		<defName>SWVehicleBullet_SFbigdoublered_testing</defName>
-		<label>heavy laser bolts</label>
+		<defName>SWVehicleBullet_NullRadarSignal</defName>
+		<label>radar signal</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath>
+			<texPath>NullTex</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>5</drawSize>
+			<!-- <shaderType>TransparentPostLight</shaderType> -->
+			<drawSize>1</drawSize>
 		</graphicData>
 		<projectile>
-			<!-- <damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef> -->
-			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
-			<damageAmountBase>200</damageAmountBase>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<damageDef>guy762_Damage_NullRadarSignal</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
 			<speed>200</speed>
-			<explosionRadius>4</explosionRadius>
-			
-			<flyOverhead>true</flyOverhead>
+			<!-- <flyOverhead>true</flyOverhead> -->
 		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
+	
+	<DamageDef>
+		<defName>guy762_Damage_NullRadarSignal</defName>
+		<label>radar signal</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		
+		<buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+		<plantDamageFactor>0</plantDamageFactor>
+		<corpseDamageFactor>0</corpseDamageFactor>
+	</DamageDef>
 
  
 
