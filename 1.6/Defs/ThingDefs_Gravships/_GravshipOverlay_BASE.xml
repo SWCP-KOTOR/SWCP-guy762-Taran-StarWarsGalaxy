@@ -45,9 +45,10 @@
 		</statBases>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<building>
-		  <isEdifice>false</isEdifice>
-		  <uninstallWork>3500</uninstallWork>
-		  <shipPart>true</shipPart>
+			<paintable>true</paintable>
+			<isEdifice>false</isEdifice>
+			<uninstallWork>3500</uninstallWork>
+			<shipPart>true</shipPart>
 		</building>
 		<thingCategories>
 		  <!-- <li>CEC_ShipParts</li> -->

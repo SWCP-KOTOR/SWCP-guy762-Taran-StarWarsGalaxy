@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
+	<ThingDef Name="guy762_SWGravshipOverlay_CR90Corvette" ParentName="guy762_SWGravshipOverlayBASE">
 		<defName>guy762_SWGravshipOverlay_CR90Corvette</defName>
 		<label>CR90 Corvette</label>
 		<graphicData>
@@ -52,6 +52,31 @@
 		  </li>
 		</children>
 	</EffecterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_SWGravshipOverlay_CR90Corvette">
+		<defName>guy762_SWGravshipOverlay_CR90FarStar</defName>
+		<label>"FarStar" CR90 Corvette</label>
+		<graphicData>
+			<texPath>Gravships/CR90Corvette/FarStar</texPath>
+			<color>(190,40,60)</color> <!-- galactic republic red -->
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_SWGravshipOverlay_CR90Corvette">
+		<defName>guy762_SWGravshipOverlay_CR90Super</defName>
+		<label>CR90 SuperCorvette</label>
+		<graphicData>
+			<texPath>Gravships/CR90Corvette/CR90Super</texPath>
+			<color>(205,125,20)</color> <!-- new republic orange -->
+		</graphicData>
+	</ThingDef>
 	
 	
 	

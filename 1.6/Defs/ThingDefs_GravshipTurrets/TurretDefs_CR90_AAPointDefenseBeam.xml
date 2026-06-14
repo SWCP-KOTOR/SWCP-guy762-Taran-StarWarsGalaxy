@@ -8,7 +8,7 @@
 
 	<ThingDef ParentName="guy762_GravshipTurretBase">
 		<defName>guy762_SWTurret_CR90_AAPointDefenseBeam</defName>
-		<label>anti-air beam turret</label>
+		<label>anti-air laser turret</label>
 		<description>.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -97,7 +97,7 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>guy762_SWTurretGun_CR90_AAPointDefenseBeam</defName>
-		<label>anti-air beam turret</label>
+		<label>anti-air laser turret</label>
 		<description>.</description>
 		<graphicData>
 		  <texPath>Gravships/CR90Corvette/CR90gun_laser</texPath>
@@ -119,15 +119,17 @@
 		<verbs>
 		  <li>
 			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SWVehicleBullet_ExProjSingleBeam_AAred</defaultProjectile>
+			<!-- <defaultProjectile>SWVehicleBullet_ExProjSingleBeam_AAred</defaultProjectile> -->
+			<defaultProjectile>SWCPStarfighterBullet_IntAAheavy_red</defaultProjectile>
 			<warmupTime>0.125</warmupTime>
 			<!-- <range>90</range> normal ground defense range -->
 			<range>250</range> <!-- ship defense range -->
 			
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>3</burstShotCount>
 			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 			
-			<soundCast>kotorsound_LAATi_beamturret_fire</soundCast>
+			<!-- <soundCast>kotorsound_LAATi_beamturret_fire</soundCast> -->
+			<soundCast>kotorsound_EaWturret</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>18</muzzleFlashScale>
 			<forcedMissRadius>0</forcedMissRadius>
@@ -143,62 +145,6 @@
 			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
 		</modExtensions>
 	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<ThingDef ParentName="SWCPStarfighterBullet_Interceptor_AntiAir_BASE">
-		<defName>SWVehicleBullet_beam_AAred</defName>
-		<label>anti-air beam</label>
-		<description>.</description>
-		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-		<drawOffscreen>true</drawOffscreen>
-		<seeThroughFog>true</seeThroughFog>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Weapons/Projectiles/continuousbeam_red</texPath>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_BeamDamage_AntiVehicleEnergy</damageDef>
-			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>1</armorPenetrationBase>
-			<stoppingPower>5</stoppingPower>
-			<speed>10000</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>7</damageTickRate>
-				<lifetimeTicks>10</lifetimeTicks>
-				<beamWidth>0.5</beamWidth>
-				<beamWidthDrawScale>3</beamWidthDrawScale>
-				<sweepRatePerTick>0.25</sweepRatePerTick>
-				<maxSweepAngle>0.25</maxSweepAngle>
-				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-				<debugCells>false</debugCells>
-				<groundFleckDef>Fleck_BeamBurn</groundFleckDef>
-				<endEffecterDef>GraserBeam_End</endEffecterDef>
-				<fleckChancePerTick>0.32</fleckChancePerTick>
-				<textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
-				
-				<sustainerSoundDef>kotorsound_LAATi_beam_midair</sustainerSoundDef>
-				<sustainerTickPeriod>100</sustainerTickPeriod>
-				<trailSoundDef>GunTail_Medium</trailSoundDef>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	
-	
-	
-	
-	
 	
 	
 	

@@ -173,7 +173,7 @@
 			<damageAmountBase>0</damageAmountBase>
 			<armorPenetrationBase>0</armorPenetrationBase>
 			<speed>200</speed>
-			<!-- <flyOverhead>true</flyOverhead> -->
+			<!-- <flyOverhead>true</flyOverhead> incompatible with Gravship Turrets -->
 		</projectile>
 	</ThingDef>
 	

@@ -134,7 +134,7 @@
 		<verbs>
 		  <li>
 			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SWCPStarfighterBullet_AssaultAVAAturbo_dualred</defaultProjectile>
+			<defaultProjectile>SWVehicleBullet_SFbigdoublered_CR90testing</defaultProjectile>
 			<warmupTime>0.5</warmupTime>
 			<minRange>5</minRange>
 			<range>500</range>
@@ -159,26 +159,26 @@
   
   
   
-	<!-- <ThingDef ParentName="BaseBullet"> -->
-		<!-- <defName>SWVehicleBullet_SFbigdoublered_testing</defName> -->
-		<!-- <label>heavy laser bolts</label> -->
-		<!-- <graphicData> -->
-			<!-- <texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath> -->
-			<!-- <graphicClass>Graphic_Single</graphicClass> -->
-			<!-- <shaderType>TransparentPostLight</shaderType> -->
-			<!-- <drawSize>5</drawSize> -->
-		<!-- </graphicData> -->
-		<!-- <projectile> -->
-			<!-- <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef> -->
-			<!-- <damageAmountBase>200</damageAmountBase> -->
-			<!-- <armorPenetrationBase>0.75</armorPenetrationBase> -->
-			<!-- <speed>200</speed> -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_SFbigdoublered_CR90testing</defName>
+		<label>heavy turbolaser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/UWingAdvAntiVehicle_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>7</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>400</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>200</speed>
 			<!-- <explosionRadius>4</explosionRadius> -->
 			
-			<!-- <flyOverhead>true</flyOverhead> -->
-		<!-- </projectile> -->
+			<!-- <flyOverhead>true</flyOverhead> incompatible with Gravship Turrets -->
+		</projectile>
 		<!-- <thingClass>Projectile_Explosive</thingClass> -->
-	<!-- </ThingDef> -->
+	</ThingDef>
 
  
 
