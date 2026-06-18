@@ -9,6 +9,9 @@
 				<value>
 					<li>SWCP_CO_EditedTwinThruster</li>
 					<li>guy762_SWGravshipPilotConsole_YT1300transport</li>
+					
+					<li>guy762_ShipTech_CR90Thruster</li>
+					<li>guy762_ShipTech_CR90Reactor</li>
 				</value>
 			</li>
 			
@@ -21,6 +24,18 @@
 						<facilityQualityOffsets>
 							<li>
 								<key>SWCP_CO_EditedTwinThruster</key>
+								<value>0.05</value>
+							</li>
+							
+							
+							
+							
+							<li>
+								<key>guy762_ShipTech_CR90Thruster</key>
+								<value>0.05</value>
+							</li>
+							<li>
+								<key>guy762_ShipTech_CR90Reactor</key>
 								<value>0.05</value>
 							</li>
 						</facilityQualityOffsets>

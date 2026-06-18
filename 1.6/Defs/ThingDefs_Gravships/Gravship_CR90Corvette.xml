@@ -31,6 +31,16 @@
 			</li>
 		</comps>
 		
+		<building>	
+			<relatedBuildCommands>
+				<li>guy762_ShipTech_CR90Thruster</li>
+				<li>guy762_ShipTech_CR90Reactor</li>
+				<li>guy762_SWTurret_CR90_AAPointDefenseBeam</li>
+				<li>guy762_SWGravshipTurret_CR90Turbolaser</li>
+				<li>guy762_SWGravshipTurret_CR90Radar</li>
+			</relatedBuildCommands>
+		</building>
+		
 		<researchPrerequisites>
 		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
 		</researchPrerequisites>

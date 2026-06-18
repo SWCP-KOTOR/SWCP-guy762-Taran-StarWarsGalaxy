@@ -25,6 +25,7 @@
 			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
 			
 			<!-- <li>SWCPBiome_OnderonUrban</li> -->
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
 			<!-- <li>SWCPBiome_OnderonJungle</li> -->
 			<!-- <li>SWCPBiome_OnderonSwampyJungle</li> -->
 			<!-- <li>SWCPBiome_OnderonSavannah</li> -->
@@ -67,6 +68,7 @@
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonIziz</li>
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
 			<li>SWCPBiome_OnderonSavannah</li>
@@ -525,6 +527,7 @@
 			<li>SWCPBiome_OrdMantellJunkyard</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonIziz</li>
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
 			<li>SWCPBiome_OnderonSavannah</li>
@@ -558,6 +561,7 @@
 		<value>
 			<li>SWCPBiome_OrdMantellUrban</li>
 			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonIziz</li>
 		</value>
 	</Operation>
 	
@@ -567,6 +571,7 @@
 		<value>
 			<li>SWCPBiome_OrdMantellUrban</li>
 			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonIziz</li>
 		</value>
 	</Operation>
 	
@@ -576,6 +581,7 @@
 		<!-- <value> -->
 			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
 			<!-- <li>SWCPBiome_OnderonUrban</li> -->
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
 		<!-- </value> -->
 	<!-- </Operation> -->
 	
@@ -604,6 +610,7 @@
 			<li>SWCPBiome_NevarroLavaField</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
 		</value>
 	</Operation>
 	
@@ -623,6 +630,7 @@
 			<li>SWCPBiome_OrdMantellJunkSwamp</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
 		</value>
 	</Operation>
 	
@@ -727,6 +735,7 @@
 			<li>SWCPBiome_NevarroHighland</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<li>SWCPBiome_OnderonIziz</li>
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
 			
@@ -755,6 +764,7 @@
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
 			
 			<li>SWCPBiome_OnderonUrban</li>
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
 			<li>SWCPBiome_OnderonJungle</li>
 			<li>SWCPBiome_OnderonSwampyJungle</li>
 			<li>SWCPBiome_OnderonVeldt</li>
