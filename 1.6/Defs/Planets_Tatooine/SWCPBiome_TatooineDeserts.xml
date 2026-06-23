@@ -280,13 +280,14 @@
 		</extraGenSteps>
 		
 		<wildPlants>
-		  <Plant_Grass>6</Plant_Grass>
-		  <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
-		  <Plant_Agave>0.25</Plant_Agave>
-		  <Plant_Bush>0.25</Plant_Bush>
-		  <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
-		  <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+			<Plant_YellowGrass>6</Plant_YellowGrass>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+			<Plant_Agave>0.25</Plant_Agave>
+			<Plant_Bush>0.25</Plant_Bush>
+			<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
 		</wildPlants>
+		
 		<wildAnimals>
 			<Iguana>1.2</Iguana>
 			<Dromedary>0.7</Dromedary>
