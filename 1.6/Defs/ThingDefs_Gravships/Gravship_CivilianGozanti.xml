@@ -36,6 +36,13 @@
 			</li>
 		</comps>
 		
+		<building>	
+			<relatedBuildCommands>
+				<li>guy762_ShipTech_GozantiThruster</li>
+				<li>guy762_ShipTech_GozantiReactor</li>
+			</relatedBuildCommands>
+		</building>
+		
 		<researchPrerequisites>
 		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
 		</researchPrerequisites>

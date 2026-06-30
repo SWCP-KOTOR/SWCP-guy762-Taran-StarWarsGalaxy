@@ -12,6 +12,9 @@
 					
 					<li>guy762_ShipTech_CR90Thruster</li>
 					<li>guy762_ShipTech_CR90Reactor</li>
+					
+					<li>guy762_ShipTech_GozantiReactor</li>
+					<li>guy762_ShipTech_GozantiThruster</li>
 				</value>
 			</li>
 			
@@ -36,6 +39,14 @@
 							</li>
 							<li>
 								<key>guy762_ShipTech_CR90Reactor</key>
+								<value>0.05</value>
+							</li>
+							<li>
+								<key>guy762_ShipTech_GozantiReactor</key>
+								<value>0.05</value>
+							</li>
+							<li>
+								<key>guy762_ShipTech_GozantiThruster</key>
 								<value>0.05</value>
 							</li>
 						</facilityQualityOffsets>

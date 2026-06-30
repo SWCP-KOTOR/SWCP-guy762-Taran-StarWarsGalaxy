@@ -1,18 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	
 	<!-- REMINDER: THESE PARTS NEED TO BE ADDED TO Patch_NewShipPartsWorkWithTheGravshipSystemSinceYouHaveToManuallyPatchAReferenceIn.xml IN ORDER TO WORK!!!!! -->
 	
+	
 	<ThingDef ParentName="ThrusterBase">
-		<defName>guy762_ShipTech_CR90Thruster</defName>
-		<label>CR90 thruster</label>
+		<defName>guy762_ShipTech_GozantiThruster</defName>
+		<label>Gozanti thruster</label>
 		<description>.</description>
 		<graphicData>
+			<texPath>Gravships/ImpGozanti/Gozanti_thruster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Gravships/CR90Corvette/CR90_thruster</texPath>
-			<drawSize>(14, 14)</drawSize>
-			<drawOffset>(-1,0,0)</drawOffset>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(185,185,185)</color> <!-- lighter grey -->
+			
+			<drawSize>(10, 10)</drawSize>
+			<drawOffset>(2,0,0)</drawOffset>
 			<shadowData>
 				<volume>(2.8, 0.9, 2.8)</volume>
 			</shadowData>
@@ -28,11 +31,11 @@
 			<uninstallWork>5000</uninstallWork>
 			
 			<relatedBuildCommands>
-				<!-- <li>guy762_ShipTech_CR90Thruster</li> -->
-				<li>guy762_ShipTech_CR90Reactor</li>
+				<!-- <li>guy762_ShipTech_GozantiThruster</li> -->
+				<li>guy762_ShipTech_GozantiReactor</li>
 			</relatedBuildCommands>
 		</building>
-		<size>(8, 12)</size>
+		<size>(5, 4)</size>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
 			<Steel>440</Steel>
@@ -53,8 +56,8 @@
 					<GravshipRange>500</GravshipRange>
 				</statOffsets>
 				<componentTypeDef>Thruster</componentTypeDef>
-				<exclusionAreaSize>(6, 0, 20)</exclusionAreaSize>
-				<exclusionAreaOffset>(-2, 0, -25)</exclusionAreaOffset>
+				<exclusionAreaSize>(5, 0, 15)</exclusionAreaSize>
+				<exclusionAreaOffset>(-2, 0, -16)</exclusionAreaOffset>
 				<directionInfluence>60</directionInfluence>
 				<flameSize>4.0</flameSize>
 				<flameOffsetsPerDirection>
@@ -96,14 +99,17 @@
 	<!-- REMINDER: THESE PARTS NEED TO BE ADDED TO Patch_NewShipPartsWorkWithTheGravshipSystemSinceYouHaveToManuallyPatchAReferenceIn.xml IN ORDER TO WORK!!!!! -->
 	
 	<ThingDef ParentName="ThrusterBase">
-		<defName>guy762_ShipTech_CR90Reactor</defName>
-		<label>CR90 reactor</label>
+		<defName>guy762_ShipTech_GozantiReactor</defName>
+		<label>Gozanti reactor</label>
 		<description>.</description>
 		<graphicData>
+			<texPath>Gravships/ImpGozanti/Gozanti_fueltank</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Gravships/CR90Corvette/CR90_fueltank</texPath>
-			<drawSize>(14, 14)</drawSize>
-			<drawOffset>(1,0,0)</drawOffset>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(185,185,185)</color> <!-- lighter grey -->
+			
+			<drawSize>(9.5, 9.5)</drawSize>
+			<drawOffset>(-2,0,0)</drawOffset>
 			<shadowData>
 				<volume>(2.8, 0.9, 2.8)</volume>
 			</shadowData>
@@ -119,11 +125,11 @@
 			<uninstallWork>5000</uninstallWork>
 			
 			<relatedBuildCommands>
-				<li>guy762_ShipTech_CR90Thruster</li>
-				<!-- <li>guy762_ShipTech_CR90Reactor</li> -->
+				<li>guy762_ShipTech_GozantiThruster</li>
+				<!-- <li>guy762_ShipTech_GozantiReactor</li> -->
 			</relatedBuildCommands>
 		</building>
-		<size>(8, 10)</size>
+		<size>(5, 4)</size>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
 			<Steel>440</Steel>
