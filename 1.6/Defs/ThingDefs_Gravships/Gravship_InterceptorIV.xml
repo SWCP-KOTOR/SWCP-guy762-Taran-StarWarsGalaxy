@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef Name="guy762_SWGravshipOverlay_InterceptorIV" ParentName="guy762_SWGravshipOverlayBASE">
+		<defName>guy762_SWGravshipOverlay_InterceptorIV</defName>
+		<label>Interceptor-IV Frigate</label>
+		<graphicData>
+			<texPath>Gravships/InterceptorIV/InterceptorIV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(78,155)</drawSize>
+
+			<drawOffset>(0,0,0)</drawOffset>
+
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255,245,0)</color> <!-- bright yellow -->
+			<colorTwo>(125,90,75)</colorTwo> <!-- darker rust -->
+		</graphicData>
+		<size>(1,1)</size>
+		<!-- <size>(25,75)</size> -->
+		<uiIconScale>0.02</uiIconScale>
+		<costList>
+			<KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>11200</MaxHitPoints>
+		  <WorkToBuild>44800</WorkToBuild>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>guy762_ShipAuraEffecter_InterceptorIV</effecterDef>
+			</li>
+		</comps>
+		
+		<building>	
+			<relatedBuildCommands>
+				<!-- <li>guy762_ShipTech_CR90Thruster</li> -->
+				<!-- <li>guy762_ShipTech_CR90Reactor</li> -->
+				<!-- <li>guy762_SWTurret_CR90_AAPointDefenseBeam</li> -->
+				<!-- <li>guy762_SWGravshipTurret_CR90Turbolaser</li> -->
+				<!-- <li>guy762_SWGravshipTurret_CR90Radar</li> -->
+			</relatedBuildCommands>
+		</building>
+		
+		<researchPrerequisites>
+		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
+		</researchPrerequisites>
+	</ThingDef>
+	
+	
+	<EffecterDef>
+		<defName>guy762_ShipAuraEffecter_InterceptorIV</defName>
+		<children>
+		  <li>
+			<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+			<soundDef>kotorsound_ShipAmbience_CROCGozanti</soundDef>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_SubtleRepComMetalCreaking</soundDef>
+			<intermittentSoundInterval><min>1000</min><max>2500</max></intermittentSoundInterval>
+			<!-- <intermittentSoundInterval><min>100</min><max>250</max></intermittentSoundInterval> -->
+		  </li>
+		</children>
+	</EffecterDef>
+	
+</Defs>
