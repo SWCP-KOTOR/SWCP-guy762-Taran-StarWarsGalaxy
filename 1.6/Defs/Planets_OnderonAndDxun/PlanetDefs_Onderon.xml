@@ -155,7 +155,7 @@
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Landmarks</li>
 			<li>AncientSites</li>
 			<li>AncientRoads</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li> -->
 			<li>Factions</li>
 			<li>Roads</li>
 			<li>Features</li>
