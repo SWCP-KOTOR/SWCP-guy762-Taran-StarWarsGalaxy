@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	
+	
+	<PrefabDef>
+	  <defName>SWCPPrefab_PazaakTable</defName>
+	  <size>(3,2)</size>
+	  <things>
+		<KOTOR_PazaakTable>
+		  <position>(1, 0, 0)</position>
+		  <quality>Normal</quality>
+		</KOTOR_PazaakTable>
+	  </things>
+	</PrefabDef>
+	
+	
+	<PrefabDef>
+	  <defName>SWCPPrefab_HologramBandAndDancer</defName>
+	  <size>(5,2)</size>
+	  <!-- <edgeOnly>true</edgeOnly> -->
+	  <things>
+		<SWCPBuilding_NPCHologram_bith>
+		  <positions>
+			<li>(0, 0, 2)</li>
+			<li>(1, 0, 2)</li>
+			<li>(3, 0, 2)</li>
+			<li>(4, 0, 2)</li>
+		  </positions>
+		  <relativeRotation>Opposite</relativeRotation>
+		</SWCPBuilding_NPCHologram_bith>
+		<SWCPBuilding_NPCHologram_dancerF>
+		  <position>(2, 0, 1)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		</SWCPBuilding_NPCHologram_dancerF>
+	  </things>
+	</PrefabDef>
+
+
+	<PrefabDef>
+		<defName>SWCPPrefab_Nalargon</defName>
+		<size>(2,2)</size>
+		<things>
+			<KOTORInstrument_Nalargon>
+				<position>(0, 0, 0)</position>
+				<quality>Excellent</quality>
+			</KOTORInstrument_Nalargon>
+		</things>
+	</PrefabDef>
+	
+	
+</Defs>

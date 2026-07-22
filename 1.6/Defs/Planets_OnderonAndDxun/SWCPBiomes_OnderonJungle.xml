@@ -144,9 +144,9 @@
 			<Clear>18</Clear>
 			<Fog>1</Fog>
 			<Rain>2</Rain>
-			<DryThunderstorm>0.3</DryThunderstorm>
-			<RainyThunderstorm>1.7</RainyThunderstorm>
-			<FoggyRain>1</FoggyRain>
+			<!-- <DryThunderstorm>0.1</DryThunderstorm> -->
+			<RainyThunderstorm>0.5</RainyThunderstorm>
+			<FoggyRain>2</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
@@ -601,18 +601,18 @@
 		<fogOfWarColor>(105,80,60)</fogOfWarColor>
 		
 		<baseWeatherCommonalities>
-		  <Clear>18</Clear>
-		  <Fog>2</Fog>
-		  <Rain>2</Rain>
-		  <DryThunderstorm>0.3</DryThunderstorm>
-		  <RainyThunderstorm>1.7</RainyThunderstorm>
-		  <FoggyRain>1</FoggyRain>
-		  <SnowGentle>4</SnowGentle>
-		  <SnowHard>4</SnowHard>
-		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-		  <BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
-		  <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
-		  <TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+			<Clear>18</Clear>
+			<Fog>4</Fog>
+			<Rain>4</Rain>
+			<!-- <DryThunderstorm>0.1</DryThunderstorm> -->
+			<RainyThunderstorm>0.5</RainyThunderstorm>
+			<FoggyRain>2</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">4</Overcast>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">1</TorrentialRain>
 		</baseWeatherCommonalities>
 		
 		<wildPlants>

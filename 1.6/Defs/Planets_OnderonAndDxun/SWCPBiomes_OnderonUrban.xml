@@ -280,11 +280,13 @@
 		<extraGenSteps>
 			<li>SWCPMapGenStep_UrbanBiome_OnderonMunicipalBuildings</li>
 			<li>SWCPMapGenStep_UrbanBiome_OnderonDormitories</li>
+			<li>SWCPMapGenStep_UrbanBiome_OnderonScumBuildings</li>
 			
-			<!-- <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li> -->
+			<li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li>
 
 			<li>SWCPGenStep_UrbanCivilians_Wander</li>
-			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</li> -->
+			<li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</li>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</li>
 
 			<li>ScarlandsJunkClusters</li>
 			<li>ScarlandsJunkPrefabs</li>
@@ -348,23 +350,73 @@
 		</genStep>
 	</GenStepDef>
 	
-	<!-- <GenStepDef MayRequire="SWCP.guy762.WarlordEmpire"> -->
-		<!-- <defName>SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</defName> -->
-		<!-- <order>960</order> -->
-		<!-- <genStep Class="SWCPBiomes.GenStep_DefendingPawns"> -->
-			<!-- <factionDef>guy762_SWWarlordsFaction_PDF</factionDef> -->
-			<!-- <defendRadius>45</defendRadius> -->
-			<!-- <pawnsPerBeacon>3~6</pawnsPerBeacon> -->
-			<!-- <beaconBuildingDefs> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<defendRadius>45</defendRadius>
+			<pawnsPerBeacon>4~6</pawnsPerBeacon>
+			<beaconBuildingDefs>
 				<!-- replace with a prop police vehicle? -->
-				<!-- <li>SWCP_CommandPost_big</li> -->
-			<!-- </beaconBuildingDefs> -->
-			<!-- <options> -->
-				<!-- <xSWOnderon_CopPistol_6x>50</xSWOnderon_CopPistol_6x> -->
-				<!-- <xSWOnderon_CopMelee_6x>50</xSWOnderon_CopMelee_6x> -->
-			<!-- </options> -->
-		<!-- </genStep> -->
-	<!-- </GenStepDef> -->
+				<li>SWCP_CommandPost_big</li>
+			</beaconBuildingDefs>
+			<options>
+				<xcSWOnderon_CopPistol_6x>50</xcSWOnderon_CopPistol_6x>
+				<xcSWOnderon_CopMelee_6x>50</xcSWOnderon_CopMelee_6x>
+				<xcSWOnderon_CopCarbine_4x>50</xcSWOnderon_CopCarbine_4x>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>2~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTOR_PazaakTable</li>
+			</beaconBuildingDefs>
+			<options>
+				<xcSWCivilian_Thug_8x>100</xcSWCivilian_Thug_8x>
+				
+				<!-- <xgSWHutts_JKRodianBaseGuard>100</xgSWHutts_JKRodianBaseGuard> -->
+				<!-- <xgSWHutts_JKWeequayBaseGuard>50</xgSWHutts_JKWeequayBaseGuard> -->
+				<!-- <xgSWHutts_JKTrandoBaseGuard>10</xgSWHutts_JKTrandoBaseGuard> -->
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

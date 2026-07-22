@@ -291,11 +291,13 @@
 		<extraGenSteps>
 		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
 		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
+		  <li>SWCPMapGenStep_UrbanBiome_ScumBuildings</li>
 		  <li>SWCPMapGenStep_NPCMoistureVaporators</li>
 		  <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li>
 		  
 		  <li>SWCPGenStep_UrbanCivilians_Wander</li>
 		  <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOrdMantell_BigCommandPostCops</li>
+		  <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</li>
 		  
 		  <li>ScarlandsJunkClusters</li>
 		  <li>ScarlandsJunkPrefabs</li>
@@ -323,21 +325,21 @@
 		  <keepPopulationReplenished>true</keepPopulationReplenished>
 		  <maxPopulation>30</maxPopulation>
 		  <options>
-			<SWCPCivilian_villager>10</SWCPCivilian_villager>
-			<SWCPCivilian_prole>10</SWCPCivilian_prole>
+			<xwSWCivilian_Villager>10</xwSWCivilian_Villager>
+			<xwSWCivilian_Prole>10</xwSWCivilian_Prole>
 
-			<SWCPCivilian_poortraveler>5</SWCPCivilian_poortraveler>
-			<SWCPCivilian_hooded>3</SWCPCivilian_hooded>
+			<xwSWCivilian_PoorTraveler>5</xwSWCivilian_PoorTraveler>
+			<xwSWCivilian_Hooded>3</xwSWCivilian_Hooded>
 			
-			<SWCPCivilian_mid>2</SWCPCivilian_mid>
+			<xwSWCivilian_Mid>2</xwSWCivilian_Mid>
 
-			<!-- <SWCPCivilian_bougie>1</SWCPCivilian_bougie> -->
-			<!-- <SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler> -->
+			<!-- <xwSWCivilian_Bougie>1</xwSWCivilian_Bougie> -->
+			<!-- <xwSWCivilian_ExoticTraveler>0.1</xwSWCivilian_ExoticTraveler> -->
 
-			<SWCPCivilian_spacer>1</SWCPCivilian_spacer>
+			<xwSWCivilian_Spacer>1</xwSWCivilian_Spacer>
 			<!-- <SWCPCivilian_doctormid>1</SWCPCivilian_doctormid> -->
-			<SWCPCivilian_ugnaught>1</SWCPCivilian_ugnaught>
-			<SWCPCivilian_jawa_offworld>1</SWCPCivilian_jawa_offworld>
+			<xwSWCivilian_Ugnaught>1</xwSWCivilian_Ugnaught>
+			<xwSWCivilian_JawaOffworld>1</xwSWCivilian_JawaOffworld>
 			
 			<SWCPDroidColonistBnS_RA7ProtocolDroid>1</SWCPDroidColonistBnS_RA7ProtocolDroid>
 			<SWCPDroidColonistBnS_PitDroid>1</SWCPDroidColonistBnS_PitDroid>
@@ -372,19 +374,35 @@
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
 			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
 			<defendRadius>45</defendRadius>
-			<pawnsPerBeacon>3~6</pawnsPerBeacon>
+			<pawnsPerBeacon>4~6</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_big</li> <!-- replace with a prop police vehicle? -->
 			</beaconBuildingDefs>
 			<options>
-				<xSWOrdMantell_CopPistol_6x>50</xSWOrdMantell_CopPistol_6x>
-				<xSWOrdMantell_CopMelee_6x>50</xSWOrdMantell_CopMelee_6x>
+				<xcSWOrdMantell_CopPistol_6x>50</xcSWOrdMantell_CopPistol_6x>
+				<xcSWOrdMantell_CopMelee_6x>50</xcSWOrdMantell_CopMelee_6x>
 			</options>
 		</genStep>
 	</GenStepDef>
 	
 	
-	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_BlackSun</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>2~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTOR_PazaakTable</li>
+			</beaconBuildingDefs>
+			<options>
+				<xgSWHutts_JKRodianBaseGuard>100</xgSWHutts_JKRodianBaseGuard>
+				<xgSWHutts_JKWeequayBaseGuard>50</xgSWHutts_JKWeequayBaseGuard>
+				<xgSWHutts_JKTrandoBaseGuard>10</xgSWHutts_JKTrandoBaseGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
 	
 	
 	

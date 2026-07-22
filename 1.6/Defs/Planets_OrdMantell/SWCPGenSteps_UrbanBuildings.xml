@@ -26,6 +26,7 @@
 		<genSteps>
 			<li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
 			<li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
+			<li>SWCPMapGenStep_UrbanBiome_ScumBuildings</li>
 		</genSteps>
 	</MapGeneratorDef>
 	
@@ -195,14 +196,134 @@
 		<roomDefs>
 			<!-- <SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor> -->
 			
-			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
-			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
+			<SWCPRoomLayout_UrbanKitchen>1</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>2</SWCPRoomLayout_UrbanDiningHall>
 			
-			<SWCPRoomLayout_UrbanLivingArea>2</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanLivingArea>3</SWCPRoomLayout_UrbanLivingArea>
 			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
 
 		</roomDefs>
 	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_ScumBuildings</defName>
+		<order>740</order>
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_SingleUrbanBuilding">
+			<layoutDef>SWCPLayout_UrbanScumBuildings</layoutDef>
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_UrbanScumBuildings</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<!-- <clearRoomsEntirely>true</clearRoomsEntirely> -->
+		<minRoomWidth>8</minRoomWidth>
+		<minRoomHeight>8</minRoomHeight>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallB</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>BrokenAsphalt</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<!-- <corridorDef>AncientRuinsShelfedCorridor</corridorDef> -->
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		
+		
+			
+		
+		<importantRoomDef>SWCPRoomLayout_UrbanRecRoom</importantRoomDef>
+		<roomDefs>
+			<AncientRuinsEmpty>0.5</AncientRuinsEmpty>
+			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
+			
+			<SWCPRoomLayout_UrbanKitchen>1</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>1</SWCPRoomLayout_UrbanDiningHall>
+			<!-- <SWCPRoomLayout_UrbanRecRoom>2</SWCPRoomLayout_UrbanRecRoom> -->
+
+			<SWCPRoomLayout_UrbanLockerRoom>1</SWCPRoomLayout_UrbanLockerRoom>
+			<SWCPRoomLayout_UrbanShelfRoom>2</SWCPRoomLayout_UrbanShelfRoom>
+			
+			<SWCPRoomLayout_UrbanTreasureRoom>1</SWCPRoomLayout_UrbanTreasureRoom>
+		</roomDefs>
+		
+		<junkScaterrers>
+		  <Filth_Trash>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_Trash>
+		  <Filth_MoldyUniform>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~2</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_MoldyUniform>
+		  <Filth_ScatteredDocuments>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~1</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_ScatteredDocuments>
+		  <AncientCardboardBox>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~5</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </AncientCardboardBox>
+		</junkScaterrers>
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -283,6 +404,11 @@
 		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<prefabs>
+			<!-- <SWCPPrefabLootbox_CivilianMisc> too frequent -->
+				<!-- <countPerHundredCells>1</countPerHundredCells> -->
+				<!-- <minMaxRange>0~1</minMaxRange> -->
+			<!-- </SWCPPrefabLootbox_CivilianMisc> -->
+			
 		  <AncientLockers_Row>
 			<countPerTenEdgeCells>3</countPerTenEdgeCells>
 			<minMaxRange>5~15</minMaxRange>
@@ -397,6 +523,11 @@
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
 		<prefabs>
+			<SWCPPrefabLootbox_CivilianMisc>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>0~2</minMaxRange>
+			</SWCPPrefabLootbox_CivilianMisc>
+			
 		  <IndustrialShelf_Edge>
 			<countPerTenEdgeCells>2</countPerTenEdgeCells>
 			<minMaxRange>10~20</minMaxRange>
@@ -425,7 +556,112 @@
 	</LayoutRoomDef>
 	
 	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanTreasureRoom</defName>
+		<!-- <minSingleRectWidth>10</minSingleRectWidth> -->
+		<!-- <minSingleRectHeight>10</minSingleRectHeight> -->
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<prefabs>
+			<SWCPPrefabLootbox_Spice>
+				<countPerHundredCells>10</countPerHundredCells>
+				<minMaxRange>0~1</minMaxRange>
+			</SWCPPrefabLootbox_Spice>
+			<SWCPPrefabLootbox_CivilianMisc>
+				<countPerHundredCells>10</countPerHundredCells>
+				<minMaxRange>0~5</minMaxRange>
+			</SWCPPrefabLootbox_CivilianMisc>
+			
+			<SWCPRoomLayout_Subroom_SpiceAndCashLoot>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPRoomLayout_Subroom_SpiceAndCashLoot>
+			
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~5</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		  <AncientSpacerCrate_Cluster>
+			<countPerHundredCells>10</countPerHundredCells>
+			<minMaxRange>0~5</minMaxRange>
+		  </AncientSpacerCrate_Cluster>
+		  <AncientOpenContainer>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientOpenContainer>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		
+		<!-- <parts> -->
+		  <!-- <HunterDrone>0.2</HunterDrone> -->
+		  <!-- <WaspDrone>0.2</WaspDrone> -->
+		<!-- </parts> -->
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_XGrate_yellow</li>
+		</floorTypes>
+		<scatterTerrain>
+		  <guy762_FloorTiles_DivotedTile_iron>
+			<groupsPerHundredCells>5~8</groupsPerHundredCells>
+			<itemsPerGroup>10~15</itemsPerGroup>
+			<groupDistRange>1~5</groupDistRange>
+		  </guy762_FloorTiles_DivotedTile_iron>
+		</scatterTerrain>
+	</LayoutRoomDef>
 	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanRecRoom</defName>
+		<minSingleRectWidth>10</minSingleRectWidth>
+		<minSingleRectHeight>10</minSingleRectHeight>
+		<prefabs>
+			<SWCPPrefab_PazaakTable>
+				<countRange>2~2</countRange>
+			</SWCPPrefab_PazaakTable>
+			<!-- <SWCPPrefab_HologramBandAndDancer> -->
+				<!-- <countRange>1</countRange> -->
+			<!-- </SWCPPrefab_HologramBandAndDancer> -->
+			
+		  <!-- <PokerTable> -->
+			<!-- <countRange>0~2</countRange> -->
+		  <!-- </PokerTable> -->
+		  <FlatscreenTelevision>
+			<countPerTenEdgeCells>1</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </FlatscreenTelevision>
+		  <!-- <ChessTable> -->
+			<!-- <countPerHundredCells>3</countPerHundredCells> -->
+			<!-- <minMaxRange>0~2</minMaxRange> -->
+		  <!-- </ChessTable> -->
+		  <Couch_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Couch_Edge>
+		  
+		  <Armchairs_Edge>
+			<countPerTenEdgeCells>5</countPerTenEdgeCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </Armchairs_Edge>
+		  
+		   <TVWithArmchairs>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TVWithArmchairs>
+		  
+		  
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+			<!-- <li>CarpetBrownLight</li> -->
+			<!-- <li>CarpetGranite</li> -->
+		</floorTypes>
+		<edgeTerrain>AncientTile</edgeTerrain>
+	</LayoutRoomDef>
 	
 	
 	
