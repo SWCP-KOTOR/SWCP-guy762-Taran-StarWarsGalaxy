@@ -284,7 +284,7 @@
 			
 			<li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li>
 
-			<li>SWCPGenStep_UrbanCivilians_Wander</li>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanCivilians_Onderon</li>
 			<li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</li>
 			<li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</li>
 
@@ -358,7 +358,39 @@
 	
 	
 	
-	
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanCivilians_Onderon</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
+		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
+		  <initialCivilianCount>25~30</initialCivilianCount>
+		  <keepPopulationReplenished>true</keepPopulationReplenished>
+		  <maxPopulation>50</maxPopulation>
+		  <options>
+			<xwSWCivilian_OnderonVillager>10</xwSWCivilian_OnderonVillager>
+			<xwSWCivilian_OnderonRobed>10</xwSWCivilian_OnderonRobed>
+
+			<xwSWCivilian_PoorTraveler>3</xwSWCivilian_PoorTraveler>
+			<xwSWCivilian_Hooded>2</xwSWCivilian_Hooded>
+			
+			<xwSWCivilian_Mid>2</xwSWCivilian_Mid>
+
+			<!-- <xwSWCivilian_Bougie>1</xwSWCivilian_Bougie> -->
+			<!-- <xwSWCivilian_ExoticTraveler>0.1</xwSWCivilian_ExoticTraveler> -->
+
+			<xwSWCivilian_Spacer>1</xwSWCivilian_Spacer>
+			<!-- <SWCPCivilian_doctormid>1</SWCPCivilian_doctormid> -->
+			<!-- <xwSWCivilian_Ugnaught>1</xwSWCivilian_Ugnaught> -->
+			<!-- <xwSWCivilian_JawaOffworld>1</xwSWCivilian_JawaOffworld> -->
+			
+			<SWCPDroidColonistBnS_RA7ProtocolDroid>1</SWCPDroidColonistBnS_RA7ProtocolDroid>
+			<SWCPDroidColonistBnS_PitDroid>1</SWCPDroidColonistBnS_PitDroid>
+			<SWCPDroidColonistBnS_R5AstDrd>0.5</SWCPDroidColonistBnS_R5AstDrd>
+			<SWCPDroidColonistBnS_3POProtocolDroid>0.5</SWCPDroidColonistBnS_3POProtocolDroid>
+			<SWCPDroidColonistBnS_LOMProtocolDroid>0.1</SWCPDroidColonistBnS_LOMProtocolDroid>
+		  </options>
+		</genStep>
+	</GenStepDef>
 	
 	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
 		<defName>SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</defName>
@@ -714,7 +746,7 @@
 			
 			<!-- <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li> -->
 
-			<li>SWCPGenStep_UrbanCivilians_Wander</li>
+			<li>SWCPGenStep_UrbanCivilians_OrdMantell</li>
 			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOnderon_BigCommandPostCops</li> -->
 
 			<li>ScarlandsJunkClusters</li>

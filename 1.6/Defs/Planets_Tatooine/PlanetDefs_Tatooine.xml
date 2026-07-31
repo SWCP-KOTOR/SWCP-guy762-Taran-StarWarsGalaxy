@@ -322,8 +322,11 @@
 		<viewGizmoTooltip>View locations that are orbiting Tatooine.</viewGizmoTooltip>
 		<viewGizmoTexPath>UI/Commands/ViewOrbit</viewGizmoTexPath>
 		<elevationString>200km</elevationString>
-		<defaultBiome>SWCPBiome_Orbit</defaultBiome>
 		<rangeDistanceFactor>20</rangeDistanceFactor>
+		
+		<defaultBiome>SWCPBiome_Orbit</defaultBiome>
+		<!-- <isSpace>false</isSpace> -->
+		<!-- <canFormCaravans>true</canFormCaravans> -->
 		
 		<modExtensions>
 			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">

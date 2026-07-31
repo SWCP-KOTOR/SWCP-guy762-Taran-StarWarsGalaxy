@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- <GenStepDef> -->
-    <!-- <defName>SWCPGenStep_UrbanCivilians_Wander</defName> -->
+    <!-- <defName>SWCPGenStep_UrbanCivilians_OrdMantell</defName> -->
     <!-- <order>960</order> -->
     <!-- <genStep Class="SWCPBiomes.GenStep_WanderingCivilians"> -->
       <!-- <factionDef>guy762_KotORFaction_Civilians</factionDef> -->

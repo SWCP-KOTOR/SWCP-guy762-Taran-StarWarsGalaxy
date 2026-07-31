@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<PawnKindDef Name="SWCPCivilian_Onderonian" ParentName="SWCPCivilian_villager">
+		<defName>SWCPCivilian_Onderonian</defName>
+		<label>Onderonian</label>
+		<combatPower>25</combatPower>
+		
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+
+		<modExtensions>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+				<geneSets>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkSaturatedReddish</li>
+							<li>Skin_Melanin7</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_MidBlack</li>
+							<li>Skin_Melanin8</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkBlack</li>
+							<li>Skin_Melanin9</li>
+						</geneDefs>
+					</li>
+				</geneSets>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_OnderonianRobed" ParentName="SWCPCivilian_poortraveler">
+		<defName>SWCPCivilian_OnderonianRobed</defName>
+		<label>Onderonian</label>
+		<combatPower>25</combatPower>
+		
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<inventoryOptions Inherit="False">
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<modExtensions>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+				<geneSets>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkSaturatedReddish</li>
+							<li>Skin_Melanin7</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_MidBlack</li>
+							<li>Skin_Melanin8</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkBlack</li>
+							<li>Skin_Melanin9</li>
+						</geneDefs>
+					</li>
+				</geneSets>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+ </Defs>

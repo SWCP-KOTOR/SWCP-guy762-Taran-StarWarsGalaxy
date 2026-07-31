@@ -295,7 +295,7 @@
 		  <li>SWCPMapGenStep_NPCMoistureVaporators</li>
 		  <li>SWCPMapGenStep_UrbanBiome_CommandPostForCops</li>
 		  
-		  <li>SWCPGenStep_UrbanCivilians_Wander</li>
+		  <li>SWCPGenStep_UrbanCivilians_OrdMantell</li>
 		  <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOrdMantell_BigCommandPostCops</li>
 		  <li MayRequire="SWCP.guy762.WarlordEmpire">SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</li>
 		  
@@ -316,8 +316,8 @@
 		<!-- </modExtensions> -->
 	</BiomeDef>
 	
-	<GenStepDef>
-		<defName>SWCPGenStep_UrbanCivilians_Wander</defName>
+	<GenStepDef MayRequire="SWCP.guy762.WarlordEmpire">
+		<defName>SWCPGenStep_UrbanCivilians_OrdMantell</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
 		  <factionDef>guy762_KotORFaction_Civilians</factionDef>

@@ -24,19 +24,30 @@
 	  <things>
 		<SWCPBuilding_NPCHologram_bith>
 		  <positions>
-			<li>(0, 0, 2)</li>
-			<li>(1, 0, 2)</li>
-			<li>(3, 0, 2)</li>
-			<li>(4, 0, 2)</li>
+			<li>(0,1,1,1)</li>
+			<li>(3,1,4,1)</li>
 		  </positions>
 		  <relativeRotation>Opposite</relativeRotation>
 		</SWCPBuilding_NPCHologram_bith>
 		<SWCPBuilding_NPCHologram_dancerF>
-		  <position>(2, 0, 1)</position>
+		  <position>(2, 0, 0)</position>
 		  <relativeRotation>Opposite</relativeRotation>
 		</SWCPBuilding_NPCHologram_dancerF>
 	  </things>
 	</PrefabDef>
+	
+	
+	<PrefabDef>
+	  <defName>SWCPPrefab_HologramDancerMale</defName>
+	  <size>(1,1)</size>
+	  <things>
+		<SWCPBuilding_NPCHologram_dancerM>
+		  <position>(0, 0, 0)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		</SWCPBuilding_NPCHologram_dancerM>
+	  </things>
+	</PrefabDef>
+
 
 
 	<PrefabDef>
@@ -50,5 +61,11 @@
 		</things>
 	</PrefabDef>
 	
+	
+	
+	
+	
+
+
 	
 </Defs>
