@@ -18,6 +18,9 @@
 					
 					<li>guy762_ShipTech_InterceptorIVThruster</li>
 					<li>guy762_ShipTech_InterceptorIVReactor</li>
+					
+					<li>guy762_ShipTech_ArquitensThruster</li>
+					<li>guy762_ShipTech_ArquitensReactor</li>
 				</value>
 			</li>
 			
@@ -60,6 +63,15 @@
 							</li>
 							<li>
 								<key>guy762_ShipTech_InterceptorIVThruster</key>
+								<value>0.05</value>
+							</li>
+							
+							<li>
+								<key>guy762_ShipTech_ArquitensReactor</key>
+								<value>0.05</value>
+							</li>
+							<li>
+								<key>guy762_ShipTech_ArquitensThruster</key>
 								<value>0.05</value>
 							</li>
 						</facilityQualityOffsets>
