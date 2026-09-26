@@ -81,7 +81,7 @@
 	
 	<ThingDef ParentName="guy762_SWGravshipOverlay_CR90Corvette">
 		<defName>guy762_SWGravshipOverlay_CR90Super</defName>
-		<label>CR90 SuperCorvette</label>
+		<label>CR90 Frigate</label>
 		<graphicData>
 			<texPath>Gravships/CR90Corvette/CR90Super</texPath>
 			<color>(205,125,20)</color> <!-- new republic orange -->
